@@ -1,0 +1,61 @@
+# ===========
+# = Utility =
+# ===========
+
+# Reload the .bashrc
+alias rl="source ~/.bashrc"
+# Edit aliases
+alias ea='mate -w ~/bin/dotfiles/bash/aliases && source ~/bin/dotfiles/bash/aliases'
+# Edit environment
+alias ee="mate ~/bin/dotfiles/bash/env"
+
+# ============================
+# = Directories and movement =
+# ============================
+
+alias l='ls -p'
+alias la='l -A'
+alias lv='l -l'
+alias lav='la -l'
+# List only dotfiles
+alias l.='l -d .[^.]*'
+alias l.v='ls -l -d .[^.]*'
+
+function cdl() {
+  cd $1; l
+}
+alias s='cd ..'
+function sl() {
+  s; l
+}
+
+alias mkd='mkdir'
+alias mkdr='mkdir -p'
+function take() {
+  mkdir -p "$1"
+  cd "$1"
+}
+
+# =======
+# = Git =
+# =======
+
+alias g='git status'
+# History of deleted files
+alias g-del-f='git log --diff-filter=D --summary'
+
+# =========
+# = Rails =
+# =========
+
+alias rt='rake test'
+alias rtv='rake test TESTOPTS="-v"'
+
+# ============
+# = Catapult =
+# ============
+
+alias ctpstart='echo "If build doesn’t work try: ctpmake" && mvn jetty:run -DskipTests -Djetty.scanIntervalSeconds=2'
+# Previous version: alias ctpstart='echo "If build doesn’t work try: ctpmake" && mvn install jetty:run -DskipTests'
+alias ctpmigrate='mvn initialize db-migration:migrate'
+alias ctpmake='mvn clean install -DskipTests'

@@ -1,0 +1,15 @@
+[alias]
+  co = checkout
+  st = status
+  ci = commit -a
+[user]
+  name = Tobias Adam
+  email = tobias.adam@mindmatters.de
+[color]
+  status = auto
+  diff = auto
+  branch = auto
+[merge]
+  tool = opendiff
+[core]
+  excludesfile = ~/.gitignore
