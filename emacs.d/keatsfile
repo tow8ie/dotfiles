@@ -1,0 +1,7 @@
+((:key "M-F" :description "Move window focus to the right")
+ (:key "M-B" :description "Move window focus to the left")
+ (:key "M-N" :description "Move window focus down")
+ (:key "M-P" :description "Move window focus up")
+ (:key "C-h m" :description "Help on the current major mode")
+ (:key "C-h b" :description "Help on the key combinations (bindings) of the current modes")
+ (:key "C-l" :description "Move the line where the cursor resides to the middle of the buffers window"))

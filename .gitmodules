@@ -1,0 +1,3 @@
+[submodule "emacs.d/keats"]
+	path = emacs.d/keats
+	url = http://github.com/rejeep/keats.git
