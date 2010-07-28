@@ -50,6 +50,7 @@ alias g-del-f='git log --diff-filter=D --summary'
 
 alias rt='rake test'
 alias rtv='rake test TESTOPTS="-v"'
+alias ss='./script/server'
 
 # ============
 # = Catapult =
