@@ -5,9 +5,9 @@
 # Reload the .bashrc
 alias rl="source ~/.bashrc"
 # Edit aliases
-alias ea='mate -w ~/bin/dotfiles/bash/aliases && source ~/bin/dotfiles/bash/aliases'
+alias ea='mate -w ~/.bash/aliases && source ~/.bash/aliases'
 # Edit environment
-alias ee="mate ~/bin/dotfiles/bash/env"
+alias ee="mate ~/.bash/env"
 
 # ============================
 # = Directories and movement =
