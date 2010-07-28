@@ -1,7 +1,11 @@
 [alias]
   co = checkout
   st = status
+  s = status -sb
   ci = commit -a
+  l = log --oneline --decorate
+  d = diff --word-diff
+  pr = pull --rebase
 [user]
   name = Tobias Adam
   email = tobias.adam@mindmatters.de
@@ -13,3 +17,5 @@
   tool = opendiff
 [core]
   excludesfile = ~/.gitignore
+[push]
+	default = tracking
