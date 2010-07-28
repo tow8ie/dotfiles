@@ -5,6 +5,8 @@ silent! call pathogen#runtime_append_all_bundles() " Loads the Pathogen plugin
 syntax enable                     " Turn on syntax highlighting.
 filetype plugin indent on         " Turn on file type detection.
 
+let mapleader = ","               " A more german keyboard friendly mapleader
+
 runtime macros/matchit.vim        " Load the matchit plugin.
 
 set showcmd                       " Display incomplete commands.
