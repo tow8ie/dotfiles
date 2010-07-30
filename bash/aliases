@@ -36,6 +36,9 @@ function take() {
   cd "$1"
 }
 
+# Show a tree listing with directories having a trailing slash
+alias tre='tree -F'
+
 # =======
 # = Git =
 # =======
