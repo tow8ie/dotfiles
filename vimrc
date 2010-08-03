@@ -49,6 +49,17 @@ set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{exists('*CapsLockStatusline')?CapsLo
 
 colorscheme topfunky-light
 
+" Mapping for moving text
+" Found here: http://vim.wikia.com/wiki/Moving_lines_up_or_down
+" The D mapping means the Command key on a Mac
+
+nnoremap <D-j> :m+<CR>==
+nnoremap <D-k> :m-2<CR>==
+inoremap <D-j> <Esc>:m+<CR>==gi
+inoremap <D-k> <Esc>:m-2<CR>==gi
+vnoremap <D-j> :m'>+<CR>gv=gv
+vnoremap <D-k> :m-2<CR>gv=gv
+
 " Tab mappings.
 " map <leader>tt :tabnew<cr>
 " map <leader>te :tabedit
