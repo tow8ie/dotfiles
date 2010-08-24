@@ -37,7 +37,8 @@ set visualbell                    " No beeping.
 
 set nobackup                      " Don't make a backup before overwriting a file.
 set nowritebackup                 " And again.
-set directory=$HOME/.vim/tmp//,.  " Keep swap files in one location
+" set directory=$HOME/.vim/tmp//,.  " Keep swap files in one location
+set noswapfile                    " Don’t create a swapfile
 
 set tabstop=2                    " Global tab width.
 set shiftwidth=2                 " And again, related.
@@ -48,6 +49,17 @@ set laststatus=2                  " Show the status line all the time
 set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{exists('*CapsLockStatusline')?CapsLockStatusline():''}%=%-16(\ %l,%c-%v\ %)%P
 
 colorscheme topfunky-light
+
+" Mapping for moving text
+" Found here: http://vim.wikia.com/wiki/Moving_lines_up_or_down
+" The D mapping means the Command key on a Mac
+
+nnoremap <D-j> :m+<CR>==
+nnoremap <D-k> :m-2<CR>==
+inoremap <D-j> <Esc>:m+<CR>==gi
+inoremap <D-k> <Esc>:m-2<CR>==gi
+vnoremap <D-j> :m'>+<CR>gv=gv
+vnoremap <D-k> :m-2<CR>gv=gv
 
 " Tab mappings.
 " map <leader>tt :tabnew<cr>
