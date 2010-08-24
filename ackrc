@@ -1,7 +1,8 @@
+--type-set=sass=.sass
+--type-set=scss=.scss
 --type-add=html=.haml
 --type-add=ruby=.haml
 --type-add=css=.sass
---type-set=sass=.sass
 --type-add=js=.javascript
 --ignore-dir=target/
 --ignore-dir=.rsync_cache/
