@@ -37,3 +37,22 @@ export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/1.6/Home/
 # =========
 
 export MAVEN_OPTS="-Xmx512m"
+
+# ==========
+# = cdargs =
+# ==========
+
+# This was prompted to be installed by the cdargs port
+if [ -f /opt/local/etc/profile.d/cdargs-bash.sh ];
+then
+  source /opt/local/etc/profile.d/cdargs-bash.sh
+fi
+
+# =======
+# = RVM =
+# =======
+
+# This basically means that if $HOME/.rvm/scripts/rvm exists it will be sourced
+# @see http://tldp.org/LDP/abs/html/testconstructs.html#DBLBRACKETS
+# @see http://tldp.org/LDP/abs/html/list-cons.html#LISTCONSREF
+[[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
