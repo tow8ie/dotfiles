@@ -54,9 +54,26 @@ alias g-del-f='git log --diff-filter=D --summary'
 # = Rails =
 # =========
 
+alias r='rails'
+
 alias rt='rake test'
+# Stands for rails specific test.
+# Has to be used with path to the specific file to be tested.
+alias rst='ruby -Itest'
 alias rtv='rake test TESTOPTS="-v"'
 alias ss='./script/server'
+
+# =========
+# = Redis =
+# =========
+
+alias redisstart='redis-server /opt/local/etc/redis.conf'
+
+# ===========
+# = MongoDB =
+# ===========
+
+alias mongodbstart='mongod -f ~/etc/mongod.conf'
 
 # ============
 # = Catapult =
