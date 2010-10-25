@@ -54,7 +54,27 @@ BWHITE='\e[47m'
 
 alias git_prompt="__git_ps1 ' [%s]'"
 
+# This is for a nice rvm prompt hint
+# This has to be wrapped in function to be called on every read access of the PS1
+
+function rvm_prompt ()
+{
+  # if [ -f ~/.rvm/bin/rvm-prompt ]
+  # then
+  #   rvm_status=`~/.rvm/bin/rvm-prompt`
+  #   if [ -n "${rvm_status}" ]
+  #   then
+  #     echo -n " [$rvm_status]"
+  #   else
+  #     echo ''
+  #   fi
+  # else
+  #   echo ''
+  # fi
+  echo ''
+}
+
 # Wrap colors in \[$COLOR_NAME\]
 # Wrap commands in \$(command_name)
 
-PS1="\n\h:\W \[$GREEN\]\$(git_prompt) \n\[$RED\]\u \[$ERED\]→\[$NO_COLOR\] "
+PS1="\n\h: \w \[$GREEN\] \n\[$RED\]\u\[$GREEN\]\$(rvm_prompt)\$(git_prompt) \[$ERED\]→\[$NO_COLOR\] "
