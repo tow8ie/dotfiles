@@ -52,6 +52,9 @@ BWHITE='\e[47m'
 # http://github.com/guides/put-your-git-branch-name-in-your-shell-prompt
 . ~/.bash/scripts/git-completion.sh
 
+# http://github.com/bobthecow/git-flow-completion
+. ~/.bash/scripts/git-flow-completion.sh
+
 alias git_prompt="__git_ps1 ' [%s]'"
 
 # This is for a nice rvm prompt hint
