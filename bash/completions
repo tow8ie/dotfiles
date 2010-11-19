@@ -1,2 +1,3 @@
 # Taken that from Ryan Bates’ dotfiles: http://github.com/ryanb/dotfiles
 complete -C ~/.bash/scripts/rake_completion -o default rake
+source ~/.bash/scripts/terminitor-completion.sh
