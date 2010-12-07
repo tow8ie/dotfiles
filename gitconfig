@@ -7,8 +7,8 @@
   d = diff --word-diff
   pr = pull --rebase
 [user]
-  name = Tobias Adam
-  email = tobias.adam@mindmatters.de
+	name = Tobias Adam
+	email = tow8ie@gmail.com
 [color]
   status = auto
   diff = auto
