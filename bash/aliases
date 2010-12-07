@@ -51,6 +51,12 @@ alias g='git status'
 alias g-del-f='git log --diff-filter=D --summary'
 
 # =========
+# = nanoc =
+# =========
+
+alias n='nanoc'
+
+# =========
 # = Rails =
 # =========
 
