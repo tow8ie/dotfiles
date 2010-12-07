@@ -62,19 +62,18 @@ alias git_prompt="__git_ps1 ' [%s]'"
 
 function rvm_prompt ()
 {
-  # if [ -f ~/.rvm/bin/rvm-prompt ]
-  # then
-  #   rvm_status=`~/.rvm/bin/rvm-prompt`
-  #   if [ -n "${rvm_status}" ]
-  #   then
-  #     echo -n " [$rvm_status]"
-  #   else
-  #     echo ''
-  #   fi
-  # else
-  #   echo ''
-  # fi
-  echo ''
+  if [ -f ~/.rvm/bin/rvm-prompt ]
+  then
+    rvm_status=`~/.rvm/bin/rvm-prompt`
+    if [ -n "${rvm_status}" ]
+    then
+      echo -n " [$rvm_status]"
+    else
+      echo ''
+    fi
+  else
+    echo ''
+  fi
 }
 
 # Wrap colors in \[$COLOR_NAME\]
