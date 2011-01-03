@@ -89,3 +89,10 @@ alias ctpstart='echo "If build doesn’t work try: ctpmake" && mvn jetty:run -Ds
 # Previous version: alias ctpstart='echo "If build doesn’t work try: ctpmake" && mvn install jetty:run -DskipTests'
 alias ctpmigrate='mvn initialize db-migration:migrate'
 alias ctpmake='mvn clean install -DskipTests'
+
+# ==========
+# = System =
+# ==========
+
+# Physically eject a disc (Mac OS X)
+alias eject-disc='drutil tray eject'
