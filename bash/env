@@ -12,7 +12,7 @@ export LC_CTYPE=en_US.UTF-8
 
 export MAVEN_PATH=/usr/local/apache-maven-2.1.0
 export MAVEN_BIN_PATH=$MAVEN_PATH/bin
-export POSTGRES_BIN_PATH=/opt/local/lib/postgresql84/bin
+export POSTGRES_BIN_PATH=/opt/local/lib/postgresql90/bin
 export MYSQL_BIN_PATH=/usr/local/mysql/bin
 export SUBVERSION_BIN_PATH=/opt/subversion/bin
 

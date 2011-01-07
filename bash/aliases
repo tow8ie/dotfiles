@@ -96,3 +96,10 @@ alias ctpmake='mvn clean install -DskipTests'
 
 # Physically eject a disc (Mac OS X)
 alias eject-disc='drutil tray eject'
+
+# ==========
+# = Tomcat =
+# ==========
+
+alias tomcat-start='/Applications/apache-tomcat-6.0.20/bin/startup.sh'
+alias tomcat-stop='/Applications/apache-tomcat-6.0.20/bin/shutdown.sh'
