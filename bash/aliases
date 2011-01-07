@@ -42,6 +42,15 @@ function take() {
 # Show a tree listing with directories having a trailing slash
 alias tre='tree -F'
 
+# ==========
+# = System =
+# ==========
+
+alias f='find . -name'
+
+# Physically eject a disc (Mac OS X)
+alias eject-disc='drutil tray eject'
+
 # =======
 # = Git =
 # =======
@@ -89,13 +98,6 @@ alias ctpstart='echo "If build doesn’t work try: ctpmake" && mvn jetty:run -Ds
 # Previous version: alias ctpstart='echo "If build doesn’t work try: ctpmake" && mvn install jetty:run -DskipTests'
 alias ctpmigrate='mvn initialize db-migration:migrate'
 alias ctpmake='mvn clean install -DskipTests'
-
-# ==========
-# = System =
-# ==========
-
-# Physically eject a disc (Mac OS X)
-alias eject-disc='drutil tray eject'
 
 # ==========
 # = Tomcat =
