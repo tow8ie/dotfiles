@@ -57,3 +57,13 @@ def create_symlink(pointing_file, pointed_at_file)
   puts "linking #{pointing_file} -> #{pointed_at_file}"
   system %Q{ln -s "#{pointed_at_file}" "#{pointing_file}"}
 end
+
+namespace :'command-t' do
+  desc 'build the Command-T Ruby extensions'
+  task :build do
+    Dir.chdir('vim/bundle/command-t/ruby/command-t') do
+      puts `ruby extconf.rb`
+      puts `make`
+    end
+  end
+end
