@@ -1,6 +1,7 @@
 set nocompatible                  " Must come first because it changes other options.
 
 silent! call pathogen#runtime_append_all_bundles() " Loads the Pathogen plugin
+call pathogen#helptags()          " I think this should automatically create helptags for all pathogen installed bundles
 
 syntax enable                     " Turn on syntax highlighting.
 filetype plugin indent on         " Turn on file type detection.
