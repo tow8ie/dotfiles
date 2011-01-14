@@ -19,3 +19,6 @@
 [submodule "vim/bundle/lusty"]
 	path = vim/bundle/lusty
 	url = https://github.com/sjbach/lusty.git
+[submodule "vim/bundle/mgutz-colorschemes"]
+	path = vim/bundle/mgutz-colorschemes
+	url = https://github.com/mgutz/vim-colors.git

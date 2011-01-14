@@ -49,8 +49,6 @@ set laststatus=2                  " Show the status line all the time
 " Useful status information at bottom of screen
 set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{exists('*CapsLockStatusline')?CapsLockStatusline():''}%=%-16(\ %l,%c-%v\ %)%P
 
-colorscheme topfunky-light
-
 " Mapping for moving text
 " Found here: http://vim.wikia.com/wiki/Moving_lines_up_or_down
 " The D mapping means the Command key on a Mac
