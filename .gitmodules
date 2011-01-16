@@ -25,3 +25,6 @@
 [submodule "vim/bundle/ruby-refactoring"]
 	path = vim/bundle/ruby-refactoring
 	url = https://github.com/ecomba/vim-ruby-refactoring.git
+[submodule "vim/bundle/AutoClose"]
+	path = vim/bundle/AutoClose
+	url = https://github.com/vim-scripts/AutoClose.git
