@@ -21,7 +21,7 @@
 	url = https://github.com/sjbach/lusty.git
 [submodule "vim/bundle/mgutz-colorschemes"]
 	path = vim/bundle/mgutz-colorschemes
-	url = https://github.com/mgutz/vim-colors.git
+	url = https://github.com/tow8ie/vim-colors.git
 [submodule "vim/bundle/ruby-refactoring"]
 	path = vim/bundle/ruby-refactoring
 	url = https://github.com/ecomba/vim-ruby-refactoring.git
