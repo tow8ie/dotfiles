@@ -28,3 +28,6 @@
 [submodule "vim/bundle/AutoClose"]
 	path = vim/bundle/AutoClose
 	url = https://github.com/vim-scripts/AutoClose.git
+[submodule "vim/bundle/endwise"]
+	path = vim/bundle/endwise
+	url = https://github.com/tpope/vim-endwise.git
