@@ -31,3 +31,6 @@
 [submodule "vim/bundle/colors-by-mgutz"]
 	path = vim/bundle/colors-by-mgutz
 	url = git@github.com:tow8ie/vim-colors.git
+[submodule "vim/bundle/surround"]
+	path = vim/bundle/surround
+	url = git@github.com:tow8ie/vim-surround.git
