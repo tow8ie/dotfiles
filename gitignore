@@ -33,6 +33,10 @@ ehthumbs.db
 Icon?
 Thumbs.db
 
+# Tag dirs of vim bundles #
+###########################
+doc/tags
+
 # My excludes #
 ###############
 
