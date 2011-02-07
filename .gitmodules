@@ -28,9 +28,6 @@
 [submodule "vim/bundle/colors-by-mgutz"]
 	path = vim/bundle/colors-by-mgutz
 	url = git@github.com:tow8ie/vim-colors.git
-[submodule "vim/bundle/textobj-user"]
-	path = vim/bundle/textobj-user
-	url = git@github.com:tow8ie/vim-textobj-user.git
 [submodule "vim/bundle/markdown"]
 	path = vim/bundle/markdown
 	url = https://github.com/hallison/vim-markdown.git
