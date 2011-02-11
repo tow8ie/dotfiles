@@ -17,7 +17,7 @@ export MYSQL_BIN_PATH=/usr/local/mysql/bin
 export SUBVERSION_BIN_PATH=/opt/subversion/bin
 
 export MANPATH=/opt/local/share/man:$MANPATH
-export PATH=~/bin:/opt/local/bin:/opt/local/sbin:$PATH:$POSTGRES_BIN_PATH:$MYSQL_BIN_PATH:$SUBVERSION_BIN_PATH:$MAVEN_BIN_PATH
+export PATH=~/bin:/usr/local/bin:/opt/local/bin:/opt/local/sbin:$PATH:$POSTGRES_BIN_PATH:$MYSQL_BIN_PATH:$SUBVERSION_BIN_PATH:$MAVEN_BIN_PATH
 
 # ============
 # = Postgres =
