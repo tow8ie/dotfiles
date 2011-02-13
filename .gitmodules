@@ -40,3 +40,6 @@
 [submodule "vim/bundle/Markdown"]
 	path = vim/bundle/Markdown
 	url = https://github.com/vim-scripts/Markdown.git
+[submodule "vim/bundle/github-theme"]
+	path = vim/bundle/github-theme
+	url = https://github.com/vim-scripts/github-theme.git
