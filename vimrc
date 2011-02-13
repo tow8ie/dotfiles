@@ -50,6 +50,8 @@ set laststatus=2                  " Show the status line all the time
 " Useful status information at bottom of screen
 set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{exists('*CapsLockStatusline')?CapsLockStatusline():''}%=%-16(\ %l,%c-%v\ %)%P
 
+" Custom Mappings
+"
 " Mapping for moving text
 " Found here: http://vim.wikia.com/wiki/Moving_lines_up_or_down
 " The D mapping means the Command key on a Mac
@@ -60,6 +62,9 @@ inoremap <D-j> <Esc>:m+<CR>==gi
 inoremap <D-k> <Esc>:m-2<CR>==gi
 vnoremap <D-j> :m'>+<CR>gv=gv
 vnoremap <D-k> :m-2<CR>gv=gv
+
+" Create new line under current one in insert mode with Ctrl-Return
+inoremap <c-cr> <esc>A<cr>
 
 " Tab mappings.
 " map <leader>tt :tabnew<cr>
