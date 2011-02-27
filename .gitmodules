@@ -43,3 +43,6 @@
 [submodule "vim/bundle/github-theme"]
 	path = vim/bundle/github-theme
 	url = https://github.com/vim-scripts/github-theme.git
+[submodule "vim/bundle/gundo"]
+	path = vim/bundle/gundo
+	url = http://github.com/sjl/gundo.vim.git
