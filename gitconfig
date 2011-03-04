@@ -2,7 +2,7 @@
   co = checkout
   st = status
   s = status -sb
-  ci = commit -a
+  c = commit
   l = log --oneline --decorate
   d = diff --word-diff
   pr = pull --rebase
