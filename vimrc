@@ -1,60 +1,116 @@
-set nocompatible                  " Must come first because it changes other options.
+set nocompatible " Must come first because it changes other options.
 
-silent! call pathogen#runtime_append_all_bundles() " Loads the Pathogen plugin
-call pathogen#helptags()          " I think this should automatically create helptags for all pathogen installed bundles
+" -------- "
+" Pathogen "
+" -------- "
 
-syntax enable                     " Turn on syntax highlighting.
-filetype plugin indent on         " Turn on file type detection.
+silent! call pathogen#runtime_append_all_bundles()
+" I think this automatically create helptags for all pathogen installed bundles
+call pathogen#helptags()
 
-let mapleader = ","               " A more german keyboard friendly mapleader
+" --------- "
+" Functions "
+" --------- "
 
-runtime macros/matchit.vim        " Load the matchit plugin.
+" A function that runs a command and preserves search history and cursor position
+" Seen at http://vimcasts.org/episodes/tidying-whitespace
+function! Preserve(command)
+  " Preparation: save last search, and cursor position.
+  let _s=@/
+  let l = line(".")
+  let c = col(".")
+  " Do the business:
+  execute a:command
+  " Clean up: restore previous search history, and cursor position
+  let @/=_s
+  call cursor(l, c)
+endfunction
 
-set showcmd                       " Display incomplete commands.
-set showmode                      " Display the mode you're in.
+" ------------------- "
+" Syntax highlighting "
+" ------------------- "
 
-set backspace=indent,eol,start    " Intuitive backspacing.
+syntax enable
 
-set hidden                        " Handle multiple buffers better.
+set list
+set listchars=tab:▸\ ,eol:¬
 
-set wildmenu                      " Enhanced command line completion.
-set wildmode=list:longest         " Complete files like a shell.
-set cpoptions+=$
+" Turn on file type detection.
+filetype plugin indent on
 
-set ignorecase                    " Case-insensitive searching.
-set smartcase                     " But case-sensitive if expression contains a capital letter.
+" --------------------- "
+" Map leader definition "
+" --------------------- "
 
-set number                        " Show line numbers.
-set ruler                         " Show cursor position.
-set cursorline                    " Highlight current line/cursor line
+" A more german keyboard friendly mapleader
+let mapleader = ","
 
-set incsearch                     " Highlight matches as you type.
-set hlsearch                      " Highlight matches.
+" ---------- "
+" Appearance "
+" ---------- "
 
-set wrap                          " Turn on line wrapping.
-set scrolloff=3                   " Show 3 lines of context around the cursor.
+set number " Show line numbers.
+set ruler " Show cursor position.
+set cursorline " Highlight current line/cursor line
 
-set title                         " Set the terminal's title
+set wrap " Turn on line wrapping.
+set scrolloff=3 " Show 3 lines of context around the cursor.
 
-set visualbell                    " No beeping.
+set title " Set the terminal's title
 
-set nobackup                      " Don't make a backup before overwriting a file.
-set nowritebackup                 " And again.
-" set directory=$HOME/.vim/tmp//,.  " Keep swap files in one location
-set noswapfile                    " Don’t create a swapfile
-set autoread                      " Autoupdate files changed by other processes without a warning
-
-set tabstop=2                    " Global tab width.
-set shiftwidth=2                 " And again, related.
-set expandtab                    " Use spaces instead of tabs
-
-set laststatus=2                  " Show the status line all the time
+" Show the status line all the time
+set laststatus=2
 " Useful status information at bottom of screen
 set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{exists('*CapsLockStatusline')?CapsLockStatusline():''}%=%-16(\ %l,%c-%v\ %)%P
 
-" Custom Mappings
-"
-" Mapping for moving text
+" ------- "
+" Editing "
+" ------- "
+
+" Load the matchit plugin.
+runtime macros/matchit.vim
+
+set cpoptions+=$
+
+set tabstop=2 " Global tab width.
+set shiftwidth=2 " And again, related.
+set expandtab " Use spaces instead of tabs
+
+" --------- "
+" Behaviour "
+" --------- "
+
+set showcmd " Display incomplete commands.
+set showmode " Display the mode you're in.
+set backspace=indent,eol,start " Intuitive backspacing.
+
+set wildmenu " Enhanced command line completion.
+set wildmode=list:longest " Complete files like a shell.
+
+set visualbell " No beeping.
+
+set nobackup " Don't make a backup before overwriting a file.
+set nowritebackup " And again.
+" set directory=$HOME/.vim/tmp//,.  " Keep swap files in one location
+set noswapfile " Don’t create a swapfile
+set autoread " Autoupdate files changed by other processes without a warning
+
+set hidden " Handle multiple buffers better.
+
+" ------ "
+" Search "
+" ------ "
+
+set ignorecase " Case-insensitive searching.
+set smartcase " But case-sensitive if expression contains a capital letter.
+set incsearch " Highlight matches as you type.
+set hlsearch " Highlight matches.
+
+" --------------- "
+" Custom Mappings "
+" --------------- "
+
+" Mappings for moving text
 " Found here: http://vim.wikia.com/wiki/Moving_lines_up_or_down
 " The D mapping means the Command key on a Mac
 
@@ -68,27 +124,13 @@ vnoremap <D-k> :m-2<CR>gv=gv
 " Create new line under current one in insert mode with Ctrl-Return
 inoremap <c-cr> <esc>A<cr>
 
-" Tab mappings.
-" map <leader>tt :tabnew<cr>
-" map <leader>te :tabedit
-" map <leader>tc :tabclose<cr>
-" map <leader>to :tabonly<cr>
-" map <leader>tn :tabnext<cr>
-" map <leader>tp :tabprevious<cr>
-" map <leader>tf :tabfirst<cr>
-" map <leader>tl :tablast<cr>
-" map <leader>tm :tabmove
+" Funky complicated macro that creates a comment box
+" But just for single char single line comments…
+map <leader>cc yyP^wv$r-jyyp^wv$r-kk^vyA <esc>pjA <esc>pjA <esc>p<cr>
+
+" Remove trailing whitespace
+nmap <Leader><space> :call Preserve("%s/\\s\\+$//e")<CR>
 
 " Uncomment to use Jamis Buck's file opening plugin
 "map <Leader>t :FuzzyFinderTextMate<Enter>
 
-" Controversial...swap colon and semicolon for easier commands
-"nnoremap ; :
-"nnoremap : ;
-
-"vnoremap ; :
-"vnoremap : ;
-
-" Automatic fold settings for specific files. Uncomment to use.
-" autocmd FileType ruby setlocal foldmethod=syntax
-" autocmd FileType css  setlocal foldmethod=indent shiftwidth=2 tabstop=2
