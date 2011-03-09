@@ -2,7 +2,7 @@
 # = Editor =
 # ==========
 
-export EDITOR='mate -w'
+export EDITOR='mvim'
 # Textmate needs this: http://manual.macromates.com/en/bundles#setting_lc_ctype.html
 export LC_CTYPE=en_US.UTF-8
 
