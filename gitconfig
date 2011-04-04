@@ -6,6 +6,7 @@
   l = log --oneline --decorate
   d = diff --word-diff
   pr = pull --rebase
+  t = log --graph --all --decorate --pretty=oneline --abbrev-commit
 [user]
 	name = Tobias Adam
 	email = tow8ie@gmail.com
