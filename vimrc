@@ -38,6 +38,14 @@ set listchars=tab:▸\ ,eol:¬
 " Turn on file type detection.
 filetype plugin indent on
 
+" ----------- "
+" Colorscheme "
+" ----------- "
+
+set background=light
+let g:solarized_termcolors=256
+colorscheme solarized
+
 " --------------------- "
 " Map leader definition "
 " --------------------- "
