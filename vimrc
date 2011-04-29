@@ -86,6 +86,7 @@ set backspace=indent,eol,start " Intuitive backspacing.
 
 set wildmenu " Enhanced command line completion.
 set wildmode=list:longest " Complete files like a shell.
+set wildignore+=tmp/**,*.scssc,*.sassc
 
 set visualbell " No beeping.
 
