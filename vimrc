@@ -130,6 +130,12 @@ set hlsearch " Highlight matches.
 
 let g:syntastic_enable_signs=1
 
+" --------- "
+" Command-T "
+" --------- "
+
+nmap <silent> <Leader><C-f> :CommandT<CR>
+
 " --------------- "
 " Custom Mappings "
 " --------------- "
