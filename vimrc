@@ -135,6 +135,8 @@ let g:syntastic_enable_signs=1
 " --------- "
 
 nmap <silent> <Leader><C-f> :CommandT<CR>
+let g:CommandTMaxHeight=10
+let g:CommandTMatchWindowAtTop=1
 
 " --------------- "
 " Custom Mappings "
