@@ -70,10 +70,13 @@ set title " Set the terminal's title
 set laststatus=2
 " Useful status information at bottom of screen
 set statusline=[%n]\ %<%.99f\ %h%w%m%r%y\ %{exists('*CapsLockStatusline')?CapsLockStatusline():''}%=%-16(\ %l,%c-%v\ %)%P
+set statusline+=%#warningmsg#
+set statusline+=%{exists('*SyntasticStatuslineFlag')?SyntasticStatuslineFlag():''}
+set statusline+=%*
 
-" ------------- "
-" netrw Setting "
-" ------------- "
+" -------------- "
+" netrw Settings "
+" -------------- "
 
 let g:netrw_liststyle=3 " Use tree-mode as default view
 
@@ -120,6 +123,12 @@ set ignorecase " Case-insensitive searching.
 set smartcase " But case-sensitive if expression contains a capital letter.
 set incsearch " Highlight matches as you type.
 set hlsearch " Highlight matches.
+
+" --------- "
+" Syntastic "
+" --------- "
+
+let g:syntastic_enable_signs=1
 
 " --------------- "
 " Custom Mappings "
