@@ -127,6 +127,9 @@ set hlsearch " Highlight matches.
 " Custom Mappings "
 " --------------- "
 
+" Quickly exit out of insert mode
+inoremap kj <Esc>
+
 " Mappings for moving text
 " Found here: http://vim.wikia.com/wiki/Moving_lines_up_or_down
 " The D mapping means the Command key on a Mac
