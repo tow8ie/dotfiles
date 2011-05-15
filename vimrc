@@ -151,9 +151,9 @@ vnoremap <D-k> :m-2<CR>gv=gv
 " Create new line under current one in insert mode with Ctrl-Return
 inoremap <c-cr> <esc>A<cr>
 
-" Funky complicated macro that creates a comment box
+" Funky complicated macro that creates a box comment
 " But just for single char single line comments…
-map <leader>cc yyP^wv$r-jyyp^wv$r-kk^vyA <esc>pjA <esc>pjA <esc>p<cr>
+map <leader>bc yyP^wv$r-jyyp^wv$r-kk^vyA <esc>pjA <esc>pjA <esc>p<cr>
 
 " Remove trailing whitespace
 nmap <Leader><space> :call Preserve("%s/\\s\\+$//e")<CR>
