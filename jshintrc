@@ -1,5 +1,5 @@
 {
-  "predef": ["jasmine", "spyOn", "it", "describe", "expect", "console"],
+  "predef": ["jasmine", "spyOn", "it", "xit", "describe", "xdescribe",  "expect", "console"],
   "node": true,
   "es5": true,
   "browser": true,
