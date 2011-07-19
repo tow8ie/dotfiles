@@ -24,3 +24,8 @@ data.location=~/.task
 #include /usr/local/share/doc/task/rc/dark-violets-256.theme
 #include /usr/local/share/doc/task/rc/dark-yellow-green.theme
 
+report.ls.columns=id,description,entry
+report.ls.labels=id,desc,created
+report.ls.sort=entry+
+report.ls.dateformat=D b H:N
+
