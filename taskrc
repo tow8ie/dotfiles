@@ -29,3 +29,6 @@ report.ls.labels=id,desc,created
 report.ls.sort=entry+
 report.ls.dateformat=D b H:N
 
+shadow.file=~/.task/shadow.txt
+shadow.command=ls
+
