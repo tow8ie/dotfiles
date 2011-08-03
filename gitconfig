@@ -16,8 +16,11 @@
   diff = auto
   branch = auto
 [merge]
-  tool = opendiff
+	tool = threesome
 [core]
   excludesfile = ~/.gitignore
 [push]
 	default = tracking
+[mergetool "threesome"]
+	cmd = "vim -f $BASE $LOCAL $REMOTE $MERGED -c 'ThreesomeInit'"
+	trustExitCode = true

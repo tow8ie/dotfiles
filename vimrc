@@ -53,6 +53,7 @@ colorscheme solarized
 
 " A more german keyboard friendly mapleader
 let mapleader = ","
+let maplocalleader = "ä"
 
 " ---------- "
 " Appearance "
