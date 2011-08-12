@@ -1,3 +1,4 @@
+# encoding: utf-8
 # Inspired by this script of Ryan Bates: http://github.com/ryanb/dotfiles/blob/master/Rakefile
 
 require 'rake'
