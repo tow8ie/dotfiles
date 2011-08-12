@@ -73,3 +73,6 @@
 [submodule "vim/bundle/threesome"]
 	path = vim/bundle/threesome
 	url = https://github.com/sjl/threesome.vim.git
+[submodule "vim/bundle/extradite"]
+	path = vim/bundle/extradite
+	url = https://github.com/int3/vim-extradite.git
