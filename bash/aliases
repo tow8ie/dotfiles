@@ -105,3 +105,10 @@ alias ctpmake='mvn clean install -DskipTests'
 
 alias tomcat-start='/Applications/apache-tomcat-6.0.20/bin/startup.sh'
 alias tomcat-stop='/Applications/apache-tomcat-6.0.20/bin/shutdown.sh'
+
+# ---- #
+# tmux #
+# ---- #
+
+alias t='tmux'
+
