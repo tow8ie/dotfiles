@@ -76,6 +76,12 @@ set statusline+=%#warningmsg#
 set statusline+=%{exists('*SyntasticStatuslineFlag')?SyntasticStatuslineFlag():''}
 set statusline+=%*
 
+" ------- "
+" Windows "
+" ------- "
+
+set splitright
+
 " -------------- "
 " netrw Settings "
 " -------------- "
