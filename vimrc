@@ -228,6 +228,13 @@ map <leader>bc yyP^wv$r-jyyp^wv$r-kk^vyA <esc>pjA <esc>pjA <esc>p<cr>
 " Remove trailing whitespace
 nmap <Leader><space> :call Preserve("%s/\\s\\+$//e")<CR>
 
+" Echoes the syntax rules matching whatever is under the cursor,
+" so you know what to change in your colorscheme.
+function! SynStack()
+  echo join(map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")'), " > ")
+endfunc
+nnoremap <leader>s :call SynStack()<CR>
+
 " Uncomment to use Jamis Buck's file opening plugin
 "map <Leader>t :FuzzyFinderTextMate<Enter>
 
