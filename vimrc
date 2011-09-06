@@ -102,6 +102,13 @@ set shiftwidth=2 " And again, related.
 set expandtab " Use spaces instead of tabs
 
 " --------- "
+" Clipboard "
+" --------- "
+
+" Uses the system clipboard as the default register
+set clipboard=unnamed
+
+" --------- "
 " Behaviour "
 " --------- "
 
