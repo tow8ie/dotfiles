@@ -235,6 +235,6 @@ function! SynStack()
 endfunc
 nnoremap <leader>s :call SynStack()<CR>
 
-" Uncomment to use Jamis Buck's file opening plugin
-"map <Leader>t :FuzzyFinderTextMate<Enter>
+" Make help open in a nice, big vertical split.
+au BufWinEnter *.txt if &ft  == 'help' | wincmd L | endif
 
