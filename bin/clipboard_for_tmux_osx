@@ -1,0 +1,7 @@
+if [ -a $HOME/.bin/reattach-to-user-namespace ]
+then
+  $HOME/.bin/reattach-to-user-namespace -l bash
+else
+  bash
+fi
+

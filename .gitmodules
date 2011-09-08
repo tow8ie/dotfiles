@@ -82,3 +82,6 @@
 [submodule "vim/bundle/commentary"]
 	path = vim/bundle/commentary
 	url = https://github.com/tpope/vim-commentary.git
+[submodule "utils/tmux-MacOSX-pasteboard"]
+	path = utils/tmux-MacOSX-pasteboard
+	url = https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard.git
