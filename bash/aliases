@@ -78,6 +78,12 @@ alias rst='ruby -Itest'
 alias rtv='rake test TESTOPTS="-v"'
 alias ss='./script/server'
 
+# ==========
+#  Bundler =
+# ==========
+
+alias b='bundle exec'
+
 # =========
 # = Redis =
 # =========
