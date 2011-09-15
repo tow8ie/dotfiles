@@ -98,3 +98,10 @@ function rbenv_prompt ()
 # Wrap commands in \$(command_name)
 
 PS1="\n\h: \w \[$GREEN\] \n\[$RED\]\u\[$GREEN\]\$(rbenv_prompt)\$(rvm_prompt)\$(git_prompt) \[$ERED\]→\[$NO_COLOR\] "
+
+# ---------- #
+# tmuxinator #
+# ---------- #
+
+[[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
+
