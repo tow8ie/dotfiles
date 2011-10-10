@@ -5,3 +5,4 @@
 --type-add=js=.javascript
 --ignore-dir=target/
 --ignore-dir=.rsync_cache/
+--ignore-dir=vendor/bundle/
