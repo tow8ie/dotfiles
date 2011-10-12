@@ -6,3 +6,4 @@
 --ignore-dir=target/
 --ignore-dir=.rsync_cache/
 --ignore-dir=vendor/bundle/
+--ignore-dir=server
