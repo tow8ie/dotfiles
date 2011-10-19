@@ -37,7 +37,15 @@ Thumbs.db
 ###########################
 doc/tags
 
+# Dirs typically used by Bundler #
+##################################
+
+.bundle
+vendor/bundle
+bin
+
 # My excludes #
 ###############
 
 .rake_tasks~
+
