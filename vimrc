@@ -260,3 +260,6 @@ nnoremap <leader>s :call SynStack()<CR>
 " Make help open in a nice, big vertical split.
 au BufWinEnter *.txt if &ft  == 'help' | wincmd L | endif
 
+" Show a preview of CoffeeScript Compilation
+nnoremap <leader>cc :CoffeeCompile<cr>
+
