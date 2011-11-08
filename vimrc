@@ -224,7 +224,7 @@ map <leader><leader>a :call RunTests('spec')<cr>
 " --------------- "
 
 " Quickly exit out of insert mode
-inoremap kj <Esc>
+inoremap kj <Esc>l
 
 " Expand %% to current file’s directory in command mode
 cnoremap %% <C-R>=expand('%:h').'/'<cr>
