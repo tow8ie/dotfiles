@@ -1,8 +1,10 @@
 --type-set=sass=.sass
 --type-set=scss=.scss
 --type-set=haml=.haml
+--type-set=coffee=.coffee
 --type-add=ruby=.haml
 --type-add=js=.javascript
+--type-add=js=.coffee
 --ignore-dir=target/
 --ignore-dir=.rsync_cache/
 --ignore-dir=vendor/bundle/
