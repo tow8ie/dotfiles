@@ -219,6 +219,11 @@ map <leader><leader>T :call RunNearestTest()<cr>
 " Run all test files
 map <leader><leader>a :call RunTests('spec')<cr>
 
+" Fold all example groups in the entire file except the full hierarchy to your spec that your cursor is inside.
+" The current example is automatically centered on your screen, when possible.
+" Taken from https://gist.github.com/1390108
+nmap <silent> <Leader>rf mr:set foldmethod=syntax<CR>zMzv?\v^\s*(it\|example)<CR>zz:noh<CR>`r:delmarks r<CR>
+
 " --------------- "
 " Custom Mappings "
 " --------------- "
