@@ -164,7 +164,6 @@ let g:syntastic_enable_signs=1
 " Command-T "
 " --------- "
 
-nmap <silent> <Leader><C-f> :CommandT<CR>
 let g:CommandTMaxHeight=10
 let g:CommandTMatchWindowReverse=1
 
