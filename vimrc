@@ -250,7 +250,7 @@ inoremap <c-cr> <esc>A<cr>
 
 " Funky complicated macro that creates a box comment
 " But just for single char single line comments…
-map <leader>bc yyP^wv$r-jyyp^wv$r-kk^vyA <esc>pjA <esc>pjA <esc>p<cr>
+map <leader>cb yyP^wv$r-jyyp^wv$r-kk^vyA <esc>pjA <esc>pjA <esc>p<cr>
 
 " Remove trailing whitespace
 nmap <Leader><space> :call Preserve("%s/\\s\\+$//e")<CR>
