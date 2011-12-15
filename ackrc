@@ -2,6 +2,7 @@
 --type-set=scss=.scss
 --type-set=haml=.haml
 --type-set=coffee=.coffee
+--type-set=feature=.feature
 --type-add=ruby=.haml
 --type-add=js=.javascript
 --type-add=js=.coffee
