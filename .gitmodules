@@ -79,3 +79,6 @@
 [submodule "utils/tmux-MacOSX-pasteboard"]
 	path = utils/tmux-MacOSX-pasteboard
 	url = https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard.git
+[submodule "vim/bundle/ctrlp"]
+	path = vim/bundle/ctrlp
+	url = https://github.com/kien/ctrlp.vim.git
