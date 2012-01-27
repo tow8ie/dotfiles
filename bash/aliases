@@ -12,6 +12,10 @@ alias ee="mate ~/.bash/env"
 # Use the vi mode to edit the shell input
 alias vishell='set -o vi'
 
+# a less that parses color codes and doesn’t prompt for
+# "Is it a binary file?"
+alias lessc='less -rf'
+
 # ============================
 # = Directories and movement =
 # ============================
