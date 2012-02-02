@@ -1,11 +1,24 @@
 colorscheme underwater-mod
-set guifont=Consolas:h14          " Font family and font size.
-set linespace=3                   " This sets a higher line height
-set antialias                     " MacVim: smooth fonts.
-set encoding=utf-8                " Use UTF-8 everywhere.
-set guioptions-=T                 " Hide toolbar.
-" set background=light            " Background.
-" set lines=25 columns=100        " Window dimensions.
-set guioptions-=r                 " Don't show right scrollbar
-set guioptions-=L                 " Don't show left scrollbar
+set encoding=utf-8
+
+" ----- "
+" Fonts "
+" ----- "
+
+set guifont=Inconsolata:h14,Menlo:h14,Consolas:h14
+" A higher line height
+set linespace=3
+" MacVim specific
+set antialias
+
+" ----------------- "
+" Window Appearance "
+" ----------------- "
+
+" Hide toolbar.
+set guioptions-=T
+" Don't show right scrollbar
+set guioptions-=r
+" Don't show left scrollbar
+set guioptions-=L
 
