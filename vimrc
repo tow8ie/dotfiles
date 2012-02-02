@@ -42,10 +42,11 @@ filetype plugin indent on
 " Colorscheme "
 " ----------- "
 
-set background=dark
+let g:lucius_style = "light"
 let g:solarized_termcolors=256
 let g:solarized_visibility = "low"
-colorscheme solarized
+
+colorscheme lucius
 
 " --------------------- "
 " Map leader definition "
