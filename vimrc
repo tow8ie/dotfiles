@@ -119,7 +119,9 @@ set backspace=indent,eol,start " Intuitive backspacing.
 
 set wildmenu " Enhanced command line completion.
 set wildmode=list:longest " Complete files like a shell.
-set wildignore+=tmp/**,*.scssc,*.sassc,vendor/bundle/**,server/**
+set wildignore+=tmp/**,*.scssc,*.sassc,*/vendor/bundle/**,server/**
+" CtrlP needs these dirs to be excluded
+set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
 
 set visualbell " No beeping.
 
