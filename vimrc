@@ -1,12 +1,44 @@
-set nocompatible " Must come first because it changes other options.
+set nocompatible
 
-" -------- "
-" Pathogen "
-" -------- "
+" ----------- "
+" Vim Plugins "
+" ----------- "
 
-silent! call pathogen#runtime_append_all_bundles()
-" I think this automatically create helptags for all pathogen installed bundles
-call pathogen#helptags()
+filetype off
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
+
+Bundle 'tpope/vim-rails'
+Bundle 'nelstrom/vim-textobj-rubyblock'
+Bundle 'sjbach/lusty'
+Bundle 'ecomba/vim-ruby-refactoring'
+Bundle 'vim-scripts/AutoClose'
+Bundle 'tpope/vim-endwise'
+Bundle 'tow8ie/vim-colors'
+Bundle 'tpope/vim-surround'
+Bundle 'kana/vim-textobj-user'
+Bundle 'vim-scripts/Markdown'
+Bundle 'vim-scripts/github-theme'
+Bundle 'sjl/gundo.vim'
+Bundle 'vim-scripts/YankRing.vim'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'mileszs/ack.vim'
+Bundle 'Lokaltog/vim-easymotion'
+Bundle 'tpope/vim-fugitive'
+Bundle 'tow8ie/syntastic'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'sjl/threesome.vim'
+Bundle 'int3/vim-extradite'
+Bundle 'tpope/vim-bundler'
+Bundle 'tpope/vim-commentary'
+Bundle 'kien/ctrlp.vim'
+Bundle 'vim-scripts/Lucius'
+Bundle 'Lokaltog/vim-powerline'
+
+filetype plugin indent on
 
 " --------- "
 " Functions "
@@ -34,9 +66,6 @@ syntax enable
 
 set list
 set listchars=tab:▸\ ,eol:¬
-
-" Turn on file type detection.
-filetype plugin indent on
 
 " ----------- "
 " Colorscheme "
