@@ -13,7 +13,6 @@ Bundle 'gmarik/vundle'
 
 Bundle 'tpope/vim-rails'
 Bundle 'nelstrom/vim-textobj-rubyblock'
-Bundle 'sjbach/lusty'
 Bundle 'ecomba/vim-ruby-refactoring'
 Bundle 'vim-scripts/AutoClose'
 Bundle 'tpope/vim-endwise'
