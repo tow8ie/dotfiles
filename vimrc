@@ -36,6 +36,7 @@ Bundle 'tpope/vim-commentary'
 Bundle 'kien/ctrlp.vim'
 Bundle 'vim-scripts/Lucius'
 Bundle 'Lokaltog/vim-powerline'
+Bundle 'vim-scripts/VimClojure'
 
 filetype plugin indent on
 
@@ -198,6 +199,14 @@ let g:CommandTMatchWindowReverse=1
 " ---------- "
 
 let g:EasyMotion_leader_key = 'ö'
+
+" ------- "
+" Nailgun "
+" ------- "
+
+let vimclojure#WantNailgun = 1
+let vimclojure#NailgunClient = "/usr/local/bin/ng"
+let vimclojure#SplitPos = "right"
 
 " ----- "
 " Rspec "
