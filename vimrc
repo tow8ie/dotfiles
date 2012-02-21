@@ -268,6 +268,9 @@ inoremap kj <Esc>l
 " Expand %% to current file’s directory in command mode
 cnoremap %% <C-R>=expand('%:h').'/'<cr>
 
+" Expand %_ to current file in command mode
+cnoremap %_ <C-R>=expand('%')<cr>
+
 " Mappings for moving text
 " Found here: http://vim.wikia.com/wiki/Moving_lines_up_or_down
 " The D mapping means the Command key on a Mac
