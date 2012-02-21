@@ -6,8 +6,10 @@
   l = log --oneline --decorate
   d = diff --word-diff
   pr = pull --rebase
-  gr = log --graph --all --decorate --pretty=oneline --abbrev-commit
   g = log --graph --all --decorate --pretty=oneline --abbrev-commit -n 25
+  gr = log --graph --all --decorate --pretty=oneline --abbrev-commit
+  gg = log --graph --all --pretty='format:%Cred%h %Cblue[%cn]%Cgreen%d %Creset%s' -n 25
+  ggr = log --graph --all --pretty='format:%Cred%h %Cblue[%cn]%Cgreen%d %Creset%s'
 [user]
 	name = Tobias Adam
 	email = tow8ie@gmail.com
