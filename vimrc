@@ -279,6 +279,12 @@ inoremap <D-k> <Esc>:m-2<CR>==gi
 vnoremap <D-j> :m'>+<CR>gv=gv
 vnoremap <D-k> :m-2<CR>gv=gv
 
+" Changing window focus
+noremap <C-H> <C-w>h
+noremap <C-J> <C-w>j
+noremap <C-K> <C-w>k
+noremap <C-L> <C-w>l
+
 " Create new line under current one in insert mode with Ctrl-Return
 inoremap <c-cr> <esc>A<cr>
 
