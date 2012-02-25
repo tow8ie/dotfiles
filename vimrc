@@ -58,6 +58,12 @@ function! Preserve(command)
   call cursor(l, c)
 endfunction
 
+" -------- "
+" Encoding "
+" -------- "
+
+set encoding=utf-8
+
 " ------------------- "
 " Syntax highlighting "
 " ------------------- "
