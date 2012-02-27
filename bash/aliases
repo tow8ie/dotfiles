@@ -55,14 +55,6 @@ alias f='find . -name'
 # Physically eject a disc (Mac OS X)
 alias eject-disc='drutil tray eject'
 
-# =======
-# = Git =
-# =======
-
-alias g='git status'
-# History of deleted files
-alias g-del-f='git log --diff-filter=D --summary'
-
 # =========
 # = nanoc =
 # =========
