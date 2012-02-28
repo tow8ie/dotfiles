@@ -97,7 +97,11 @@ let maplocalleader = "ä"
 
 set number " Show line numbers.
 set ruler " Show cursor position.
-set cursorline " Highlight current line/cursor line
+
+" Highlight current line/cursor line in current window
+set cursorline
+autocmd WinLeave * set nocursorline
+autocmd WinEnter * set cursorline
 
 set wrap " Turn on line wrapping.
 set scrolloff=3 " Show 3 lines of context around the cursor.
