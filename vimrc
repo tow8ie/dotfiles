@@ -153,8 +153,6 @@ set backspace=indent,eol,start " Intuitive backspacing.
 set wildmenu " Enhanced command line completion.
 set wildmode=list:longest " Complete files like a shell.
 set wildignore+=tmp/**,*.scssc,*.sassc,*/vendor/bundle/**,server/**
-" CtrlP needs these dirs to be excluded
-set wildignore+=*/.git/*,*/.hg/*,*/.svn/*
 
 set visualbell " No beeping.
 
@@ -202,6 +200,16 @@ let g:CommandTMatchWindowReverse=1
 " ---------- "
 
 let g:EasyMotion_leader_key = 'ö'
+
+" ----- "
+" CtrlP "
+" ----- "
+
+let g:ctrlp_custom_ignore = {
+  \ 'dir':  '\.git$\|\.hg$\|\.svn$\|\.rsync_cache$',
+  \ 'file': '\.exe$\|\.so$\|\.dll$',
+  \ 'link': '',
+  \ }
 
 " ------- "
 " Nailgun "
