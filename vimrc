@@ -36,6 +36,7 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'vim-scripts/Lucius'
 Bundle 'Lokaltog/vim-powerline'
 Bundle 'vim-scripts/VimClojure'
+Bundle 'sandeepcr529/Buffet.vim'
 
 filetype plugin indent on
 
@@ -210,6 +211,12 @@ let g:ctrlp_custom_ignore = {
   \ 'file': '\.exe$\|\.so$\|\.dll$',
   \ 'link': '',
   \ }
+
+" ------ "
+" Buffet "
+" ------ "
+
+nmap <leader>b :Bufferlist<cr>
 
 " ------- "
 " Nailgun "
