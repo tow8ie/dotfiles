@@ -27,7 +27,6 @@ Bundle 'altercation/vim-colors-solarized'
 Bundle 'mileszs/ack.vim'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'tpope/vim-fugitive'
-Bundle 'tow8ie/syntastic'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'sjl/threesome.vim'
 Bundle 'int3/vim-extradite'
@@ -190,12 +189,6 @@ vnoremap <silent> # :<C-U>
   \gvy?<C-R><C-R>=substitute(
   \escape(@", '?\.*$^~['), '\_s\+', '\\_s\\+', 'g')<CR><CR>
   \gV:call setreg('"', old_reg, old_regtype)<CR>
-
-" --------- "
-" Syntastic "
-" --------- "
-
-let g:syntastic_enable_signs=1
 
 " --------- "
 " Command-T "
