@@ -44,6 +44,11 @@ doc/tags
 vendor/bundle
 bin
 
+# Dirs used by npm #
+####################
+
+node_modules
+
 # My excludes #
 ###############
 
