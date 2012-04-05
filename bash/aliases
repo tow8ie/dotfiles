@@ -1,6 +1,6 @@
-# ===========
-# = Utility =
-# ===========
+# ------- #
+# Utility #
+# ------- #
 
 # Reload the .bashrc
 alias rl="source ~/.bashrc"
@@ -16,9 +16,9 @@ alias vishell='set -o vi'
 # "Is it a binary file?"
 alias lessc='less -rf'
 
-# ============================
-# = Directories and movement =
-# ============================
+# ------------------------ #
+# Directories and movement #
+# ------------------------ #
 
 alias l='ls -p'
 alias la='l -A'
@@ -46,24 +46,24 @@ function take() {
 # Show a tree listing with directories having a trailing slash and hidden files
 alias tre='tree -Fa'
 
-# ==========
-# = System =
-# ==========
+# ------ #
+# System #
+# ------ #
 
 alias f='find . -name'
 
 # Physically eject a disc (Mac OS X)
 alias eject-disc='drutil tray eject'
 
-# =========
-# = nanoc =
-# =========
+# ----- #
+# nanoc #
+# ----- #
 
 alias n='nanoc'
 
-# =========
-# = Rails =
-# =========
+# ----- #
+# Rails #
+# ----- #
 
 alias r='rails'
 
@@ -74,42 +74,42 @@ alias rst='ruby -Itest'
 alias rtv='rake test TESTOPTS="-v"'
 alias ss='./script/server'
 
-# ==========
-#  Bundler =
-# ==========
+# ------- #
+# Bundler #
+# ------- #
 
 alias b='bundle exec'
 
-# =====
-# Git =
-# =====
+# --- #
+# Git #
+# --- #
 
 alias gti='git'
 
-# =========
-# = Redis =
-# =========
+# ----- #
+# Redis #
+# ----- #
 
 alias redisstart='redis-server /opt/local/etc/redis.conf'
 
-# ===========
-# = MongoDB =
-# ===========
+# ------- #
+# MongoDB #
+# ------- #
 
 alias mongodbstart='mongod -f ~/etc/mongod.conf'
 
-# ============
-# = Catapult =
-# ============
+# -------- #
+# Catapult #
+# -------- #
 
 alias ctpstart='echo "If build doesn’t work try: ctpmake" && mvn jetty:run -DskipTests -Djetty.scanIntervalSeconds=2'
 # Previous version: alias ctpstart='echo "If build doesn’t work try: ctpmake" && mvn install jetty:run -DskipTests'
 alias ctpmigrate='mvn initialize db-migration:migrate'
 alias ctpmake='mvn clean install -DskipTests'
 
-# ==========
-# = Tomcat =
-# ==========
+# ------ #
+# Tomcat #
+# ------ #
 
 alias tomcat-start='/Applications/apache-tomcat-6.0.20/bin/startup.sh'
 alias tomcat-stop='/Applications/apache-tomcat-6.0.20/bin/shutdown.sh'
