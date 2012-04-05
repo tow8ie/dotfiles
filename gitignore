@@ -41,7 +41,6 @@ doc/tags
 
 .bundle
 vendor/bundle
-bin
 
 # Dirs used by npm #
 ####################
