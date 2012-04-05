@@ -39,6 +39,7 @@ Bundle 'vim-scripts/VimClojure'
 Bundle 'sandeepcr529/Buffet.vim'
 " Find documentation here: https://github.com/rstacruz/sparkup
 Bundle 'bingaman/vim-sparkup'
+Bundle 'digitaltoad/vim-jade'
 
 filetype plugin indent on
 
