@@ -97,7 +97,7 @@ function rbenv_prompt ()
 # Wrap colors in \[$COLOR_NAME\]
 # Wrap commands in \$(command_name)
 
-PS1="\n\h: \w \[$GREEN\] \n\[$RED\]\u\[$GREEN\]\$(rbenv_prompt)\$(rvm_prompt)\$(git_prompt) \[$ERED\]→\[$NO_COLOR\] "
+PS1="\n\h: \w \[$GREEN\] \n\[$RED\]\u \[$GREEN\](\j)\$(rbenv_prompt)\$(rvm_prompt)\$(git_prompt) \[$ERED\]→\[$NO_COLOR\] "
 
 # ---------- #
 # tmuxinator #
