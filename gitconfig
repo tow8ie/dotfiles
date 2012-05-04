@@ -14,20 +14,20 @@
   df = log --diff-filter=D --summary
   ctags = !.git/hooks/ctags
 [user]
-	name = Tobias Adam
-	email = tow8ie@gmail.com
+  name = Tobias Adam
+  email = tow8ie@gmail.com
 [color]
   status = auto
   diff = auto
   branch = auto
 [merge]
-	tool = threesome
+  tool = threesome
 [core]
   excludesfile = ~/.gitignore
 [push]
-	default = tracking
+  default = tracking
 [mergetool "threesome"]
-	cmd = "vim -f $BASE $LOCAL $REMOTE $MERGED -c 'ThreesomeInit'"
-	trustExitCode = true
+  cmd = "vim -f $BASE $LOCAL $REMOTE $MERGED -c 'ThreesomeInit'"
+  trustExitCode = true
 [init]
   templatedir = ~/.gittemplate
