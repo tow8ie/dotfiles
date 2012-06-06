@@ -7,9 +7,13 @@
   d = diff --word-diff
   pr = pull --rebase
   g = log --graph --all --decorate --pretty=oneline --abbrev-commit -n 25
+  gd = log --graph --all --decorate --pretty=oneline --abbrev-commit -n 25 --date-order
   gr = log --graph --all --decorate --pretty=oneline --abbrev-commit
+  grd = log --graph --all --decorate --pretty=oneline --abbrev-commit --date-order
   gg = log --graph --all --pretty='format:%Cred%h %Cblue%cn (%ar)%Cgreen%d %Creset%s' -n 25
+  ggd = log --graph --all --pretty='format:%Cred%h %Cblue%cn (%ar)%Cgreen%d %Creset%s' -n 25 --date-order
   ggr = log --graph --all --pretty='format:%Cred%h %Cblue%cn (%ar)%Cgreen%d %Creset%s'
+  ggrd = log --graph --all --pretty='format:%Cred%h %Cblue%cn (%ar)%Cgreen%d %Creset%s' --date-order
   # History of deleted files
   df = log --diff-filter=D --summary
   ctags = !.git/hooks/ctags
