@@ -1,5 +1,10 @@
 set nocompatible
 
+" This is a hack for disabling the highlighting of matching parentheses that
+" is also fundamental for speed improvements in Terminal Vim as the paren
+" matching function is mapped to the CursorMoved au-Command by default.
+let g:loaded_matchparen = 1
+
 " ----------- "
 " Vim Plugins "
 " ----------- "
