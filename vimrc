@@ -11,36 +11,44 @@ call vundle#rc()
 
 Bundle 'gmarik/vundle'
 
-Bundle 'tpope/vim-rails'
-Bundle 'nelstrom/vim-textobj-rubyblock'
-Bundle 'ecomba/vim-ruby-refactoring'
-Bundle 'vim-scripts/AutoClose'
-Bundle 'tpope/vim-endwise'
-Bundle 'tow8ie/vim-colors'
-Bundle 'tpope/vim-surround'
-Bundle 'kana/vim-textobj-user'
-Bundle 'vim-scripts/Markdown'
-Bundle 'vim-scripts/github-theme'
-Bundle 'sjl/gundo.vim'
-" Bundle 'vim-scripts/YankRing.vim'
-Bundle 'altercation/vim-colors-solarized'
+" Helpers
+Bundle 'kien/ctrlp.vim'
+Bundle 'sandeepcr529/Buffet.vim'
+Bundle 'vim-scripts/Rename2'
+Bundle 'tpope/vim-commentary'
 Bundle 'mileszs/ack.vim'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'tpope/vim-fugitive'
-Bundle 'kchmck/vim-coffee-script'
-Bundle 'sjl/threesome.vim'
-Bundle 'int3/vim-extradite'
-Bundle 'tpope/vim-bundler'
-Bundle 'tpope/vim-commentary'
-Bundle 'kien/ctrlp.vim'
+
+" Editing plugins
+Bundle 'kana/vim-textobj-user'
+Bundle 'nelstrom/vim-textobj-rubyblock'
+Bundle 'vim-scripts/AutoClose'
+Bundle 'tpope/vim-surround'
+
+" Color/theme plugins
 Bundle 'vim-scripts/Lucius'
 Bundle 'Lokaltog/vim-powerline'
-Bundle 'vim-scripts/VimClojure'
-Bundle 'sandeepcr529/Buffet.vim'
-" Find documentation here: https://github.com/rstacruz/sparkup
-Bundle 'bingaman/vim-sparkup'
+
+" Syntax/language/framework plugins
+Bundle 'tpope/vim-rails'
+Bundle 'kchmck/vim-coffee-script'
 Bundle 'digitaltoad/vim-jade'
-Bundle 'vim-scripts/Rename2'
+Bundle 'vim-scripts/VimClojure'
+Bundle 'vim-scripts/Markdown'
+Bundle 'tpope/vim-endwise'
+
+" Bundle 'vim-scripts/YankRing.vim'
+" Bundle 'ecomba/vim-ruby-refactoring'
+" Bundle 'vim-scripts/github-theme'
+" Bundle 'sjl/gundo.vim'
+" Bundle 'sjl/threesome.vim'
+" Bundle 'altercation/vim-colors-solarized'
+" Find documentation here: https://github.com/rstacruz/sparkup
+" Bundle 'bingaman/vim-sparkup'
+" Bundle 'tow8ie/vim-colors'
+" Bundle 'int3/vim-extradite'
+" Bundle 'tpope/vim-bundler'
 
 filetype plugin indent on
 
