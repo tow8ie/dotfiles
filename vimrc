@@ -40,6 +40,7 @@ Bundle 'sandeepcr529/Buffet.vim'
 " Find documentation here: https://github.com/rstacruz/sparkup
 Bundle 'bingaman/vim-sparkup'
 Bundle 'digitaltoad/vim-jade'
+Bundle 'vim-scripts/Rename2'
 
 filetype plugin indent on
 
