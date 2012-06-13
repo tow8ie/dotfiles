@@ -265,6 +265,9 @@ nmap <silent> <Leader>rf mr:set foldmethod=syntax<CR>zMzv?\v^\s*(it\|example)<CR
 " Quickly exit out of insert mode
 inoremap kj <Esc>l
 
+" Clear the search buffer when hitting return
+nnoremap <cr> :nohlsearch<cr>
+
 " Expand %% to current file’s directory in command mode
 cnoremap %% <C-R>=expand('%:h').'/'<cr>
 
