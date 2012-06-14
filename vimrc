@@ -264,6 +264,20 @@ map <leader>T :VroomRunNearestTest<cr>
 nmap <silent> <Leader>rf mr:set foldmethod=syntax<CR>zMzv?\v^\s*(it\|example)<CR>zz:noh<CR>`r:delmarks r<CR>
 
 " --------------- "
+" Custom Autocmds "
+" --------------- "
+
+augroup vimrcEx
+  " Clear all autocmds in the group
+  autocmd!
+
+  " Leave the return key alone when in command line windows, since it's used
+  " to run commands there.
+  autocmd! CmdwinEnter * :unmap <cr>
+  autocmd! CmdwinLeave * :call MapCR()
+augroup END
+
+" --------------- "
 " Custom Mappings "
 " --------------- "
 
@@ -271,7 +285,10 @@ nmap <silent> <Leader>rf mr:set foldmethod=syntax<CR>zMzv?\v^\s*(it\|example)<CR
 inoremap kj <Esc>l
 
 " Clear the search buffer when hitting return
-nnoremap <cr> :nohlsearch<cr>
+function! MapCR()
+  nnoremap <cr> :nohlsearch<cr>
+endfunction
+call MapCR()
 
 " Expand %% to current file’s directory in command mode
 cnoremap %% <C-R>=expand('%:h').'/'<cr>
