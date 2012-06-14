@@ -284,6 +284,9 @@ augroup END
 " Quickly exit out of insert mode
 inoremap kj <Esc>l
 
+" Disable Ex Mode
+map Q <nop>
+
 " Clear the search buffer when hitting return
 function! MapCR()
   nnoremap <cr> :nohlsearch<cr>
