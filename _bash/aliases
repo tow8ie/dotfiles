@@ -20,7 +20,7 @@ alias lessc='less -rf'
 # Directories and movement #
 # ------------------------ #
 
-alias l='ls -p'
+alias l='ls -FG'
 alias la='l -A'
 alias lv='l -l'
 alias lav='la -l'
