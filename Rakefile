@@ -2,18 +2,6 @@
 
 require 'rake'
 
-namespace :'vim' do
-  namespace :'command-t' do
-    desc 'build the Command-T Ruby extensions'
-    task :build do
-      Dir.chdir('vim/bundle/command-t/ruby/command-t') do
-        puts `ruby extconf.rb`
-        puts `make`
-      end
-    end
-  end
-end
-
 namespace :tmux do
   desc 'build the OSX pasteboard wrapper'
   task :build_pasteboard_wrapper do
