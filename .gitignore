@@ -1,6 +1,7 @@
-emacs.d/auto-save-list
-vim/.netrwhist
-vim/bundle/
-bash/env
-bin/reattach-to-user-namespace
+_emacs.d/auto-save-list
+_vim/.netrwhist
+_vim/bundle/
+_bash/env
+_bin/reattach-to-user-namespace
+sandbox
 

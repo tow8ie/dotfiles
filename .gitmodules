@@ -1,5 +1,5 @@
-[submodule "emacs.d/keats"]
-	path = emacs.d/keats
+[submodule "_emacs.d/keats"]
+	path = _emacs.d/keats
 	url = http://github.com/rejeep/keats.git
 [submodule "utils/tmux-MacOSX-pasteboard"]
 	path = utils/tmux-MacOSX-pasteboard
