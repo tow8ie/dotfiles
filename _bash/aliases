@@ -14,7 +14,7 @@ alias vishell='set -o vi'
 
 # a less that parses color codes and doesn’t prompt for
 # "Is it a binary file?"
-alias lessc='less -rf'
+alias less='less -RfFi'
 
 # ------------------------ #
 # Directories and movement #
