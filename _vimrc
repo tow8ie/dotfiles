@@ -230,6 +230,9 @@ let g:ctrlp_custom_ignore = {
   \ 'link': '',
   \ }
 
+" Only suggest files that are under Git version control
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files']
+
 " ------ "
 " Buffet "
 " ------ "
