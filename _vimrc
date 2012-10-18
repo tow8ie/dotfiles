@@ -29,7 +29,6 @@ Bundle 'skalnik/vim-vroom'
 " Editing plugins
 Bundle 'kana/vim-textobj-user'
 Bundle 'nelstrom/vim-textobj-rubyblock'
-Bundle 'vim-scripts/AutoClose'
 Bundle 'tpope/vim-surround'
 
 " Color/theme plugins
@@ -55,6 +54,7 @@ Bundle 'tpope/vim-endwise'
 " Bundle 'tow8ie/vim-colors'
 " Bundle 'int3/vim-extradite'
 " Bundle 'tpope/vim-bundler'
+" Bundle 'vim-scripts/AutoClose'
 
 filetype plugin indent on
 
