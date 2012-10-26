@@ -19,6 +19,8 @@
   # History of deleted files
   df = log --diff-filter=D --summary
   ctags = !.git/hooks/ctags
+  # Delete deleted remote branches
+  rprune = remote prune origin
 [user]
   name = Tobias Adam
   email = tow8ie@gmail.com
