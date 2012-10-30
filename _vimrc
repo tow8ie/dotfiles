@@ -254,6 +254,9 @@ let g:vroom_write_all = 1
 map <leader>t :VroomRunTestFile<cr>
 map <leader>T :VroomRunNearestTest<cr>
 
+" YUI Tests
+map <leader>y :wa<cr>:! ./script/yeti spec-js/dev.html<cr>
+
 " ----- "
 " Rspec "
 " ----- "
