@@ -134,6 +134,7 @@ set laststatus=2
 " ------- "
 
 set splitright
+set winwidth=90
 
 " -------------- "
 " netrw Settings "
