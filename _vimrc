@@ -42,6 +42,7 @@ Bundle 'digitaltoad/vim-jade'
 Bundle 'vim-scripts/VimClojure'
 Bundle 'vim-scripts/Markdown'
 Bundle 'tpope/vim-endwise'
+Bundle 'scrooloose/syntastic'
 
 " Bundle 'vim-scripts/YankRing.vim'
 " Bundle 'ecomba/vim-ruby-refactoring'
