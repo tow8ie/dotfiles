@@ -184,6 +184,9 @@ set autoread " Autoupdate files changed by other processes without a warning
 
 set hidden " Handle multiple buffers better.
 
+" Also save file on :W (capital W)
+cnoreabbrev <expr> W ((getcmdtype() is# ':' && getcmdline() is# 'W')?('w'):('W'))
+
 " ------ "
 " Search "
 " ------ "
