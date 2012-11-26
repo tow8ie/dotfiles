@@ -291,6 +291,8 @@ augroup END
 
 " Quickly exit out of insert mode
 inoremap kj <Esc>l
+inoremap Kj <Esc>l
+inoremap kJ <Esc>l
 
 " Disable Ex Mode
 map Q <nop>
