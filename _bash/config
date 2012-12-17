@@ -94,10 +94,20 @@ function rbenv_prompt ()
   fi
 }
 
+function hitch_prompt ()
+{
+  if [[ -n "${GIT_AUTHOR_NAME}" ]]
+  then
+    echo " [hitch: ${GIT_AUTHOR_NAME}]"
+  else
+    echo ''
+  fi
+}
+
 # Wrap colors in \[$COLOR_NAME\]
 # Wrap commands in \$(command_name)
 
-PS1="\n\h: \w \[$GREEN\] \n\[$RED\]\u \[$GREEN\](\j)\$(rbenv_prompt)\$(rvm_prompt)\$(git_prompt) \[$ERED\]→\[$NO_COLOR\] "
+PS1="\n\h: \w \[$GREEN\] \n\[$RED\]\u \[$GREEN\](\j)\$(rbenv_prompt)\$(rvm_prompt)\$(hitch_prompt)\$(git_prompt) \[$ERED\]→\[$NO_COLOR\] "
 
 # ---------- #
 # tmuxinator #
