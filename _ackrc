@@ -12,3 +12,4 @@
 --ignore-dir=server
 --ignore-dir=tmp
 --ignore-dir=node_modules
+--ignore-dir=public/javascripts/compiled
