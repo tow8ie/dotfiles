@@ -61,13 +61,10 @@ alias git_prompt="__git_ps1 ' [%s]'"
 # on every read access of the PS1.
 
 # This is for a nice rvm prompt hint
-function rvm_prompt ()
-{
-  if [ -f ~/.rvm/bin/rvm-prompt ]
-  then
+rvm_prompt() {
+  if [ -f ~/.rvm/bin/rvm-prompt ]; then
     rvm_status=`~/.rvm/bin/rvm-prompt`
-    if [ -n "${rvm_status}" ]
-    then
+    if [ -n "${rvm_status}" ]; then
       echo -n " [$rvm_status]"
     else
       echo ''
@@ -78,13 +75,10 @@ function rvm_prompt ()
 }
 
 # This is for a nice rbenv prompt hint
-function rbenv_prompt ()
-{
-  if [ -f ~/.rbenv/bin/rbenv ]
-  then
+rbenv_prompt() {
+  if [ -f ~/.rbenv/bin/rbenv ]; then
     rbenv_status=`~/.rbenv/bin/rbenv version-name`
-    if [ -n "${rbenv_status}" ]
-    then
+    if [ -n "${rbenv_status}" ]; then
       echo -n " [$rbenv_status]"
     else
       echo ''
@@ -94,10 +88,8 @@ function rbenv_prompt ()
   fi
 }
 
-function hitch_prompt ()
-{
-  if [[ -n "${GIT_AUTHOR_NAME}" ]]
-  then
+hitch_prompt() {
+  if [[ -n "${GIT_AUTHOR_NAME}" ]]; then
     echo " [hitch: ${GIT_AUTHOR_NAME}]"
   else
     echo ''
