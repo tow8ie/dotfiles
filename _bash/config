@@ -104,10 +104,18 @@ function hitch_prompt ()
   fi
 }
 
+error_prompt() {
+  exit_code=$tow8ie_exit_code
+  if [ $exit_code -ne 0 ]; then
+    echo -n " [Error: $exit_code]"
+  fi
+}
+
 # Wrap colors in \[$COLOR_NAME\]
 # Wrap commands in \$(command_name)
 
-PS1="\n\h: \w \[$GREEN\] \n\[$RED\]\u \[$GREEN\](\j)\$(rbenv_prompt)\$(rvm_prompt)\$(hitch_prompt)\$(git_prompt) \[$ERED\]→\[$NO_COLOR\] "
+PROMPT_COMMAND='tow8ie_exit_code=$?'
+PS1="\n\h: \w \[$GREEN\] \n\[$RED\]\u \[$GREEN\](\j)\$(rbenv_prompt)\$(rvm_prompt)\$(hitch_prompt)\$(git_prompt)\[$ERED\]\$(error_prompt) →\[$NO_COLOR\] "
 
 # ---------- #
 # tmuxinator #
