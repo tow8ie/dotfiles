@@ -19,6 +19,9 @@
   # History of deleted files
   df = log --diff-filter=D --summary
   ctags = !.git/hooks/ctags
+  # Delete remote branch
+  # Example: git rrmbranch mybranch
+  rrmbranch = "push --delete origin"
   # Delete deleted remote branches
   rprune = remote prune origin
 [user]
