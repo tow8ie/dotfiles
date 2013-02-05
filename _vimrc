@@ -249,6 +249,14 @@ let vimclojure#WantNailgun = 1
 let vimclojure#NailgunClient = "/usr/local/bin/ng"
 let vimclojure#SplitPos = "right"
 
+" --------- "
+" Syntastic "
+" --------- "
+
+let g:syntastic_mode_map = { 'mode': 'active',
+                           \ 'active_filetypes': [],
+                           \ 'passive_filetypes': ['yaml'] }
+
 " ------- "
 " Testing "
 " ------- "
