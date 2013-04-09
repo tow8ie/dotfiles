@@ -342,6 +342,10 @@ noremap <C-J> <C-w>j
 noremap <C-K> <C-w>k
 noremap <C-L> <C-w>l
 
+" Shortcuts for next and previous Quickfind results
+map <leader>n :cn<cr>
+map <leader>p :cp<cr>
+
 " Create new line under current one in insert mode with Ctrl-Return
 inoremap <c-cr> <esc>A<cr>
 
