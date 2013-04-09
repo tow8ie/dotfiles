@@ -25,6 +25,7 @@ Bundle 'mileszs/ack.vim'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'tpope/vim-fugitive'
 Bundle 'skalnik/vim-vroom'
+Bundle 'scrooloose/nerdtree'
 
 " Editing plugins
 Bundle 'kana/vim-textobj-user'
@@ -219,6 +220,12 @@ vnoremap <silent> # :<C-U>
 
 let g:CommandTMaxHeight=10
 let g:CommandTMatchWindowReverse=1
+
+" -------- "
+" NERDTree "
+" -------- "
+
+map <F2> :NERDTreeToggle<cr>
 
 " ---------- "
 " EasyMotion "
