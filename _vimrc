@@ -226,6 +226,7 @@ let g:CommandTMatchWindowReverse=1
 " -------- "
 
 map <F2> :NERDTreeToggle<cr>
+map <F3> :NERDTreeFind<cr>
 
 " ---------- "
 " EasyMotion "
