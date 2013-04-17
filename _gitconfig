@@ -18,7 +18,7 @@
   ggr = log --graph --all --pretty='format:%Cred%h %Cblue%an (%ar)%Cgreen%d %Creset%s'
   ggrd = log --graph --all --pretty='format:%Cred%h %Cblue%an (%ar)%Cgreen%d %Creset%s' --date-order
   # History of deleted files
-  df = log --diff-filter=D --summary
+  ldf = log --diff-filter=D --summary
   ctags = !.git/hooks/ctags
   # Delete remote branch
   # Example: git rrmbranch mybranch
