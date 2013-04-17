@@ -5,6 +5,7 @@
   c = commit
   l = log --oneline --decorate
   d = diff --word-diff
+  dc = diff --cached
   pr = pull --rebase
   g = log --graph --all --decorate --pretty=oneline --abbrev-commit -n 25
   gl = log --graph --decorate --pretty=oneline --abbrev-commit -n 25
