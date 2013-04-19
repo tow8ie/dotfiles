@@ -33,6 +33,7 @@ Bundle 'kana/vim-textobj-user'
 Bundle 'nelstrom/vim-textobj-rubyblock'
 Bundle 'tpope/vim-surround'
 Bundle 'godlygeek/tabular'
+Bundle 'editorconfig/editorconfig-vim'
 
 " Color/theme plugins
 Bundle 'vim-scripts/Lucius'
