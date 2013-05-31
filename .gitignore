@@ -1,7 +1,7 @@
 _emacs.d/auto-save-list
 _vim/.netrwhist
 _vim/bundle/
-_bash/env
+_bash.d/00-env.sh
 _bin/reattach-to-user-namespace
 sandbox
 

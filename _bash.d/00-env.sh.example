@@ -1,39 +1,25 @@
-# ==========
-# = Editor =
-# ==========
+# ------ #
+# Editor #
+# ------ #
 
-export EDITOR='mvim'
-# Textmate needs this: http://manual.macromates.com/en/bundles#setting_lc_ctype.html
-export LC_CTYPE=en_US.UTF-8
+export EDITOR="vim"
 # This is to make tmux correctly show the solarized vim theme
 # which otherwise shows the right colors only behing text
-export TERM=screen-256color
+export TERM="screen-256color"
 
-# ====================
-# = Path definitions =
-# ====================
+# ---------------- #
+# Path definitions #
+# ---------------- #
 
-export MYSQL_BIN_PATH=/usr/local/mysql/bin
+export RBENV_BIN_PATH="$HOME/.rbenv/bin"
+export MACPORTS_PATH="/opt/local/bin"
+export NODE_PATH="/usr/local/lib/node_modules"
+export NPM_BIN_PATH="/usr/local/share/npm/bin"
+export DART_BIN_PATH="$HOME/dart/dart-sdk/bin"
 
-export MANPATH=/opt/local/share/man:$MANPATH
-export PATH=~/.bin:~/bin:/usr/local/bin:$PATH:$MYSQL_BIN_PATH
+export DOTFILES_BIN_PATH="$HOME/.bin"
+export PERSONAL_BIN_PATH="$HOME/bin"
+export HOMEBREW_BIN_PATH="/usr/local/bin"
 
-# ==========
-# = cdargs =
-# ==========
-
-# This was prompted to be installed by the cdargs brew formula
-if [ -f /usr/local/etc/bash_completion.d/cdargs-bash.sh ];
-then
-  source /usr/local/etc/bash_completion.d/cdargs-bash.sh
-fi
-
-# =======
-# = RVM =
-# =======
-
-# This basically means that if $HOME/.rvm/scripts/rvm exists it will be sourced
-# @see http://tldp.org/LDP/abs/html/testconstructs.html#DBLBRACKETS
-# @see http://tldp.org/LDP/abs/html/list-cons.html#LISTCONSREF
-[[ -s $HOME/.rvm/scripts/rvm ]] && source $HOME/.rvm/scripts/rvm
+export PATH="$DOTFILES_BIN_PATH:$PERSONAL_BIN_PATH:$RBENV_BIN_PATH:$NPM_BIN_PATH:$HOMEBREW_BIN_PATH:$MACPORTS_PATH:$DART_BIN_PATH:$PATH"
 
