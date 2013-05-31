@@ -25,6 +25,10 @@
   rrmbranch = "push --delete origin"
   # Delete deleted remote branches
   rprune = remote prune origin
+  # Shows if current branch and master have both touched/created migrations.
+  # Useful as a check before rebasing because rebasing changes history and
+  # migrations need a consistent history to work properly over time.
+  diff-migrations = diff master..HEAD --stat -- db/migrate/
 [user]
   name = Tobias Adam
   email = tow8ie@gmail.com
