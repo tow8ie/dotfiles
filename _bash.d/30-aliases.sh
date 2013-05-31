@@ -4,10 +4,6 @@
 
 # Reload the .bashrc
 alias rl="source ~/.bashrc"
-# Edit aliases
-alias ea='mate -w ~/.bash/aliases && source ~/.bash/aliases'
-# Edit environment
-alias ee="mate ~/.bash/env"
 
 # Use the vi mode to edit the shell input
 alias vishell='set -o vi'

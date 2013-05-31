@@ -1,4 +1,6 @@
-. ~/.bash/env
-. ~/.bash/completions
-. ~/.bash/config
-. ~/.bash/aliases
+for script in $HOME/.bash.d/*.sh; do
+  if [[ -r $script ]]; then
+    source $script
+  fi
+done
+
