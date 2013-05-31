@@ -12,7 +12,6 @@
                     (or (buffer-file-name) load-file-name)))
 (setq package-user-dir (concat dotfiles-dir "elpa/"))
 (add-to-list 'load-path dotfiles-dir)
-(add-to-list 'load-path (concat dotfiles-dir "keats/"))
 
 ;; Load ELPA package manager
 
@@ -106,13 +105,6 @@
 
 ;; This is to load the markdown major mode
 (autoload 'markdown-mode "markdown-mode.el" "Major mode for editing Markdown files" t)
-
-;; The excellent Keats mode by rejeep lets you organize cheats for the shortcuts you always forget:
-;; http://github.com/rejeep/keats
-
-(require 'keats)
-(require 'keats-interactive)
-(setq keats-file "~/.emacs.d/keatsfile")
 
 ;; This lets you browse the kill ring.
 ;; The browsing is enabled when M-y is pressed without a preceeding C-y.
