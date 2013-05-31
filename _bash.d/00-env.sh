@@ -18,15 +18,6 @@ export DART_BIN_PATH="$HOME/dart/dart-sdk/bin"
 export NODE_PATH=/usr/local/lib/jsctags/:\$NODE_PATH
 export PATH=~/.bin:~/bin:$RBENV_BIN_PATH:$NPM_BIN_PATH:/usr/local/bin:$MACPORTS_PATH:$DART_BIN_PATH:$PATH
 
-# ----- #
-# rbenv #
-# ----- #
-
-# Add rbenv's shims directory to $PATH and set up Bash autocompletion
-if which rbenv > /dev/null; then
-  eval "$(rbenv init -)"
-fi
-
 # ------- #
 # Node.js #
 # ------- #
