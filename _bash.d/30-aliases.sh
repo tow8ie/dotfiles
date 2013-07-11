@@ -120,11 +120,13 @@ alias t='tmux'
 # hitch #
 # ----- #
 
-hitch() {
-  command hitch "$@"
-  if [[ -s "$HOME/.hitch_export_authors" ]] ; then source "$HOME/.hitch_export_authors" ; fi
-}
-alias unhitch='hitch -u'
-alias hitched='echo $GIT_AUTHOR_NAME'
-hitch # Persist pair info between terminal instances
+if `rbenv which hitch 2> /dev/null`; then
+  hitch() {
+    command hitch "$@"
+    if [[ -s "$HOME/.hitch_export_authors" ]] ; then source "$HOME/.hitch_export_authors" ; fi
+  }
+  alias unhitch='hitch -u'
+  alias hitched='echo $GIT_AUTHOR_NAME'
+  hitch # Persist pair info between terminal instances
+fi
 
