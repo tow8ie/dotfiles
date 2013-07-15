@@ -16,7 +16,7 @@ link_linkable_files() {
 list_linkable_files() {
   local dotfiles_dir=$1
 
-  find $dotfiles_dir -depth 1 -name "_*" -exec basename {} \;
+  find $dotfiles_dir -maxdepth 1 -name "_*" -exec basename {} \;
 }
 
 create_link() {
