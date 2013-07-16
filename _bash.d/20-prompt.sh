@@ -19,7 +19,7 @@ rvm_prompt() {
 
 # This is for a nice rbenv prompt hint
 rbenv_prompt() {
-  if which rbenv 2> /dev/null; then
+  if which rbenv &> /dev/null; then
     rbenv_status=`rbenv version-name`
     if [ -n "${rbenv_status}" ]; then
       echo -n " [$rbenv_status]"
