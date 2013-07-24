@@ -12,6 +12,9 @@ alias vishell='set -o vi'
 # "Is it a binary file?"
 alias less='less -Rfi'
 
+# A simple little timer helper
+alias timer='echo "Stop timer with Ctrl-D" && date && time cat && date'
+
 # ------------------------ #
 # Directories and movement #
 # ------------------------ #
