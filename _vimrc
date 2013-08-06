@@ -34,6 +34,7 @@ Bundle 'nelstrom/vim-textobj-rubyblock'
 Bundle 'tpope/vim-surround'
 Bundle 'godlygeek/tabular'
 Bundle 'editorconfig/editorconfig-vim'
+Bundle 'tpope/vim-repeat'
 
 " Color/theme plugins
 Bundle 'vim-scripts/Lucius'
