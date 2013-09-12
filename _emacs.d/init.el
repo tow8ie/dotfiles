@@ -15,10 +15,11 @@
 
 ;; Load ELPA package manager
 
-(when
-    (load
-     (concat package-user-dir "package.el"))
-  (package-initialize))
+(require 'package)
+(add-to-list 'package-archives
+    '("marmalade" .
+      "http://marmalade-repo.org/packages/"))
+(package-initialize)
 
 ;; Resize the Frame at startup
 ;; (add-to-list 'default-frame-alist '(height . 60))
@@ -55,12 +56,9 @@
 ;; http://stackoverflow.com/questions/1231188/emacs-list-buffers-behavior
 (global-set-key "\C-x\C-b" 'buffer-menu)
 
-;; Loading a custom color theme
-(require 'color-theme)
-(color-theme-initialize)
-;; The Zenburn theme is a low contrast theme optimized for staying longer in the “zone”
-(require 'zenburn)
-(zenburn)
+;; Solarized Color Theme
+(setq solarized-termcolors 256)
+(load-theme 'solarized-dark t)
 
 ;; Enable colored buffer listing in buffer menu as described in:
 ;; http://www.emacswiki.org/emacs/BufferMenuHighlighting
@@ -93,16 +91,6 @@
 ; Org buffers only
 (add-hook 'org-mode-hook 'turn-on-font-lock)
 
-;; This is my first try to make me enter [] abd {} that require
-;; the alt-key on Mac.
-;; (setq mac-option-modifier t)
-
-;; Another attempt to make the keys problem on Mac OS less worse
-;; A hint by http://stackoverflow.com/questions/2180231/whats-a-good-way-to-deal-with-a-german-keyboard-when-using-emacs-on-mac-os-x/2192257#2192257
-(setq mac-command-modifier 'meta
-      mac-option-modifier 'none
-      default-input-method "MacOSX")
-
 ;; This is to load the markdown major mode
 (autoload 'markdown-mode "markdown-mode.el" "Major mode for editing Markdown files" t)
 
@@ -111,3 +99,4 @@
 ;; Found at: http://emacs-fu.blogspot.com/2010/04/navigating-kill-ring.html
 (when (require 'browse-kill-ring nil 'noerror)
   (browse-kill-ring-default-keybindings))
+

@@ -1,4 +1,5 @@
 _emacs.d/auto-save-list
+_emacs.d/elpa/archives/
 _vim/.netrwhist
 _vim/bundle/
 _bash.d/00-env.sh
