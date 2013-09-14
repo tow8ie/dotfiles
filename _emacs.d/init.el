@@ -7,7 +7,6 @@
 ;;;; Package configuration
 
 ;;; Solarized Color Theme
-(setq solarized-termcolors 256)
 (load-theme 'solarized-dark t)
 
 ;;;; General editor configuration
