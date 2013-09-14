@@ -71,15 +71,6 @@
 
 (add-hook 'buffer-menu-mode-hook 'buffer-menu-custom-font-lock)
 
-;; These lines are necessary for using org-mode.
-;; It seems that they're necessary.
-(add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
-(global-set-key "\C-cl" 'org-store-link)
-(global-set-key "\C-ca" 'org-agenda)
-(global-set-key "\C-cb" 'org-iswitchb)
-; Org buffers only
-(add-hook 'org-mode-hook 'turn-on-font-lock)
-
 ;; This lets you browse the kill ring.
 ;; The browsing is enabled when M-y is pressed without a preceeding C-y.
 ;; Found at: http://emacs-fu.blogspot.com/2010/04/navigating-kill-ring.html
