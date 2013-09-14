@@ -1,3 +1,7 @@
+;; Package Management
+(require 'cask "~/.cask/cask.el")
+(cask-initialize)
+
 ;; Remove those ugly system scroll bars. Also enforces me to use keyboard.
 (if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
 ;; Remove the toolbar (clickable icons at top of window)
@@ -5,21 +9,6 @@
 
 ;; Delete files by moving them to the system’s trash
 (setq delete-by-moving-to-trash t)
-
-;; All things concerning the load paths
-
-(setq dotfiles-dir (file-name-directory
-                    (or (buffer-file-name) load-file-name)))
-(setq package-user-dir (concat dotfiles-dir "elpa/"))
-(add-to-list 'load-path dotfiles-dir)
-
-;; Load ELPA package manager
-
-(require 'package)
-(add-to-list 'package-archives
-    '("marmalade" .
-      "http://marmalade-repo.org/packages/"))
-(package-initialize)
 
 ;; Resize the Frame at startup
 ;; (add-to-list 'default-frame-alist '(height . 60))
