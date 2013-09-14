@@ -80,9 +80,6 @@
 ; Org buffers only
 (add-hook 'org-mode-hook 'turn-on-font-lock)
 
-;; This is to load the markdown major mode
-(autoload 'markdown-mode "markdown-mode.el" "Major mode for editing Markdown files" t)
-
 ;; This lets you browse the kill ring.
 ;; The browsing is enabled when M-y is pressed without a preceeding C-y.
 ;; Found at: http://emacs-fu.blogspot.com/2010/04/navigating-kill-ring.html
