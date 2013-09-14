@@ -53,29 +53,8 @@
 ;; http://stackoverflow.com/questions/1231188/emacs-list-buffers-behavior
 (global-set-key "\C-x\C-b" 'buffer-menu)
 
-;; Enable colored buffer listing in buffer menu as described in:
-;; http://www.emacswiki.org/emacs/BufferMenuHighlighting
-(setq buffer-menu-buffer-font-lock-keywords
-      '(("^....[*]Man .*Man.*"   . font-lock-variable-name-face) ;Man page
-        (".*Dired.*"             . font-lock-comment-face)       ; Dired
-        ("^....[*]shell.*"       . font-lock-preprocessor-face)  ; shell buff
-        (".*[*]scratch[*].*"     . font-lock-function-name-face) ; scratch buffer
-        ("^....[*].*"            . font-lock-string-face)        ; "*" named buffers
-        ("^..[*].*"              . font-lock-constant-face)      ; Modified
-        ("^.[%].*"               . font-lock-keyword-face)))     ; Read only
-
-(defun buffer-menu-custom-font-lock  ()
-  (let ((font-lock-unfontify-region-function
-	 (lambda (start end)
-	   (remove-text-properties start end '(font-lock-face nil)))))
-    (font-lock-unfontify-buffer)
-    (set (make-local-variable 'font-lock-defaults)
-	 '(buffer-menu-buffer-font-lock-keywords t))
-    (font-lock-fontify-buffer)))
-
-(add-hook 'buffer-menu-mode-hook 'buffer-menu-custom-font-lock)
-
 ;;;; Interesting customizations (not activated at the moment)
 
 ;; http://emacs-fu.blogspot.com/2010/04/navigating-kill-ring.html
+;; http://www.emacswiki.org/emacs/BufferMenuHighlighting
 
