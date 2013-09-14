@@ -1,7 +1,20 @@
-;; Package Management
+;;;; Package Management
+
 (require 'cask "~/.cask/cask.el")
 (cask-initialize)
 
+;;;; Package configuration
+
+;;; Solarized Color Theme
+(setq solarized-termcolors 256)
+(load-theme 'solarized-dark t)
+
+;;;; General editor configuration
+
+;; Resize the Frame at startup
+;; (add-to-list 'default-frame-alist '(height . 60))
+;; (add-to-list 'default-frame-alist '(width . 180))
+;;
 ;; Remove those ugly system scroll bars. Also enforces me to use keyboard.
 (if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
 ;; Remove the toolbar (clickable icons at top of window)
@@ -9,10 +22,6 @@
 
 ;; Delete files by moving them to the system’s trash
 (setq delete-by-moving-to-trash t)
-
-;; Resize the Frame at startup
-;; (add-to-list 'default-frame-alist '(height . 60))
-;; (add-to-list 'default-frame-alist '(width . 180))
 
 ;; This is to customize the cursor and the current line highlighting as described in:
 ;; http://www.gnu.org/software/emacs/manual/html_node/emacs/Cursor-Display.html#index-highlight-current-line-583
@@ -22,7 +31,6 @@
 
 ;; Since Emacs 23 using shift while moving the point sets the region (mimicking the normal
 ;; behavior of other editors). This switches it off, for it conflicts with my window switching keybindings.
-
 (setq shift-select-mode nil)
 
 ;; This should turn of the autosaving feature that produces these #file.txt# files
@@ -44,10 +52,6 @@
 ;; Make buffer switching more modal, as explained in:
 ;; http://stackoverflow.com/questions/1231188/emacs-list-buffers-behavior
 (global-set-key "\C-x\C-b" 'buffer-menu)
-
-;; Solarized Color Theme
-(setq solarized-termcolors 256)
-(load-theme 'solarized-dark t)
 
 ;; Enable colored buffer listing in buffer menu as described in:
 ;; http://www.emacswiki.org/emacs/BufferMenuHighlighting
