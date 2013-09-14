@@ -75,9 +75,7 @@
 
 (add-hook 'buffer-menu-mode-hook 'buffer-menu-custom-font-lock)
 
-;; This lets you browse the kill ring.
-;; The browsing is enabled when M-y is pressed without a preceeding C-y.
-;; Found at: http://emacs-fu.blogspot.com/2010/04/navigating-kill-ring.html
-(when (require 'browse-kill-ring nil 'noerror)
-  (browse-kill-ring-default-keybindings))
+;;;; Interesting customizations (not activated at the moment)
+
+;; http://emacs-fu.blogspot.com/2010/04/navigating-kill-ring.html
 
