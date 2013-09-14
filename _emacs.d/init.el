@@ -14,7 +14,7 @@
 ;; Resize the Frame at startup
 ;; (add-to-list 'default-frame-alist '(height . 60))
 ;; (add-to-list 'default-frame-alist '(width . 180))
-;;
+
 ;; Remove those ugly system scroll bars. Also enforces me to use keyboard.
 (if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
 ;; Remove the toolbar (clickable icons at top of window)
@@ -38,12 +38,10 @@
 ;; And this should turn of the backup feature that produces these file.txt~ files
 (setq make-backup-files nil)
 
-;; These configuration makes window switching more efficient.
-;; First I had a config that used the keybindings as described in:
-;; http://nex-3.com/posts/45-efficient-window-switching-in-emacs
-;; But then I read about the more mnemonic keybindings using M-N, M-P, etc. here, which are used now:
-;; http://emacs-fu.blogspot.com/2008/12/easy-switching-between-visible-buffers.html
+;;;; Custom key bindings
 
+;; Window movement
+;; http://emacs-fu.blogspot.com/2008/12/easy-switching-between-visible-buffers.html
 (global-set-key (kbd "M-B") 'windmove-left)
 (global-set-key (kbd "M-F") 'windmove-right)
 (global-set-key (kbd "M-P") 'windmove-up)
