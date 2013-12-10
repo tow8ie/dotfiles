@@ -17,3 +17,14 @@ For example:
 You’ll be prompted before any destructive operation (like overwriting an
 existing file, e.g.) will be performed.
 
+## Mac-specific installation
+
+When using tmux [on Mac OS X the system clipboard is not available by
+default][1]. To fix this install a wrapper/helper script via Homebrew.
+
+1. Install [Brewdler][2].
+2. `brewdle install`
+
+[1]: https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard
+[2]: https://github.com/andrew/brewdler
+
