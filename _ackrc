@@ -13,3 +13,4 @@
 --ignore-dir=tmp
 --ignore-dir=node_modules
 --ignore-dir=public/javascripts/compiled
+--ignore-dir=log/
