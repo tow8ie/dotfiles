@@ -282,6 +282,16 @@ map <leader>T :VroomRunNearestTest<cr>
 " YUI Tests
 map <leader>y :wa<cr>:! ./script/yeti spec-js/dev.html<cr>
 
+" Helper for aligning table-like array as I use in Sequel-based tests.
+function! AlignTable()
+  '<,'>Tabularize /,
+  '<,'>Tabularize /[
+  '<,'>Tabularize /]
+endfunction
+
+vnoremap <leader>a :call AlignTable()<cr>
+nnoremap <leader>A Vi(k:call AlignTable()<cr>
+
 " ----- "
 " Rspec "
 " ----- "
