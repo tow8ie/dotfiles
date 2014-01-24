@@ -1,0 +1,10 @@
+# Order dependent, most important first
+
+path_definitions=(
+  bin                      # Bundler binstubs
+  node_modules/.bin        # npm local bins
+  $HOME/.bin               # dotfiles bins
+  $HOME/bin                # Personal bins
+  $HOME/.cask/bin          # Cask bins
+)
+
