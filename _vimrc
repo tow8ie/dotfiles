@@ -35,6 +35,7 @@ Bundle 'tpope/vim-surround'
 Bundle 'godlygeek/tabular'
 Bundle 'editorconfig/editorconfig-vim'
 Bundle 'tpope/vim-repeat'
+Bundle 'SirVer/ultisnips'
 
 " Color/theme plugins
 Bundle 'vim-scripts/Lucius'
@@ -223,6 +224,20 @@ vnoremap <silent> # :<C-U>
 
 let g:CommandTMaxHeight=10
 let g:CommandTMatchWindowReverse=1
+
+" --------- "
+" UltiSnips "
+" --------- "
+
+let g:UltiSnipsSnippetsDir="~/.vim/snippets"
+let g:UltiSnipsSnippetDirectories=["UltiSnips", "snippets"]
+
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<tab>"
+let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
+" Seems not to work in iTerm
+" let g:UltiSnipsListSnippets="<c-j>"
+map <leader>l :call UltiSnips_ListSnippets()<cr>
 
 " -------- "
 " NERDTree "
