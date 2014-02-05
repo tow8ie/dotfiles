@@ -122,6 +122,9 @@ let maplocalleader = "ä"
 
 set number " Show line numbers.
 set ruler " Show cursor position.
+" Show visual marker for preferred line length
+" @see http://stackoverflow.com/a/3765575
+set colorcolumn=80
 
 " Highlight current line/cursor line in current window
 set cursorline
