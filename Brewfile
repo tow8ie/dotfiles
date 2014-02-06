@@ -1,2 +1,2 @@
-brew 'reattach-to-user-namespace'
+install reattach-to-user-namespace
 

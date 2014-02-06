@@ -22,9 +22,9 @@ existing file, e.g.) will be performed.
 When using tmux [on Mac OS X the system clipboard is not available by
 default][1]. To fix this install a wrapper/helper script via Homebrew.
 
-1. Install [Brewdler][2].
-2. `brewdle install`
+1. Install [Homebrew][2].
+2. `brew bundle`
 
 [1]: https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard
-[2]: https://github.com/andrew/brewdler
+[2]: http://brew.sh/
 
