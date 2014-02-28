@@ -45,7 +45,6 @@ Bundle 'Lokaltog/vim-powerline'
 Bundle 'tpope/vim-rails'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'digitaltoad/vim-jade'
-Bundle 'vim-scripts/VimClojure'
 Bundle 'vim-scripts/Markdown'
 Bundle 'tpope/vim-endwise'
 Bundle 'scrooloose/syntastic'
@@ -270,14 +269,6 @@ let g:ctrlp_custom_ignore = {
 " ------ "
 
 nmap <leader>b :Bufferlist<cr>
-
-" ------- "
-" Nailgun "
-" ------- "
-
-let vimclojure#WantNailgun = 1
-let vimclojure#NailgunClient = "/usr/local/bin/ng"
-let vimclojure#SplitPos = "right"
 
 " --------- "
 " Syntastic "
