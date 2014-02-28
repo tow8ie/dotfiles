@@ -125,10 +125,8 @@ set ruler " Show cursor position.
 " @see http://stackoverflow.com/a/3765575
 set colorcolumn=80
 
-" Highlight current line/cursor line in current window
+" Highlight current line/cursor
 set cursorline
-autocmd WinLeave * set nocursorline
-autocmd WinEnter * set cursorline
 
 set wrap " Turn on line wrapping.
 set scrolloff=3 " Show 3 lines of context around the cursor.
@@ -311,20 +309,6 @@ nnoremap <leader>A Vi(k:call AlignTable()<cr>
 nmap <silent> <Leader>rf mr:set foldmethod=syntax<CR>zMzv?\v^\s*(it\|example)<CR>zz:noh<CR>`r:delmarks r<CR>
 
 " --------------- "
-" Custom Autocmds "
-" --------------- "
-
-augroup vimrcEx
-  " Clear all autocmds in the group
-  autocmd!
-
-  " Leave the return key alone when in command line windows, since it's used
-  " to run commands there.
-  autocmd! CmdwinEnter * :unmap <cr>
-  autocmd! CmdwinLeave * :call MapCR()
-augroup END
-
-" --------------- "
 " Custom Mappings "
 " --------------- "
 
@@ -389,3 +373,24 @@ nnoremap <leader>s :call SynStack()<CR>
 " Show a preview of CoffeeScript Compilation
 nnoremap <leader>cc :CoffeeCompile<cr>
 
+" ------------ "
+" Autocommands "
+" ------------ "
+
+" These commands use the “clear the current group pattern” as described in
+" http://learnvimscriptthehardway.stevelosh.com/chapters/14.html
+
+" Highlight current line/cursor line only in current window
+augroup HighlightCurrentCursor
+  autocmd!
+  autocmd WinLeave * set nocursorline
+  autocmd WinEnter * set cursorline
+augroup END
+
+augroup vimrcEx
+  autocmd!
+  " Leave the return key alone when in command line windows, since it's used
+  " to run commands there.
+  autocmd! CmdwinEnter * :unmap <cr>
+  autocmd! CmdwinLeave * :call MapCR()
+augroup END
