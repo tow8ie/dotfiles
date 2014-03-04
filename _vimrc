@@ -41,6 +41,7 @@ Bundle 'vim-scripts/paredit.vim'
 " Color/theme plugins
 Bundle 'vim-scripts/Lucius'
 Bundle 'Lokaltog/vim-powerline'
+Bundle 'kien/rainbow_parentheses.vim'
 
 " Syntax/language/framework plugins
 Bundle 'tpope/vim-rails'
@@ -403,3 +404,13 @@ augroup vimrcEx
   autocmd! CmdwinEnter * :unmap <cr>
   autocmd! CmdwinLeave * :call MapCR()
 augroup END
+
+augroup RainbowParentheses
+  autocmd!
+  autocmd Syntax clojure RainbowParenthesesLoadRound
+  autocmd Syntax clojure RainbowParenthesesLoadSquare
+  autocmd Syntax clojure RainbowParenthesesLoadBraces
+  " autocmd Syntax clojure RainbowParenthesesLoadChevrons
+  autocmd VimEnter,BufRead,BufWinEnter,BufNewFile *.clj RainbowParenthesesActivate
+augroup END
+
