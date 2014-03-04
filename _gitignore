@@ -31,6 +31,7 @@
 
 *.log
 *.sqlite
+*.sq3
 
 # ------------------ #
 # OS generated files #
