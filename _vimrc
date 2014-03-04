@@ -36,6 +36,7 @@ Bundle 'godlygeek/tabular'
 Bundle 'editorconfig/editorconfig-vim'
 Bundle 'tpope/vim-repeat'
 Bundle 'SirVer/ultisnips'
+Bundle 'vim-scripts/paredit.vim'
 
 " Color/theme plugins
 Bundle 'vim-scripts/Lucius'
@@ -276,6 +277,13 @@ nmap <leader>b :Bufferlist<cr>
 let g:syntastic_mode_map = { 'mode': 'active',
                            \ 'active_filetypes': [],
                            \ 'passive_filetypes': ['yaml'] }
+
+" ------- "
+" Paredit "
+" ------- "
+
+let g:paredit_leader = 'ö'
+let g:paredit_smartjump = 1
 
 " ------- "
 " Testing "
