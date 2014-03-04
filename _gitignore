@@ -68,3 +68,11 @@ node_modules
 
 .rake_tasks~
 
+# --------- #
+# Leiningen #
+# --------- #
+
+.lein-repl-history
+target
+.nrepl-port
+
