@@ -37,6 +37,7 @@ Bundle 'editorconfig/editorconfig-vim'
 Bundle 'tpope/vim-repeat'
 Bundle 'SirVer/ultisnips'
 Bundle 'vim-scripts/paredit.vim'
+Bundle 'mattn/emmet-vim'
 
 " Color/theme plugins
 Bundle 'vim-scripts/Lucius'
