@@ -261,7 +261,7 @@ let g:EasyMotion_leader_key = 'ö'
 " ----- "
 
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\.git$\|\.hg$\|\.svn$\|\.rsync_cache$\|node_modules$\|public/javascripts/compiled$',
+  \ 'dir':  '\.git$\|\.hg$\|\.svn$\|\.rsync_cache$\|node_modules$\|public/javascripts/compiled$\|target$',
   \ 'file': '\.exe$\|\.so$\|\.dll|\.class$',
   \ 'link': '',
   \ }
