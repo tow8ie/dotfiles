@@ -284,7 +284,6 @@ let g:syntastic_mode_map = { 'mode': 'active',
 " Paredit "
 " ------- "
 
-let g:paredit_leader = 'ö'
 let g:paredit_smartjump = 1
 
 " ------- "
