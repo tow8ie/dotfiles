@@ -35,7 +35,6 @@ Bundle 'tpope/vim-surround'
 Bundle 'godlygeek/tabular'
 Bundle 'editorconfig/editorconfig-vim'
 Bundle 'tpope/vim-repeat'
-Bundle 'SirVer/ultisnips'
 Bundle 'vim-scripts/paredit.vim'
 Bundle 'mattn/emmet-vim'
 
@@ -65,6 +64,7 @@ Bundle 'tpope/vim-fireplace'
 " Bundle 'int3/vim-extradite'
 " Bundle 'tpope/vim-bundler'
 " Bundle 'vim-scripts/AutoClose'
+" Bundle 'SirVer/ultisnips'
 
 filetype plugin indent on
 
