@@ -1,0 +1,66 @@
+" ----------- "
+" Vim Plugins "
+" ----------- "
+
+if &compatible
+  set nocompatible
+end
+
+filetype off
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
+
+" Helpers
+Bundle 'kien/ctrlp.vim'
+Bundle 'sandeepcr529/Buffet.vim'
+Bundle 'vim-scripts/Rename2'
+Bundle 'tpope/vim-commentary'
+Bundle 'mileszs/ack.vim'
+Bundle 'Lokaltog/vim-easymotion'
+Bundle 'tpope/vim-fugitive'
+Bundle 'airblade/vim-gitgutter'
+Bundle 'skalnik/vim-vroom'
+Bundle 'scrooloose/nerdtree'
+
+" Editing plugins
+Bundle 'kana/vim-textobj-user'
+Bundle 'nelstrom/vim-textobj-rubyblock'
+Bundle 'tpope/vim-surround'
+Bundle 'godlygeek/tabular'
+Bundle 'editorconfig/editorconfig-vim'
+Bundle 'tpope/vim-repeat'
+Bundle 'vim-scripts/paredit.vim'
+Bundle 'mattn/emmet-vim'
+
+" Color/theme plugins
+Bundle 'vim-scripts/Lucius'
+Bundle 'Lokaltog/vim-powerline'
+Bundle 'kien/rainbow_parentheses.vim'
+
+" Syntax/language/framework plugins
+Bundle 'tpope/vim-rails'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'digitaltoad/vim-jade'
+Bundle 'vim-scripts/Markdown'
+Bundle 'tpope/vim-endwise'
+Bundle 'scrooloose/syntastic'
+Bundle 'tpope/vim-fireplace'
+
+" Bundle 'vim-scripts/YankRing.vim'
+" Bundle 'ecomba/vim-ruby-refactoring'
+" Bundle 'vim-scripts/github-theme'
+" Bundle 'sjl/gundo.vim'
+" Bundle 'sjl/threesome.vim'
+" Bundle 'altercation/vim-colors-solarized'
+" Find documentation here: https://github.com/rstacruz/sparkup
+" Bundle 'bingaman/vim-sparkup'
+" Bundle 'tow8ie/vim-colors'
+" Bundle 'int3/vim-extradite'
+" Bundle 'tpope/vim-bundler'
+" Bundle 'vim-scripts/AutoClose'
+" Bundle 'SirVer/ultisnips'
+
+filetype on
+

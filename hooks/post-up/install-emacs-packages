@@ -1,0 +1,8 @@
+#!/bin/sh
+
+if which cask > /dev/null; then
+  echo 'Installing Cask packages'
+  cd $HOME/.emacs.d
+  cask install
+fi
+

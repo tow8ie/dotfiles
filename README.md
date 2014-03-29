@@ -3,28 +3,31 @@ configuration files.
 
 # Installation
 
-Install them from within the repository via the included bash script:
+1. Clone the repo in your home directory under the name of `.dotfiles`.
 
-    $ ./install.sh .
+        cd && git clone git@github.com:tow8ie/dotfiles.git .dotfiles
 
-Files or directories that have a name starting with an underscore will be
-linked as dotfile to the home dir.
+2. Install [rcm][1]. If you’re using a Mac and have [Homebrew][2] installed
+   just type `brew bundle` from within the dotfiles repository.
 
-For example:
+3. Install the dotfiles with [rcm][1].
 
-- `~/.vimrc -> /path/to/dotfiles/repo/_vimrc`
+        rcup -x README.md -x Brewfile
 
-You’ll be prompted before any destructive operation (like overwriting an
-existing file, e.g.) will be performed.
+Subsequent runs of `rcup` no longer need the `-x` options.
 
-## Mac-specific installation
+## Mac-specific additions
 
-When using tmux [on Mac OS X the system clipboard is not available by
-default][1]. To fix this install a wrapper/helper script via Homebrew.
+When running the `brew bundle` command of [Homebrew][2] a wrapper/helper script
+gets installed that fixes the problem that when using tmux [on Mac OS X the
+system clipboard is not available by default][3].
 
-1. Install [Homebrew][2].
-2. `brew bundle`
+Also, [Cask][4] is installed, which is used by [Pallet][5] for managing Emacs
+package dependencies.
 
-[1]: https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard
+[1]: https://github.com/thoughtbot/rcm
 [2]: http://brew.sh/
+[3]: https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard
+[4]: http://cask.github.io/
+[5]: https://github.com/rdallasgray/pallet
 

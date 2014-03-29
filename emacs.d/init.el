@@ -1,6 +1,6 @@
 ;;;; Package Management
 
-(require 'cask "~/.cask/cask.el")
+(require 'cask "/usr/local/Cellar/cask/0.6.0/cask.el")
 (cask-initialize)
 (require 'pallet)
 

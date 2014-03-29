@@ -1,5 +1,0 @@
-(source "melpa" "http://melpa.milkbox.net/packages/")
-
-(depends-on "color-theme-solarized")
-(depends-on "pallet")
-(depends-on "paredit")

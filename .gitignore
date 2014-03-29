@@ -1,8 +1,0 @@
-_bash.d/00-path-definitions.sh
-_bash.d/03-env-system-specific.sh
-_emacs.d/.cask
-_emacs.d/auto-save-list
-_vim/.netrwhist
-_vim/bundle/
-sandbox
-
