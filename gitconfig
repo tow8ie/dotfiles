@@ -43,6 +43,7 @@
   tool = threesome
 [core]
   excludesfile = ~/.gitignore
+  precomposeunicode = true
 [push]
   default = upstream
 [mergetool "threesome"]
