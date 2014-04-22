@@ -330,6 +330,12 @@ nnoremap <leader>s :call SynStack()<CR>
 " Show a preview of CoffeeScript Compilation
 nnoremap <leader>cc :CoffeeCompile<cr>
 
+" Naive implementation of a Ruby Hash conversion to the new Hash Syntax.
+function! ConvertRubyHash()
+  '<,'>s/:\(.*\) => /\1: /g
+endfunction
+vnoremap <leader>c :call ConvertRubyHash()<cr>
+
 " ------------ "
 " Autocommands "
 " ------------ "
