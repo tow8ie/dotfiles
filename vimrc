@@ -352,6 +352,13 @@ augroup vimrcEx
   autocmd! CmdwinLeave * :call MapCR()
 augroup END
 
+augroup RedefineWord
+  autocmd!
+  " Standard value was @,48-57,_,192-255,$
+  " Alternative set iskeyword+=-
+  autocmd FileType css,scss,sass,html,haml set iskeyword=@,48-57,_,-,?,!,192-255,$
+augroup END
+
 augroup RainbowParentheses
   autocmd!
   autocmd Syntax clojure RainbowParenthesesLoadRound
