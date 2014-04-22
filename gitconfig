@@ -19,6 +19,7 @@
   ggd = log --graph --all --pretty='format:%Cred%h %Cblue%an (%ar)%Cgreen%d %Creset%s' -n 25 --date-order
   ggr = log --graph --all --pretty='format:%Cred%h %Cblue%an (%ar)%Cgreen%d %Creset%s'
   ggrd = log --graph --all --pretty='format:%Cred%h %Cblue%an (%ar)%Cgreen%d %Creset%s' --date-order
+  ggro = log --graph --pretty='format:%Cred%h %Cblue%an (%ar)%Cgreen%d %Creset%s'
   # History of deleted files
   ldf = log --diff-filter=D --summary
   ctags = !.git/hooks/ctags
