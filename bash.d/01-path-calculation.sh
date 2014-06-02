@@ -60,6 +60,15 @@ if which rbenv &> /dev/null; then
   eval "$(rbenv init -)"
 fi
 
+# Ceremony to integrate nvm installed via Homebrew
+export NVM_DIR=$HOME/.nvm
+mkdir -p $NVM_DIR
+if which brew &> /dev/null; then
+  if brew --prefix nvm &> /dev/null; then
+    source $(brew --prefix nvm)/nvm.sh
+  fi
+fi
+
 PATH=`repath`
 
 export PATH
