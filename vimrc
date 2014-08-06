@@ -203,7 +203,7 @@ map <F3> :NERDTreeFind<cr>
 " EasyMotion "
 " ---------- "
 
-let g:EasyMotion_leader_key = 'ö'
+" let g:EasyMotion_leader_key = 'ö'
 
 " ----- "
 " CtrlP "
