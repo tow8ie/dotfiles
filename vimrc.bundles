@@ -20,7 +20,7 @@ Bundle 'tpope/vim-commentary'
 Bundle 'mileszs/ack.vim'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'tpope/vim-fugitive'
-Bundle 'airblade/vim-gitgutter'
+" Bundle 'airblade/vim-gitgutter'
 Bundle 'skalnik/vim-vroom'
 Bundle 'scrooloose/nerdtree'
 
