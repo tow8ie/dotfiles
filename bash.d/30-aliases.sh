@@ -15,6 +15,8 @@ alias less='less -Rfi'
 # A simple little timer helper
 alias timer='echo "Stop timer with Ctrl-D" && date && time cat && date'
 
+alias webserver='python -m SimpleHTTPServer'
+
 # ------------------------ #
 # Directories and movement #
 # ------------------------ #
