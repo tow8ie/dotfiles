@@ -9,6 +9,7 @@
 --ignore-dir=target/
 --ignore-dir=.rsync_cache/
 --ignore-dir=vendor/bundle/
+--ignore-dir=.bundle/
 --ignore-dir=server
 --ignore-dir=tmp
 --ignore-dir=node_modules
