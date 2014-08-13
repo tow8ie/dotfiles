@@ -2,7 +2,7 @@
   co = checkout
   st = status
   s = status -sb
-  c = commit
+  c = commit --verbose
   l = log --oneline --decorate
   d = diff --word-diff
   dc = diff --cached
