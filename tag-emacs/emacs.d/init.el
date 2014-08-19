@@ -27,6 +27,10 @@
 
 ;;;; General editor configuration
 
+(setq mac-option-modifier 'none
+      mac-command-modifier 'meta
+      mac-right-command-modifier 'super)
+
 ;; Resize the Frame at startup
 ;; (add-to-list 'default-frame-alist '(height . 60))
 ;; (add-to-list 'default-frame-alist '(width . 180))
