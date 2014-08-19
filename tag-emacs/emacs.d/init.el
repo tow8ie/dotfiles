@@ -1,3 +1,15 @@
+;;;; Fix loading of environment variables
+
+;;; This makes sure that all of the stuff you have on your PATH actually gets
+;;; respected in the GUI Emacs, no matter how you start it.
+;;; See: http://clojure-doc.org/articles/tutorials/emacs.html
+(defun set-exec-path-from-shell-PATH ()
+  (let ((path-from-shell (shell-command-to-string "TERM=vt100 $SHELL -i -c 'echo $PATH'")))
+    (setenv "PATH" path-from-shell)
+    (setq exec-path (split-string path-from-shell path-separator))))
+
+(when window-system (set-exec-path-from-shell-PATH))
+
 ;;;; Package Management
 
 (require 'cask "/usr/local/Cellar/cask/0.6.0/cask.el")
