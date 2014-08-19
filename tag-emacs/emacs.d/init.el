@@ -12,7 +12,11 @@
 
 ;;;; Package Management
 
-(require 'cask "/usr/local/Cellar/cask/0.6.0/cask.el")
+(defun cask-install-path ()
+  (let ((brew-cask-install-path (shell-command-to-string "brew --prefix cask")))
+    (replace-regexp-in-string "\n$" "" brew-cask-install-path)))
+
+(require 'cask (concat (cask-install-path) "/cask.el"))
 (cask-initialize)
 (require 'pallet)
 
