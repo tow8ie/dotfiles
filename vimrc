@@ -254,7 +254,7 @@ function! AlignTable()
 endfunction
 
 vnoremap <leader>a :call AlignTable()<cr>
-nnoremap <leader>A Vi(k:call AlignTable()<cr>
+nnoremap <leader>A 0Vi(k:call AlignTable()<cr>
 
 " ----- "
 " Rspec "
