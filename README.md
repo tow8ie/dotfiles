@@ -5,7 +5,7 @@ configuration files.
 
 1. Clone the repo in your home directory under the name of `.dotfiles`.
 
-        cd && git clone git@github.com:tow8ie/dotfiles.git .dotfiles
+        cd && git clone https://github.com/tow8ie/dotfiles.git .dotfiles
 
 2. Install [rcm][1]. If you’re using a Mac and have [Homebrew][2] installed
    just type `brew bundle` from within the dotfiles repository.
