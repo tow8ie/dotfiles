@@ -124,8 +124,6 @@ set clipboard=unnamed
 " Behaviour "
 " --------- "
 
-set shell=/bin/bash
-
 set showcmd " Display incomplete commands.
 set showmode " Display the mode you're in.
 set backspace=indent,eol,start " Intuitive backspacing.
