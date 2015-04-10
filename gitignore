@@ -80,6 +80,8 @@ target
 # IntelliJ #
 # -------- #
 
+# See here which IntelliJ project files should be typically ignored:
+# https://www.jetbrains.com/idea/help/synchronizing-and-sharing-settings.html
 .idea/workspace.xml
 .idea/tasks.xml
 
