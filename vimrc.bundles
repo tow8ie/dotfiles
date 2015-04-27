@@ -36,6 +36,7 @@ Bundle 'tpope/vim-repeat'
 Bundle 'vim-scripts/paredit.vim'
 Bundle 'mattn/emmet-vim'
 Bundle 'tommcdo/vim-exchange'
+Bundle 'pbrisbin/vim-mkdir'
 
 " Color/theme plugins
 Bundle 'vim-scripts/Lucius'
