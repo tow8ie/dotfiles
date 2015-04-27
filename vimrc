@@ -306,6 +306,12 @@ noremap <C-J> <C-w>j
 noremap <C-K> <C-w>k
 noremap <C-L> <C-w>l
 
+" Disable the arrow keys in normal mode
+nnoremap <Left> :echoe "Use h"<CR>
+nnoremap <Right> :echoe "Use l"<CR>
+nnoremap <Up> :echoe "Use k"<CR>
+nnoremap <Down> :echoe "Use j"<CR>
+
 " Shortcuts for next and previous Quickfind results
 map <leader>n :cn<cr>
 map <leader>p :cp<cr>
