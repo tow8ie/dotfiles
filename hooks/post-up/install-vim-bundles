@@ -6,5 +6,5 @@ if [ ! -e $HOME/.vim/bundle/vundle ]; then
 fi
 
 echo "Installing Vundle bundles"
-vim -u $HOME/.vimrc.bundles +BundleInstall +qa
+vim -u $HOME/.vimrc.bundles +PluginInstall +qa
 
