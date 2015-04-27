@@ -316,6 +316,9 @@ nnoremap <Down> :echoe "Use j"<CR>
 map <leader>n :cn<cr>
 map <leader>p :cp<cr>
 
+" Switch between the last two files
+nnoremap <leader><leader> <c-^>
+
 " Create new line under current one in insert mode with Ctrl-Return
 inoremap <c-cr> <esc>A<cr>
 
