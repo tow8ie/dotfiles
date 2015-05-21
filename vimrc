@@ -383,3 +383,5 @@ augroup RainbowParentheses
   autocmd VimEnter,BufRead,BufWinEnter,BufNewFile *.clj RainbowParenthesesActivate
 augroup END
 
+let g:ctrlp_match_window = 'bottom,order:btt,min:15,max:15,results:15'
+
