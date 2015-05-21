@@ -24,6 +24,7 @@ Plugin 'tpope/vim-fugitive'
 " Plugin 'airblade/vim-gitgutter'
 Plugin 'skalnik/vim-vroom'
 Plugin 'scrooloose/nerdtree'
+Plugin 'tpope/vim-projectionist'
 
 " Editing plugins
 Plugin 'kana/vim-textobj-user'
