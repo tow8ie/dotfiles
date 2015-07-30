@@ -65,6 +65,9 @@ export NVM_DIR=$HOME/.nvm
 mkdir -p $NVM_DIR
 if which brew &> /dev/null; then
   if brew --prefix nvm &> /dev/null; then
+    if [[ ! -e $HOME/.nvm/nvm-exec ]]; then
+      cp $(brew --prefix nvm)/nvm-exec $HOME/.nvm/
+    fi
     source $(brew --prefix nvm)/nvm.sh
   fi
 fi
