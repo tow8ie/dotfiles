@@ -33,9 +33,9 @@ rbenv_prompt() {
 
 hitch_prompt() {
   if [[ -n "${GIT_AUTHOR_NAME}" ]]; then
-    echo " [hitch: ${GIT_AUTHOR_NAME}]"
+    echo " [Pairing session: ${GIT_AUTHOR_NAME}]"
   else
-    echo ''
+    echo " [Not pairing]"
   fi
 }
 
