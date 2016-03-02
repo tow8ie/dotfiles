@@ -208,7 +208,7 @@ map <F3> :NERDTreeFind<cr>
 " ----- "
 
 let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\.git$\|\.hg$\|\.svn$\|\.rsync_cache$\|node_modules$\|public/javascripts/compiled$\|target$',
+  \ 'dir':  '\.git$\|\.hg$\|\.svn$\|\.rsync_cache$\|node_modules$\|public/javascripts/compiled$\|target$\|release$',
   \ 'file': '\.exe$\|\.so$\|\.dll|\.class$',
   \ 'link': '',
   \ }
