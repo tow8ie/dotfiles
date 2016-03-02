@@ -326,6 +326,9 @@ inoremap <c-cr> <esc>A<cr>
 " But just for single char single line comments…
 map <leader>cb yyP^wv$r-jyyp^wv$r-kk^vyA <esc>pjA <esc>pjA <esc>p<cr>
 
+" Convert CSS to React JavaScript object style notation
+nnoremap <leader>cs 0vt::s/-/_/ge:nohlcrcf lvt;S'f;r,j
+
 " Remove trailing whitespace
 nmap <Leader><space> :call Preserve("%s/\\s\\+$//e")<CR>
 
