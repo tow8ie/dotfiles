@@ -40,7 +40,7 @@
   diff = auto
   branch = auto
 [merge]
-  tool = threesome
+  tool = opendiff
 [core]
   excludesfile = ~/.gitignore
   precomposeunicode = true
