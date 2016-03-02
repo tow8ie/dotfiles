@@ -2,8 +2,8 @@
 # PATH calculation #
 # ---------------- #
 
-# The $path_definitions array has to be loaded for this script to work.
-# It is located in 00-path-definitions.sh.
+# The $pre_path_definitions and $post_path_definitions arrays have to be loaded
+# for this script to work. They are located in 00-path-definitions.sh.
 
 glu() {
 
@@ -14,9 +14,16 @@ glu() {
   shift && echo "$*"
 }
 
-my_paths() {
-  # Converts $path_definitions array to space separated string
-  local _paths=`echo "${path_definitions[@]/#/ }"`
+pre_paths() {
+  # Converts $pre_path_definitions array to space separated string
+  local _paths=`echo "${pre_path_definitions[@]/#/ }"`
+  # Replaces spaces of string with colons
+  glu ":" $_paths
+}
+
+post_paths() {
+  # Converts $post_path_definitions array to space separated string
+  local _paths=`echo "${post_path_definitions[@]/#/ }"`
   # Replaces spaces of string with colons
   glu ":" $_paths
 }
@@ -53,7 +60,7 @@ debug_path() {
   for i in $(echo $PATH | tr ":" "\n"); do echo $i; done
 }
 
-PATH="`my_paths`:$PATH"
+PATH="`pre_paths`:$PATH:`post_paths`"
 
 # Add rbenv's shims directory to $PATH and set up Bash autocompletion
 if which rbenv &> /dev/null; then
