@@ -16,3 +16,4 @@
 --ignore-dir=public/javascripts/compiled
 --ignore-dir=log/
 --ignore-dir=data/
+--ignore-dir=.sass_cache/
