@@ -60,12 +60,12 @@ debug_path() {
   for i in $(echo $PATH | tr ":" "\n"); do echo $i; done
 }
 
-PATH="`pre_paths`:$PATH:`post_paths`"
-
 # Add rbenv's shims directory to $PATH and set up Bash autocompletion
 if which rbenv &> /dev/null; then
   eval "$(rbenv init -)"
 fi
+
+PATH="`pre_paths`:$PATH:`post_paths`"
 
 # Ceremony to integrate nvm installed via Homebrew
 export NVM_DIR=$HOME/.nvm
