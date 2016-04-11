@@ -254,6 +254,7 @@ explicitly specified that a variable should be set before a package is loaded,
 you should place you code here."
   (setq-default
    evil-escape-key-sequence "kj"
+   evil-shift-round nil
    )
   (setq
    powerline-default-separator nil
