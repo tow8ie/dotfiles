@@ -1,5 +1,25 @@
-tap thoughtbot/formulae
-install rcm
-install cask
-install reattach-to-user-namespace
+tap 'homebrew/bundle'
+tap 'homebrew/core'
+tap 'railwaycat/emacsmacport'
+tap 'thoughtbot/formulae'
+tap 'tow8ie/tow8ie'
+
+brew 'ack'
+brew 'cask'
+brew 'cdargs'
+brew 'git'
+brew 'nvm'
+brew 'planck'
+brew 'ranger'
+brew 'ruby-build'
+brew 'rbenv'
+brew 'reattach-to-user-namespace'
+brew 'the_silver_searcher'
+brew 'tmux'
+brew 'tree'
+brew 'watch'
+brew 'wget'
+brew 'railwaycat/emacsmacport/emacs-mac', args: ['with-spacemacs-icon']
+brew 'thoughtbot/formulae/rcm'
+brew 'tow8ie/tow8ie/vim-tow8ie'
 

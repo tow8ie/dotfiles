@@ -1,4 +1,4 @@
-EXCLUDES="README.md Brewfile"
+EXCLUDES="README.md"
 HOSTNAME="home"
 TAGS="spacemacs"
 
