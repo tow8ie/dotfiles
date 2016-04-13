@@ -12,9 +12,14 @@ configuration files.
 
 3. Install the dotfiles with [rcm].
 
+        # General setup
         env RCRC=$HOME/.dotfiles/rcrc rcup
 
-Subsequent runs of `rcup` no longer need the `RCRC` env variable being set.
+        # Or host specific setup, e.g. host 'home'
+        env RCRC=$HOME/.dotfiles/rcrc rcup -B home
+
+Subsequent runs of `rcup` no longer need the `RCRC` env variable or the host
+variable being set.
 
 ## Emacs
 
