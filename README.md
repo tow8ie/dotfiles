@@ -16,6 +16,30 @@ configuration files.
 
 Subsequent runs of `rcup` no longer need the `-x` options.
 
+## Emacs
+
+Emacs isn’t installed by default. You have to choose between a
+[Spacemacs]-based configuration and a configuration for vanilla Emacs.
+
+*Be sure to delete or backup your existing `.emacs.d` directory beforehand if
+you change between Spacemacs or Vanilla Emacs or a preexisting Emacs
+configuration because the installations don’t work well with a mix of these
+configuration options.*
+
+### Spacemacs
+
+In addition to the installation above install the `spacemacs` tag and
+install [Spacemacs] itself:
+
+    rcup -t spacemacs
+    git clone https://github.com/syl20bnr/spacemacs ~/.emacs.d
+
+### Vanilla Emacs
+
+In addition to the installation above install the `vanilla-emacs` tag:
+
+    rcup -t vanilla-emacs
+
 ## Mac-specific additions
 
 When running the `brew bundle` command of [Homebrew] a wrapper/helper script
@@ -29,6 +53,7 @@ package dependencies.
 [Homebrew]: http://brew.sh/
 [Cask]: http://cask.github.io/
 [Pallet]: https://github.com/rdallasgray/pallet
+[Spacemacs]: http://spacemacs.org/
 
 [1]: https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard
 
