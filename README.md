@@ -12,9 +12,9 @@ configuration files.
 
 3. Install the dotfiles with [rcm].
 
-        rcup -x README.md -x Brewfile
+        env RCRC=$HOME/.dotfiles/rcrc rcup
 
-Subsequent runs of `rcup` no longer need the `-x` options.
+Subsequent runs of `rcup` no longer need the `RCRC` env variable being set.
 
 ## Emacs
 
