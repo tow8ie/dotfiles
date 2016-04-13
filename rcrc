@@ -1,2 +1,2 @@
-EXCLUDES=".dotfiles:README.md .dotfiles:Brewfile"
+EXCLUDES="README.md Brewfile"
 
