@@ -261,6 +261,10 @@ you should place you code here."
   (setq-default
    evil-escape-key-sequence "kj"
    evil-shift-round nil
+
+   mac-option-modifier 'none
+   mac-command-modifier 'meta
+   mac-right-command-modifier 'super
    )
   (setq
    powerline-default-separator nil
