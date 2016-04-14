@@ -38,6 +38,10 @@ values."
           osx-use-option-as-meta nil
           )
      ranger
+     (theming :variables
+              theming-headings-inherit-from-default 'all
+              theming-headings-same-size 'all
+              )
 
      ;; Third party layers
      frame-geometry
