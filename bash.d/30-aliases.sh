@@ -66,8 +66,6 @@ alias n='nanoc'
 # Rails #
 # ----- #
 
-alias r='rails'
-
 alias rt='rake test'
 # Stands for rails specific test.
 # Has to be used with path to the specific file to be tested.
@@ -136,4 +134,10 @@ if `which rbenv &> /dev/null`; then
     hitch # Persist pair info between terminal instances
   fi
 fi
+
+# ------ #
+# ranger #
+# ------ #
+
+alias r='ranger'
 
