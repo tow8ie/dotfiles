@@ -14,12 +14,12 @@
   gr = log --graph --all --decorate --pretty=oneline --abbrev-commit
   grl = log --graph --decorate --pretty=oneline --abbrev-commit
   grd = log --graph --all --decorate --pretty=oneline --abbrev-commit --date-order
-  gg = log --graph --all --pretty='format:%Cred%h %Cblue%an (%ar)%Cgreen%d %Creset%s' -n 25
-  ggo = log --graph --pretty='format:%Cred%h %Cblue%an (%ar)%Cgreen%d %Creset%s' -n 25
-  ggd = log --graph --all --pretty='format:%Cred%h %Cblue%an (%ar)%Cgreen%d %Creset%s' -n 25 --date-order
-  ggr = log --graph --all --pretty='format:%Cred%h %Cblue%an (%ar)%Cgreen%d %Creset%s'
-  ggrd = log --graph --all --pretty='format:%Cred%h %Cblue%an (%ar)%Cgreen%d %Creset%s' --date-order
-  ggro = log --graph --pretty='format:%Cred%h %Cblue%an (%ar)%Cgreen%d %Creset%s'
+  gg = log --graph --all --pretty='format:%Cred%h %Cblue%an (%ad)%Cgreen%d %Creset%s' -n 25 --date=relative
+  ggo = log --graph --pretty='format:%Cred%h %Cblue%an (%ad)%Cgreen%d %Creset%s' -n 25 --date=relative
+  ggd = log --graph --all --pretty='format:%Cred%h %Cblue%an (%ad)%Cgreen%d %Creset%s' -n 25 --date=relative --date-order
+  ggr = log --graph --all --pretty='format:%Cred%h %Cblue%an (%ad)%Cgreen%d %Creset%s' --date=relative
+  ggrd = log --graph --all --pretty='format:%Cred%h %Cblue%an (%ad)%Cgreen%d %Creset%s' --date=relative --date-order
+  ggro = log --graph --pretty='format:%Cred%h %Cblue%an (%ad)%Cgreen%d %Creset%s' --date=relative
   # History of deleted files
   ldf = log --diff-filter=D --summary
   ctags = !.git/hooks/ctags
