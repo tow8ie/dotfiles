@@ -32,6 +32,17 @@
   # Useful as a check before rebasing because rebasing changes history and
   # migrations need a consistent history to work properly over time.
   diff-migrations = diff master..HEAD --stat -- db/migrate/
+  # Suggested Git aliases from Hackernoon
+  # @see: https://hackernoon.com/lesser-known-git-commands-151a1918a60#.olkv2dnlh
+  please = push --force-with-lease
+  commend = commit --amend --no-edit
+  it = !git init && git commit -m “root” --allow-empty
+  stsh = stash --keep-index
+  staash = stash --include-untracked
+  staaash = stash --all
+  shorty = status --short --branch
+  merc = merge --no-ff
+  grog = log --graph --abbrev-commit --decorate --all --format=format:\"%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(dim white) - %an%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n %C(white)%s%C(reset)\"
 [user]
   name = Tobias Adam
   email = mail@tobiadam.de
