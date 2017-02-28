@@ -83,6 +83,8 @@ target
 # https://www.jetbrains.com/idea/help/synchronizing-and-sharing-settings.html
 .idea/workspace.xml
 .idea/tasks.xml
+# Cursive IDE store the Clojure REPL history in this file
+.idea/replstate.xml
 
 # ------ #
 # Gradle #
