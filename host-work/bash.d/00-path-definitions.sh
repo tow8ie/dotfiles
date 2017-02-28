@@ -17,5 +17,6 @@ pre_path_definitions=(
 # Order dependent, most important first.
 post_path_definitions=(
   ./node_modules/.bin       # npm local bins
+  `yarn global bin`         # yarn
 )
 
