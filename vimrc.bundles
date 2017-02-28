@@ -53,6 +53,7 @@ Plugin 'vim-scripts/Markdown'
 Plugin 'tpope/vim-endwise'
 Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-fireplace'
+Plugin 'leafgarland/typescript-vim'
 Plugin 'mtscout6/syntastic-local-eslint.vim'
 
 " Plugin 'vim-scripts/YankRing.vim'
