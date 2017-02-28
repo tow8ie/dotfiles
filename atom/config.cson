@@ -1,8 +1,9 @@
 "*":
+  core:
+    telemetryConsent: "no"
+  editor:
+    invisibles: {}
   "exception-reporting":
     userId: "91d8fb03-d569-ae2c-199e-65cf5ffecf26"
   welcome:
     showOnStartup: false
-  editor:
-    invisibles: {}
-  core: {}
