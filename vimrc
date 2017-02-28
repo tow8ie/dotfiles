@@ -282,6 +282,9 @@ nmap <silent> <Leader>rf mr:set foldmethod=syntax<CR>zMzv?\v^\s*(it\|example)<CR
 inoremap kj <Esc>l
 inoremap Kj <Esc>l
 inoremap kJ <Esc>l
+vnoremap kj <Esc>l
+vnoremap Kj <Esc>l
+vnoremap kJ <Esc>l
 
 " Disable Ex Mode
 map Q <nop>
