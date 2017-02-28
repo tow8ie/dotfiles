@@ -42,6 +42,7 @@ values."
               theming-headings-inherit-from-default 'all
               theming-headings-same-size 'all
               )
+     clojure
 
      ;; Third party layers
      frame-geometry
