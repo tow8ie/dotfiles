@@ -1,5 +1,7 @@
 // Place your settings in this file to overwrite the default settings
 {
   // The number of spaces a tab is equal to.
-  "editor.tabSize": 2
+  "editor.tabSize": 2,
+  // Controls the font size.
+	"editor.fontSize": 14
 }
