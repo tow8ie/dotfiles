@@ -81,6 +81,8 @@ target
 
 # See here which IntelliJ project files should be typically ignored:
 # https://www.jetbrains.com/idea/help/synchronizing-and-sharing-settings.html
+# https://www.jetbrains.com/help/idea/2016.3/managing-projects-under-version-control.html
+# https://www.jetbrains.com/help/idea/2016.3/sharing-intellij-idea-settings.html
 .idea/workspace.xml
 .idea/tasks.xml
 # Cursive IDE store the Clojure REPL history in this file
