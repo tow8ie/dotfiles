@@ -278,3 +278,43 @@ you should place you code here."
 
 ;; Do not write anything past this comment. This is where Emacs will
 ;; auto-generate custom variable definitions.
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(package-selected-packages
+   (quote
+    (xterm-color ws-butler window-numbering which-key volatile-highlights vi-tilde-fringe uuidgen use-package toc-org spaceline powerline smeargle shell-pop reveal-in-osx-finder restart-emacs ranger rainbow-delimiters popwin persp-mode pcre2el pbcopy paradox osx-trash osx-dictionary orgit org org-plus-contrib org-bullets open-junk-file neotree multi-term move-text magit-gitflow macrostep lorem-ipsum linum-relative link-hint launchctl info+ indent-guide ido-vertical-mode hungry-delete hl-todo highlight-parentheses highlight-numbers parent-mode highlight-indentation hide-comnt help-fns+ helm-themes helm-swoop helm-projectile helm-mode-manager helm-make projectile helm-gitignore request helm-flx helm-descbinds helm-company helm-c-yasnippet helm-ag google-translate golden-ratio gitignore-mode gitconfig-mode gitattributes-mode git-timemachine git-messenger git-link flx-ido flx fill-column-indicator fancy-battery eyebrowse expand-region exec-path-from-shell evil-visualstar evil-visual-mark-mode evil-unimpaired evil-tutor evil-surround evil-search-highlight-persist evil-numbers evil-nerd-commenter evil-mc evil-matchit evil-magit magit magit-popup git-commit with-editor evil-lisp-state smartparens evil-indent-plus evil-iedit-state iedit evil-exchange evil-escape evil-ediff evil-args evil-anzu anzu evil goto-chg undo-tree eshell-z eshell-prompt-extras esh-help elisp-slime-nav dumb-jump f diminish company-statistics company column-enforce-mode clojure-snippets clj-refactor hydra inflections edn multiple-cursors paredit s peg clean-aindent-mode cider-eval-sexp-fu eval-sexp-fu highlight cider seq spinner queue pkg-info clojure-mode epl bind-map bind-key auto-yasnippet yasnippet auto-highlight-symbol auto-compile packed dash aggressive-indent adaptive-wrap ace-window ace-link ace-jump-helm-line helm avy helm-core async ac-ispell auto-complete popup quelpa package-build spacemacs-theme))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(font-latex-sectioning-0-face ((t (:inherit default :height 1.0))))
+ '(font-latex-sectioning-1-face ((t (:inherit default :height 1.0))))
+ '(font-latex-sectioning-2-face ((t (:inherit default :height 1.0))))
+ '(font-latex-sectioning-3-face ((t (:inherit default :height 1.0))))
+ '(font-latex-sectioning-4-face ((t (:inherit default :height 1.0))))
+ '(font-latex-sectioning-5-face ((t (:inherit default :height 1.0))))
+ '(font-latex-slide-title-face ((t (:inherit default :height 1.0))))
+ '(info-title-1 ((t (:inherit default :height 1.0))))
+ '(info-title-2 ((t (:inherit default :height 1.0))))
+ '(info-title-3 ((t (:inherit default :height 1.0))))
+ '(info-title-4 ((t (:inherit default :height 1.0))))
+ '(markdown-header-face ((t (:inherit default :height 1.0))))
+ '(markdown-header-face-1 ((t (:inherit default :height 1.0))))
+ '(markdown-header-face-2 ((t (:inherit default :height 1.0))))
+ '(markdown-header-face-3 ((t (:inherit default :height 1.0))))
+ '(markdown-header-face-4 ((t (:inherit default :height 1.0))))
+ '(markdown-header-face-5 ((t (:inherit default :height 1.0))))
+ '(markdown-header-face-6 ((t (:inherit default :height 1.0))))
+ '(org-document-title ((t (:inherit default :height 1.0))))
+ '(org-level-1 ((t (:inherit default :height 1.0))))
+ '(org-level-2 ((t (:inherit default :height 1.0))))
+ '(org-level-3 ((t (:inherit default :height 1.0))))
+ '(org-level-4 ((t (:inherit default :height 1.0))))
+ '(org-level-5 ((t (:inherit default :height 1.0))))
+ '(org-level-6 ((t (:inherit default :height 1.0))))
+ '(org-level-7 ((t (:inherit default :height 1.0))))
+ '(org-level-8 ((t (:inherit default :height 1.0)))))
