@@ -1,5 +1,6 @@
 packages: [
   "package-sync",
   "language-idris",
-  "react"
+  "react",
+  "atom-typescript"
 ]
