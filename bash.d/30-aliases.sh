@@ -144,3 +144,9 @@ fi
 
 alias r='ranger'
 
+# ------ #
+# Gradle #
+# ------ #
+
+alias gdl='./gradlew'
+
