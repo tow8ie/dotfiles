@@ -76,3 +76,7 @@
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
 	required = true
+# Cache the GitHub password in Git when cloning with HTTPS.
+# @see: https://help.github.com/articles/caching-your-github-password-in-git/
+[credential]
+	helper = osxkeychain
