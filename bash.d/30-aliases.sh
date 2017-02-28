@@ -17,6 +17,9 @@ alias timer='echo "Stop timer with Ctrl-D" && date && time cat && date'
 
 alias webserver='python -m SimpleHTTPServer'
 
+# I don’t like swearing, but I like the f*** utility program.
+alias yuck='fuck'
+
 # ------------------------ #
 # Directories and movement #
 # ------------------------ #
