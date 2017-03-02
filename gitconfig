@@ -33,7 +33,7 @@
   # migrations need a consistent history to work properly over time.
   diff-migrations = diff master..HEAD --stat -- db/migrate/
   # Git ad-hoc sharing in the local network
-  serve = daemon --reuseaddr --base-path=. --export-all --verbose
+  serve = daemon --reuseaddr --base-path=. --export-all --verbose --enable=receive-pack
   # Suggested Git aliases from Hackernoon
   # @see: https://hackernoon.com/lesser-known-git-commands-151a1918a60#.olkv2dnlh
   please = push --force-with-lease
