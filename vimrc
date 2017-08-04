@@ -205,6 +205,10 @@ map <F3> :NERDTreeFind<cr>
 
 " let g:EasyMotion_leader_key = 'ö'
 
+" Highlights motion targets, when target is two keys
+hi EasyMotionTarget2First ctermbg=none ctermfg=red
+hi EasyMotionTarget2Second ctermbg=none ctermfg=red
+
 " ----- "
 " CtrlP "
 " ----- "
