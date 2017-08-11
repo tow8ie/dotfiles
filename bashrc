@@ -1,4 +1,4 @@
-for script in $HOME/.bash.d/*.sh; do
+for script in `ls $HOME/.shell.d/*.{sh,bash} | sort`; do
   if [[ -r $script ]]; then
     source $script
   fi

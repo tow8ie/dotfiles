@@ -1,4 +1,4 @@
-EXCLUDES="README.md"
+EXCLUDES="README.md *.placeholder"
 HOSTNAME="home"
 TAGS="spacemacs"
 UNDOTTED="Library"

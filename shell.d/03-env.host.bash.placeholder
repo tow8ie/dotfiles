@@ -1,3 +1,5 @@
+# WILL BE LOADED BY HOST-SPECIFIC FILES!
+
 # Add your system-specific ENV settings here
 #
 # Since Mac OS 10.10 (Yosemite), if you want your environment variables to be

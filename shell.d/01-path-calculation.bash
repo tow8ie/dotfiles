@@ -3,7 +3,8 @@
 # ---------------- #
 
 # The $pre_path_definitions and $post_path_definitions arrays have to be loaded
-# for this script to work. They are located in 00-path-definitions.sh.
+# for this script to work. They are located in the host specific
+# 00-path-definitions.*.sh file
 
 glu() {
 

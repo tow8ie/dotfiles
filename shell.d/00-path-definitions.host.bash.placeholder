@@ -1,3 +1,5 @@
+# WILL BE LOADED BY HOST-SPECIFIC FILES!
+
 # These path definitions will be _prepended_ to $PATH.
 # Order dependent, most important first.
 pre_path_definitions=(
