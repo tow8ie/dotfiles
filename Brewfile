@@ -31,3 +31,7 @@ brew 'watch'
 brew 'wget'
 brew 'railwaycat/emacsmacport/emacs-mac', args: ['with-spacemacs-icon']
 
+brew 'zsh'
+brew 'zplug'
+brew 'zsh-autosuggestions'
+
