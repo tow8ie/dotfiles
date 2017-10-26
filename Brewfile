@@ -9,6 +9,7 @@ brew 'ack'
 # package dependencies.
 brew 'cask'
 brew 'cdargs'
+brew 'direnv'
 brew 'editorconfig'
 brew 'git'
 brew 'nvm'
