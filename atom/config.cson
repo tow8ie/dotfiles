@@ -1,4 +1,7 @@
 "*":
+  "Remote-FTP":
+    connector:
+      autoUploadOnSave: "never"
   core:
     telemetryConsent: "no"
   editor:

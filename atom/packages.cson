@@ -1,6 +1,7 @@
 packages: [
-  "package-sync",
-  "language-idris",
-  "react",
   "atom-typescript"
+  "language-idris"
+  "package-sync"
+  "react"
+  "Remote-FTP"
 ]
