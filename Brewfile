@@ -20,6 +20,8 @@ brew 'rbenv'
 # @see: https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard
 brew 'reattach-to-user-namespace'
 brew 'ruby-build'
+brew 'task'
+brew 'tasksh'
 brew 'the_silver_searcher'
 brew 'thefuck'
 brew 'thoughtbot/formulae/rcm'
