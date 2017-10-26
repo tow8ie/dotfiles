@@ -5,5 +5,8 @@
     invisibles: {}
   "exception-reporting":
     userId: "91d8fb03-d569-ae2c-199e-65cf5ffecf26"
+  "package-sync":
+    createOnChange: true
+    forceOverwrite: true
   welcome:
     showOnStartup: false
