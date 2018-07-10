@@ -7,10 +7,10 @@ if &compatible
 end
 
 filetype off
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
-Plugin 'gmarik/vundle'
+Plugin 'VundleVim/Vundle.vim'
 
 " Helpers
 Plugin 'kien/ctrlp.vim'
@@ -70,5 +70,6 @@ Plugin 'mtscout6/syntastic-local-eslint.vim'
 " Plugin 'vim-scripts/AutoClose'
 " Plugin 'SirVer/ultisnips'
 
+call vundle#end()
 filetype on
 
