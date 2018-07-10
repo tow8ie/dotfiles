@@ -1,0 +1,5 @@
+EXCLUDES="README.md *.placeholder"
+HOSTNAME="otto"
+TAGS="spacemacs"
+UNDOTTED="Library"
+
