@@ -1,3 +1,6 @@
+[user]
+  name = Tobias Adam
+  email = mail@tobiadam.de
 [core]
   sshCommand = "ssh -i ~/.ssh/tow8ie_rsa"
 
