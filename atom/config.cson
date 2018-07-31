@@ -13,3 +13,5 @@
     forceOverwrite: true
   welcome:
     showOnStartup: false
+  wordcount:
+    noextension: true
