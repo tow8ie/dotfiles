@@ -6,6 +6,7 @@ pre_path_definitions=(
   $HOME/bin                 # Personal bins
   /usr/local/share/npm/bin  # npm global bins
   /usr/local/bin            # Homebrew bins
+  /usr/local/sbin           # Homebrew bins
   $HOME/.cask/bin           # Cask bins
   /opt/local/bin            # Macport bins
   $HOME/dart/dart-sdk/bin   # Dart bins

@@ -6,6 +6,7 @@ pre_path_definitions=(
   $HOME/bin                          # Personal bins
   # /usr/local/share/npm/bin         # npm global bins
   /usr/local/bin                     # Homebrew bins
+  /usr/local/sbin                    # Homebrew bins
   /usr/local/opt/python/libexec/bin/ # Unversioned symlinks for Python installed by Homebrew
   $HOME/.cask/bin                    # Cask bins
   # /opt/local/bin                   # Macport bins

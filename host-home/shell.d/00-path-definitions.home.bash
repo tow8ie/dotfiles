@@ -6,6 +6,7 @@ pre_path_definitions=(
   $HOME/bin                                            # Personal bins
   /Applications/Postgres.app/Contents/Versions/9.3/bin # Postgres.app bins
   /usr/local/bin                                       # Homebrew bins
+  /usr/local/sbin                                      # Homebrew bins
 )
 
 # These path definitions will be _appended_ to $PATH.
