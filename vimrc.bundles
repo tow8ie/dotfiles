@@ -6,71 +6,66 @@ if &compatible
   set nocompatible
 end
 
-filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-
-Plugin 'VundleVim/Vundle.vim'
+call plug#begin('~/.vim/bundle')
 
 " Helpers
-Plugin 'kien/ctrlp.vim'
-Plugin 'sandeepcr529/Buffet.vim'
-Plugin 'vim-scripts/Rename2'
-Plugin 'tpope/vim-commentary'
-Plugin 'mileszs/ack.vim'
-Plugin 'ervandew/ag'
-Plugin 'Lokaltog/vim-easymotion'
-Plugin 'tpope/vim-fugitive'
-" Plugin 'airblade/vim-gitgutter'
-Plugin 'skalnik/vim-vroom'
-Plugin 'scrooloose/nerdtree'
-Plugin 'tpope/vim-projectionist'
-Plugin 'rizzatti/dash.vim'
+Plug 'kien/ctrlp.vim'
+Plug 'sandeepcr529/Buffet.vim'
+Plug 'vim-scripts/Rename2'
+Plug 'tpope/vim-commentary'
+Plug 'mileszs/ack.vim'
+Plug 'ervandew/ag'
+Plug 'Lokaltog/vim-easymotion'
+Plug 'tpope/vim-fugitive'
+" Plug 'airblade/vim-gitgutter'
+Plug 'skalnik/vim-vroom'
+Plug 'scrooloose/nerdtree'
+Plug 'tpope/vim-projectionist'
+Plug 'rizzatti/dash.vim'
 
 " Editing plugins
-Plugin 'kana/vim-textobj-user'
-Plugin 'nelstrom/vim-textobj-rubyblock'
-Plugin 'tpope/vim-surround'
-Plugin 'godlygeek/tabular'
-Plugin 'editorconfig/editorconfig-vim'
-Plugin 'tpope/vim-abolish'
-Plugin 'tpope/vim-repeat'
-Plugin 'vim-scripts/paredit.vim'
-Plugin 'mattn/emmet-vim'
-Plugin 'tommcdo/vim-exchange'
-Plugin 'pbrisbin/vim-mkdir'
+Plug 'kana/vim-textobj-user'
+Plug 'nelstrom/vim-textobj-rubyblock'
+Plug 'tpope/vim-surround'
+Plug 'godlygeek/tabular'
+Plug 'editorconfig/editorconfig-vim'
+Plug 'tpope/vim-abolish'
+Plug 'tpope/vim-repeat'
+Plug 'vim-scripts/paredit.vim'
+Plug 'mattn/emmet-vim'
+Plug 'tommcdo/vim-exchange'
+Plug 'pbrisbin/vim-mkdir'
 
 " Color/theme plugins
-Plugin 'vim-scripts/Lucius'
-Plugin 'Lokaltog/vim-powerline'
-Plugin 'kien/rainbow_parentheses.vim'
+Plug 'vim-scripts/Lucius'
+Plug 'Lokaltog/vim-powerline'
+Plug 'kien/rainbow_parentheses.vim'
 
 " Syntax/language/framework plugins
-Plugin 'tpope/vim-rails'
-Plugin 'kchmck/vim-coffee-script'
-Plugin 'digitaltoad/vim-jade'
-Plugin 'vim-scripts/Markdown'
-Plugin 'tpope/vim-endwise'
-Plugin 'scrooloose/syntastic'
-Plugin 'tpope/vim-fireplace'
-Plugin 'leafgarland/typescript-vim'
-Plugin 'mtscout6/syntastic-local-eslint.vim'
-Plugin 'hashivim/vim-terraform'
+Plug 'tpope/vim-rails'
+Plug 'kchmck/vim-coffee-script'
+Plug 'digitaltoad/vim-jade'
+Plug 'vim-scripts/Markdown'
+Plug 'tpope/vim-endwise'
+Plug 'scrooloose/syntastic'
+Plug 'tpope/vim-fireplace'
+Plug 'leafgarland/typescript-vim'
+Plug 'mtscout6/syntastic-local-eslint.vim'
+Plug 'hashivim/vim-terraform'
 
-" Plugin 'vim-scripts/YankRing.vim'
-" Plugin 'ecomba/vim-ruby-refactoring'
-" Plugin 'vim-scripts/github-theme'
-" Plugin 'sjl/gundo.vim'
-" Plugin 'sjl/threesome.vim'
-" Plugin 'altercation/vim-colors-solarized'
+" Plug 'vim-scripts/YankRing.vim'
+" Plug 'ecomba/vim-ruby-refactoring'
+" Plug 'vim-scripts/github-theme'
+" Plug 'sjl/gundo.vim'
+" Plug 'sjl/threesome.vim'
+" Plug 'altercation/vim-colors-solarized'
 " Find documentation here: https://github.com/rstacruz/sparkup
-" Plugin 'bingaman/vim-sparkup'
-" Plugin 'tow8ie/vim-colors'
-" Plugin 'int3/vim-extradite'
-" Plugin 'tpope/vim-bundler'
-" Plugin 'vim-scripts/AutoClose'
-" Plugin 'SirVer/ultisnips'
+" Plug 'bingaman/vim-sparkup'
+" Plug 'tow8ie/vim-colors'
+" Plug 'int3/vim-extradite'
+" Plug 'tpope/vim-bundler'
+" Plug 'vim-scripts/AutoClose'
+" Plug 'SirVer/ultisnips'
 
-call vundle#end()
-filetype on
+call plug#end()
 

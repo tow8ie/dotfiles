@@ -13,8 +13,6 @@ if filereadable(expand("~/.vimrc.bundles"))
   source ~/.vimrc.bundles
 endif
 
-filetype plugin indent on
-
 " --------- "
 " Functions "
 " --------- "
@@ -42,8 +40,6 @@ set encoding=utf-8
 " ------------------- "
 " Syntax highlighting "
 " ------------------- "
-
-syntax enable
 
 set list
 set listchars=tab:▸\ ,eol:¬
