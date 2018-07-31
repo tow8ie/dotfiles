@@ -3,5 +3,5 @@ packages: [
   "language-idris"
   "package-sync"
   "react"
-  "Remote-FTP"
+  "remote-ftp"
 ]
