@@ -1,3 +1,7 @@
+[alias]
+  # Clone a tesla repository
+  # @see: https://stackoverflow.com/a/7005698
+  tc = "!f() { cd /Users/toadam/code/tesla; git clone git@github.com:otto-ec/tsl_${1} ${1}; }; f"
 [user]
   name = Tobias Adam
   email = tobias.adam@otto.de
