@@ -55,6 +55,7 @@ Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-fireplace'
 Plugin 'leafgarland/typescript-vim'
 Plugin 'mtscout6/syntastic-local-eslint.vim'
+Plugin 'hashivim/vim-terraform'
 
 " Plugin 'vim-scripts/YankRing.vim'
 " Plugin 'ecomba/vim-ruby-refactoring'
