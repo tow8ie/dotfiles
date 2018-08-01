@@ -5,7 +5,7 @@
 [user]
   name = Tobias Adam
   email = tobias.adam@otto.de
-[includeIf "gitdir:~/code/projects/"]
+[includeIf "gitdir:~/code/"]
   path = .gitconfig-otto
 [includeIf "gitdir:~/code/tow8ie/"]
   path = .gitconfig-tow8ie
