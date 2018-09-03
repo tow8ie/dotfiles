@@ -7,7 +7,6 @@ pre_path_definitions=(
   # /usr/local/share/npm/bin         # npm global bins
   /usr/local/bin                     # Homebrew bins
   /usr/local/sbin                    # Homebrew bins
-  /usr/local/opt/python/libexec/bin/ # Unversioned symlinks for Python installed by Homebrew
   $HOME/.cask/bin                    # Cask bins
   # /opt/local/bin                   # Macport bins
   # $HOME/dart/dart-sdk/bin          # Dart bins
@@ -18,7 +17,8 @@ pre_path_definitions=(
 # These path definitions will be _appended_ to $PATH.
 # Order dependent, most important first.
 post_path_definitions=(
-  # ./node_modules/.bin # npm local bins
-  # `yarn global bin`   # yarn
+  /usr/local/opt/python/libexec/bin/ # Unversioned symlinks for Python installed by Homebrew
+  # ./node_modules/.bin              # npm local bins
+  # `yarn global bin`                # yarn
 )
 
