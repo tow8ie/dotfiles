@@ -16,6 +16,8 @@ alias less='less -Rfi'
 alias timer='echo "Stop timer with Ctrl-D" && date && time cat && date'
 
 alias webserver='python -m SimpleHTTPServer'
+alias urldecode='python3 -c "import sys, urllib.parse as ul; print(ul.unquote_plus(sys.argv[1]))"'
+alias urlencode='python3 -c "import sys, urllib.parse as ul; print(ul.quote_plus(sys.argv[1]))"'
 
 # I don’t like swearing, but I like the f*** utility program.
 alias yuck='fuck'
