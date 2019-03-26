@@ -6,6 +6,7 @@
 --type-add=ruby=.haml
 --type-add=js=.javascript
 --type-add=js=.coffee
+--type-add=md=.md
 --ignore-dir=target/
 --ignore-dir=.rsync_cache/
 --ignore-dir=vendor/bundle/
