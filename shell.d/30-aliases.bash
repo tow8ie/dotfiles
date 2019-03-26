@@ -160,7 +160,7 @@ alias sha256='shasum -a 256'
 alias sha1='openssl sha1'
 
 # How to check if a program exists from a Bash script?
-# https://stackoverflow.com/a/26759734
+# @see: https://stackoverflow.com/a/26759734
 if ! [ -x "$(command -v md5)" ]; then
   alias md5='openssl md5'
 fi
