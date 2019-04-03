@@ -21,6 +21,7 @@ brew 'rbenv'
 # not available by default.
 # @see: https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard
 brew 'reattach-to-user-namespace'
+brew 'rsync'
 brew 'ruby-build'
 brew 'task'
 brew 'tasksh'
