@@ -2,6 +2,7 @@
   # Clone a tesla repository
   # @see: https://stackoverflow.com/a/7005698
   tc = "!f() { cd /Users/toadam/code/tesla; git clone git@github.com:otto-ec/tsl_${1} ${1}; }; f"
+  ce = commit --verbose --allow-empty --template="/Users/toadam/.git-empty-commit.tpl"
 [user]
   name = Tobias Adam
   email = tobias.adam@otto.de
