@@ -3,4 +3,5 @@
   email = mail@tobiadam.de
 [core]
   sshCommand = "ssh -i ~/.ssh/tow8ie_rsa"
+  excludesfile = ~/.gitignore
 

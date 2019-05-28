@@ -54,7 +54,6 @@
 [merge]
   tool = opendiff
 [core]
-  excludesfile = ~/.gitignore
   precomposeunicode = true
 [push]
   default = upstream
