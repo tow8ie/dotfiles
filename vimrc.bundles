@@ -53,6 +53,9 @@ Plug 'leafgarland/typescript-vim'
 Plug 'mtscout6/syntastic-local-eslint.vim'
 Plug 'hashivim/vim-terraform'
 
+" A secure alternative to Vim modelines
+Plug 'ciaranm/securemodelines'
+
 " Plug 'vim-scripts/YankRing.vim'
 " Plug 'ecomba/vim-ruby-refactoring'
 " Plug 'vim-scripts/github-theme'
