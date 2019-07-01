@@ -1,6 +1,5 @@
 tap 'homebrew/bundle'
 tap 'homebrew/core'
-tap 'railwaycat/emacsmacport'
 tap 'thoughtbot/formulae'
 tap 'tow8ie/tow8ie'
 
@@ -34,7 +33,6 @@ brew 'tree'
 brew 'vim'
 brew 'watch'
 brew 'wget'
-brew 'railwaycat/emacsmacport/emacs-mac', args: ['with-spacemacs-icon']
 
 brew 'zsh'
 brew 'zplug'
