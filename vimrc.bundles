@@ -38,7 +38,7 @@ Plug 'pbrisbin/vim-mkdir'
 
 " Color/theme plugins
 Plug 'vim-scripts/Lucius'
-Plug 'Lokaltog/vim-powerline'
+Plug 'vim-airline/vim-airline'
 Plug 'kien/rainbow_parentheses.vim'
 
 " Syntax/language/framework plugins
