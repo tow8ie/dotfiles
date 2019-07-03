@@ -14,6 +14,8 @@ brew 'git'
 brew 'neovim'
 brew 'nvm'
 brew 'planck'
+brew 'pyenv'
+brew 'pyenv-virtualenvwrapper'
 brew 'ranger'
 brew 'rbenv'
 # Fixes the problem that when using tmux on Mac OS X the system clipboard is

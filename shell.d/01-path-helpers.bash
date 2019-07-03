@@ -61,11 +61,6 @@ debug_path() {
   for i in $(echo $PATH | tr ":" "\n"); do echo $i; done
 }
 
-# Add rbenv's shims directory to $PATH and set up Bash autocompletion
-if which rbenv &> /dev/null; then
-  eval "$(rbenv init -)"
-fi
-
 PATH="`pre_paths`:$PATH:`post_paths`"
 
 # Ceremony to integrate nvm installed via Homebrew
@@ -81,6 +76,16 @@ if which brew &> /dev/null; then
 fi
 
 PATH=`repath`
+
+# Add rbenv's shims directory to $PATH and set up Bash autocompletion
+if which rbenv &> /dev/null; then
+  eval "$(rbenv init -)"
+fi
+
+# Add pyenv's shims directory to $PATH and set up Bash autocompletion
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
 
 export PATH
 
