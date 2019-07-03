@@ -949,9 +949,9 @@
 	<key>NSWindow Frame SUUpdateAlert</key>
 	<string>970 769 620 392 0 0 2560 1417 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>362 623 918 452 0 0 2560 1417 </string>
+	<string>361 571 918 512 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>1200 0 1360 1417 0 0 2560 1417 </string>
+	<string>950 0 1610 1417 0 0 2560 1417 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>343 181 1610 1127 0 0 2560 1417 </string>
 	<key>New Bookmarks</key>
@@ -1830,7 +1830,7 @@
 			<key>Visual Bell</key>
 			<true/>
 			<key>Window Type</key>
-			<integer>7</integer>
+			<integer>0</integer>
 			<key>Working Directory</key>
 			<string>/Users/tow8ie</string>
 		</dict>
@@ -2572,7 +2572,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>7C79C573-AC11-44D1-9B8A-33DD1153CCB3</string>
 	<key>NoSyncLastTipTime</key>
-	<real>560950924.25426805</real>
+	<real>564934996.56931901</real>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -2630,6 +2630,32 @@
 		<string>0043</string>
 		<string>0044</string>
 		<string>0045</string>
+		<string>0046</string>
+		<string>0047</string>
+		<string>0048</string>
+		<string>0049</string>
+		<string>0050</string>
+		<string>0051</string>
+		<string>0052</string>
+		<string>0053</string>
+		<string>0054</string>
+		<string>0055</string>
+		<string>0056</string>
+		<string>0057</string>
+		<string>0058</string>
+		<string>0059</string>
+		<string>0060</string>
+		<string>0061</string>
+		<string>0062</string>
+		<string>0063</string>
+		<string>0064</string>
+		<string>0065</string>
+		<string>0066</string>
+		<string>0067</string>
+		<string>0068</string>
+		<string>0069</string>
+		<string>0070</string>
+		<string>0071</string>
 	</array>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
@@ -2703,7 +2729,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-10-11T11:42:04Z</date>
+	<date>2019-06-25T07:55:30Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SavePasteHistory</key>
@@ -2755,6 +2781,6 @@
 	<key>findRegex_iTerm</key>
 	<false/>
 	<key>iTerm Version</key>
-	<string>3.2.3</string>
+	<string>3.2.9</string>
 </dict>
 </plist>
