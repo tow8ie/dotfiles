@@ -38,7 +38,7 @@
   # @see: https://hackernoon.com/lesser-known-git-commands-151a1918a60#.olkv2dnlh
   please = push --force-with-lease
   commend = commit --amend --no-edit
-  it = !git init && git commit -m “root” --allow-empty
+  it = !git init && git commit -m 'Root commit.' --allow-empty
   stsh = stash --keep-index
   staash = stash --include-untracked
   staaash = stash --all
