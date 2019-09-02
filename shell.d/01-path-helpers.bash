@@ -63,22 +63,15 @@ debug_path() {
 
 PATH="`pre_paths`:$PATH:`post_paths`"
 
-# Ceremony to integrate nvm installed via Homebrew
-export NVM_DIR=$HOME/.nvm
-mkdir -p $NVM_DIR
-if which brew &> /dev/null; then
-  if brew ls | grep nvm &> /dev/null; then
-    if [[ ! -e $HOME/.nvm/nvm-exec ]]; then
-      cp $(brew --prefix nvm)/nvm-exec $HOME/.nvm/
-    fi
-    source $(brew --prefix nvm)/nvm.sh
+# asdf version manager (for Node.js)
+if command -v brew 1>/dev/null 2>&1; then
+  if brew --prefix asdf 1>/dev/null 2>&1; then
+    source "$(brew --prefix asdf)/asdf.sh"
   fi
 fi
 
-PATH=`repath`
-
 # Add rbenv's shims directory to $PATH and set up Bash autocompletion
-if which rbenv &> /dev/null; then
+if command -v rbenv 1>/dev/null 2>&1; then
   eval "$(rbenv init -)"
 fi
 
@@ -87,5 +80,6 @@ if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
 
+PATH=`repath`
 export PATH
 
