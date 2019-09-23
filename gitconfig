@@ -55,6 +55,7 @@
   tool = opendiff
 [core]
   precomposeunicode = true
+  # autocrlf = input
 [push]
   default = upstream
 [mergetool "threesome"]
