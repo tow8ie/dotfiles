@@ -29,10 +29,3 @@
 # </dict>
 # </plist>
 
-# -- #
-# Go #
-# -- #
-
-# For the start I prefer to set the GOPATH per project.
-# export GOPATH="/Users/tow8ie/code/goworkspace"
-
