@@ -80,6 +80,11 @@ if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi
 
+# Add the bin subdirectory of the GOPATH to the PATH
+if command -v go 1>/dev/null 2>&1; then
+  PATH="${PATH}:$(go env GOPATH)/bin"
+fi
+
 PATH=`repath`
 export PATH
 
