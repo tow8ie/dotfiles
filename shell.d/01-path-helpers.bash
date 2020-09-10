@@ -64,10 +64,18 @@ debug_path() {
 PATH="`pre_paths`:$PATH:`post_paths`"
 
 # asdf version manager (for Node.js)
-if command -v brew 1>/dev/null 2>&1; then
-  if brew --prefix asdf 1>/dev/null 2>&1; then
-    source "$(brew --prefix asdf)/asdf.sh"
+
+ASDF_BREW_PATH="/usr/local/opt/asdf"
+
+# brew --prefix is slooooow, so only use it if it cannot be avoided
+if [ ! -d "${ASDF_BREW_PATH}" ]; then
+  if command -v brew 1>/dev/null 2>&1; then
+    ASDF_BREW_PATH="$(brew --prefix asdf)"
   fi
+fi
+
+if [ -d "${ASDF_BREW_PATH}" ]; then
+  source "${ASDF_BREW_PATH}/asdf.sh"
 fi
 
 # Add rbenv's shims directory to $PATH and set up Bash autocompletion

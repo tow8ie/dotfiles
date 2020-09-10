@@ -4,6 +4,8 @@ tap 'thoughtbot/formulae'
 tap 'tow8ie/tow8ie'
 
 brew 'ack'
+brew 'bash'
+brew 'bash-completion@2'
 # Is used by Pallet (https://github.com/rdallasgray/pallet) for managing Emacs
 # package dependencies.
 brew 'cask'
