@@ -31,14 +31,6 @@ rbenv_prompt() {
   fi
 }
 
-hitch_prompt() {
-  if [[ -n "${GIT_AUTHOR_NAME}" ]]; then
-    echo " [Pairing session: ${GIT_AUTHOR_NAME}]"
-  else
-    echo " [Not pairing]"
-  fi
-}
-
 error_prompt() {
   exit_code=$tow8ie_exit_code
   if [ $exit_code -ne 0 ]; then
@@ -50,5 +42,5 @@ error_prompt() {
 # Wrap commands in \$(command_name)
 
 PROMPT_COMMAND='tow8ie_exit_code=$?'
-PS1="\n\h: \w \[$GREEN\] \n\[$RED\]\u \[$GREEN\](\j)\$(rbenv_prompt)\$(rvm_prompt)\$(hitch_prompt)\$(git_prompt)\[$ERED\]\$(error_prompt) →\[$NO_COLOR\] "
+PS1="\n\h: \w \[$GREEN\] \n\[$RED\]\u \[$GREEN\](\j)\$(rbenv_prompt)\$(rvm_prompt)\$(git_prompt)\[$ERED\]\$(error_prompt) →\[$NO_COLOR\] "
 

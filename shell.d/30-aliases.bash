@@ -124,22 +124,6 @@ alias tomcat-stop='/Applications/apache-tomcat-6.0.20/bin/shutdown.sh'
 
 alias t='tmux'
 
-# ----- #
-# hitch #
-# ----- #
-
-if `which rbenv &> /dev/null`; then
-  if `rbenv which hitch &> /dev/null`; then
-    hitch() {
-      command hitch "$@"
-      if [[ -s "$HOME/.hitch_export_authors" ]] ; then source "$HOME/.hitch_export_authors" ; fi
-    }
-    alias unhitch='hitch -u'
-    alias hitched='echo $GIT_AUTHOR_NAME'
-    hitch # Persist pair info between terminal instances
-  fi
-fi
-
 # ------ #
 # ranger #
 # ------ #
