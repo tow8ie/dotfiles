@@ -1,4 +1,0 @@
-EXCLUDES="README.md *.placeholder"
-HOSTNAME="work"
-TAGS="spacemacs"
-
