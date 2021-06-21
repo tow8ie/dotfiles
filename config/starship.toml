@@ -36,7 +36,7 @@ symbol = " "
 symbol = " "
 
 [java]
-symbol = "Clojure/JVM "
+symbol = "JDK "
 # symbol = " "
 
 [julia]
@@ -71,6 +71,12 @@ symbol = " "
 
 [rust]
 symbol = " "
+
+[scala]
+symbol = " "
+
+[shlvl]
+symbol = " "
 
 [swift]
 symbol = "ﯣ "
