@@ -1,2 +1,10 @@
 !bin
 
+# IntelliJ IDEA
+.idea
+
+# OTTO
+
+host-otto/bin/nav-get-aws-credentials.sh
+host-otto/bin/tesla-get-aws-credentials.sh
+host-otto/shell.d/31-aliases.otto.bash
