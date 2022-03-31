@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+# To use this script from Launchbar it MUST not have a .sh ending. Sigh.
+# @see: https://forums.obdev.at/viewtopic.php?t=8533
+
+ykman oath accounts code -s "Amazon Web Services" | pbcopy
+
