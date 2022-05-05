@@ -1,0 +1,7 @@
+{:deps {nav.otto.de/scripts {:git/url "git@github.com:otto-ec/nav_scripts.git"
+                             :git/tag "0.1.0"
+                             :git/sha "e838385"}}
+ :tasks {swamp swmp/swamp-cli
+         rotate-aws-access-key aws/rotate-aws-access-key
+         docker-login de.otto.nav.docker/docker-login}}
+
