@@ -1,8 +1,0 @@
-packages: [
-  "atom-typescript"
-  "language-idris"
-  "package-sync"
-  "react"
-  "remote-ftp"
-  "wordcount"
-]
