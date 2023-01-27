@@ -21,6 +21,10 @@ You need to have [rcm] installed.
 
    # Or host specific setup, e.g. host 'home'
    env RCRC=$HOME/.dotfiles/rcrc rcup -B home
+
+   # Or just
+   ./install-home.sh
+   ./install-otto.sh
    ```
 
 ## Emacs
