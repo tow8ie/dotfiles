@@ -1,6 +1,7 @@
 tap 'homebrew/bundle'
 tap 'homebrew/core'
 tap 'tow8ie/tow8ie'
+tap "homebrew/cask"
 
 brew 'ack'
 brew 'bash'
@@ -33,4 +34,11 @@ brew 'wget'
 brew 'zsh'
 brew 'zplug'
 brew 'zsh-autosuggestions'
+
+cask "rectangle"
+cask "the-unarchiver"
+cask "contexts"
+cask "caffeine"
+cask "marked"
+cask "alfred"
 
