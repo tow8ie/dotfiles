@@ -10,7 +10,7 @@ if which brew &> /dev/null; then
     zplug "~/.shell.d", from:local, use:"*.zsh"
 
     # geometry is a minimalistic, fully customizable zsh prompt theme.
-    zplug "frmendes/geometry"
+    # zplug "frmendes/geometry"
 
     # A hyperminimal zsh prompt.
     # zplug 'tylerreckart/hyperzsh', as:theme
