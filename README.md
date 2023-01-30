@@ -13,17 +13,11 @@ You need to have [rcm] installed.
    cd && git clone https://github.com/tow8ie/dotfiles.git .dotfiles
    ```
 
-2. Install the dotfiles with [rcm]:
+2. Install the dotfiles:
 
    ```bash
-   # General setup
-   env RCRC=$HOME/.dotfiles/rcrc rcup
-
-   # Or host specific setup, e.g. host 'home'
-   env RCRC=$HOME/.dotfiles/rcrc rcup -B home
-
-   # Or just
-   ./install-home.sh
+   ./install.sh
+   # or
    ./install-otto.sh
    ```
 

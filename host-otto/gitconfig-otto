@@ -1,6 +1,0 @@
-[user]
-  name = Tobias Adam
-  email = tobias.adam@otto.de
-[core]
-  sshCommand = "ssh -i ~/.ssh/id_rsa"
-
