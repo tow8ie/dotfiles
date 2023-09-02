@@ -4,6 +4,7 @@ tap 'tow8ie/tow8ie'
 tap "homebrew/cask"
 
 brew 'ack'
+brew 'asdf'
 brew 'bash'
 brew 'bash-completion@2'
 brew 'bat'
@@ -15,6 +16,7 @@ brew 'editorconfig'
 brew 'fd'
 brew 'fish'
 brew 'fzf'
+brew 'jq'
 brew 'neovim'
 brew 'ranger'
 # Fixes the problem that when using tmux on Mac OS X the system clipboard is
