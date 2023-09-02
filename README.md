@@ -16,7 +16,7 @@ You need to have [rcm] installed.
 2. Install the dotfiles:
 
    ```bash
-   ./install.sh
+   .bin/dotfiles-install.sh
    ```
 
 ## Emacs
