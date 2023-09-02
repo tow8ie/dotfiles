@@ -1,46 +1,54 @@
-tap 'homebrew/bundle'
-tap 'homebrew/core'
-tap 'tow8ie/tow8ie'
-tap "homebrew/cask"
+tap "babashka/brew"
+tap "borkdude/brew"
+tap "homebrew/bundle"
+tap "tow8ie/tow8ie"
 
-brew 'ack'
-brew 'asdf'
-brew 'bash'
-brew 'bash-completion@2'
-brew 'bat'
+brew "ack"
+brew "asdf"
+brew "bash"
+brew "bash-completion@2"
+brew "bat"
 # Is used by Pallet (https://github.com/rdallasgray/pallet) for managing Emacs
 # package dependencies.
-# brew 'cask'
-brew 'direnv'
-brew 'editorconfig'
-brew 'fd'
-brew 'fish'
-brew 'fzf'
-brew 'jq'
-brew 'neovim'
-brew 'ranger'
+# brew "cask"
+brew "clojure"
+brew "direnv"
+brew "editorconfig"
+brew "fd"
+brew "fish"
+brew "fzf"
+brew "jq"
+brew "neovim"
+brew "ranger"
 # Fixes the problem that when using tmux on Mac OS X the system clipboard is
 # not available by default.
 # @see: https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard
-# brew 'reattach-to-user-namespace'
-brew 'starship'
-brew 'the_silver_searcher'
-brew 'thefuck'
-brew 'tmux'
-# brew 'trash'
-brew 'tree'
-brew 'vim'
-brew 'watch'
-brew 'wget'
+# brew "reattach-to-user-namespace"
+brew "starship"
+brew "the_silver_searcher"
+brew "thefuck"
+brew "tmux"
+# brew "trash"
+brew "tree"
+brew "vim"
+brew "watch"
+brew "wget"
+brew "zplug"
+brew "zsh"
+brew "zsh-autosuggestions"
 
-brew 'zsh'
-brew 'zplug'
-brew 'zsh-autosuggestions'
-
+cask "contexts"
+cask "marked"
 cask "rectangle"
 cask "the-unarchiver"
-cask "contexts"
-cask "caffeine"
-cask "marked"
-cask "alfred"
 
+vscode "42Crunch.vscode-openapi"
+vscode "arcticicestudio.nord-visual-studio-code"
+vscode "betterthantomorrow.calva"
+vscode "betterthantomorrow.calva-spritz"
+vscode "GitHub.github-vscode-theme"
+vscode "golang.go"
+vscode "golf1052.base16-generator"
+vscode "mechatroner.rainbow-csv"
+vscode "ms-vsliveshare.vsliveshare"
+vscode "redhat.vscode-yaml"
