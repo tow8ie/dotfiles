@@ -15,14 +15,27 @@ fi
 
 path=(
 
-  # bin                                                # Bundler binstubs
-  $HOME/.bin                                           # dotfiles bins
-  $HOME/bin                                            # Personal bins
+  # Bundler binstubs
+  # bin
 
-  $path                                                # -- DEFAULT --
+  # dotfiles bins
+  $HOME/.bin
 
-  # ./node_modules/.bin                                # npm local bins
+  # Personal bins
+  $HOME/bin
+
+  $HOME/.babashka/bbin/bin
+
+  # -- DEFAULT --
+  $path
+
+  # Visual Studio Code
+  "/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+
+  # npm local bins
+  # ./node_modules/.bin
 
 )
 
 export PATH
+
