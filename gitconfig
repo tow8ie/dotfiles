@@ -53,7 +53,7 @@
   tool = opendiff
 [core]
   precomposeunicode = true
-  # autocrlf = input
+  autocrlf = input
   excludesfile = ~/.gitignore
 [push]
   default = upstream
