@@ -7,17 +7,15 @@ You need to have [rcm] installed.
 
 # Installation
 
-1. Clone the repo in your home directory under the name of `.dotfiles`:
+```bash
+.bin/dotfiles-install.sh
+```
 
-   ```bash
-   cd && git clone https://github.com/tow8ie/dotfiles.git .dotfiles
-   ```
+## Updating after pulling latest repo changes
 
-2. Install the dotfiles:
-
-   ```bash
-   .bin/dotfiles-install.sh
-   ```
+```bash
+./bin/dotfiles-update.sh
+```
 
 ## Emacs
 
