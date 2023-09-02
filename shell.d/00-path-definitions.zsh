@@ -7,6 +7,12 @@ typeset -gx -U path
 # What should/shouldn't go in .zshenv, .zshrc, .zlogin, .zprofile, .zlogout?
 # https://unix.stackexchange.com/questions/71253/what-should-shouldnt-go-in-zshenv-zshrc-zlogin-zprofile-zlogout
 
+if (( $+commands[brew] )); then
+  if brew ls | grep asdf &> /dev/null; then
+    source $(brew --prefix asdf)/libexec/asdf.sh
+  fi
+fi
+
 path=(
 
   # bin                                                # Bundler binstubs
