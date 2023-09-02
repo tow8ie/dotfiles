@@ -49,16 +49,6 @@ In addition to the installation above install the `vanilla-emacs` tag:
 rcup -t vanilla-emacs
 ```
 
-# Updating
-
-Subsequent runs of `rcup` no longer need the `RCRC` env variable or the host
-variable being set.
-
-```bash
-# Updating dotfiles
-rcup
-```
-
 [rcm]: https://github.com/thoughtbot/rcm
 [Spacemacs]: http://spacemacs.org/
 
