@@ -1,4 +1,4 @@
-if which brew &> /dev/null; then
+if (( $+commands[brew] )); then
   if brew ls | grep zplug &> /dev/null; then
 
     # If zplug is installed via Homebrew on macOS.
