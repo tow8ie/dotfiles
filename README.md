@@ -17,8 +17,6 @@ You need to have [rcm] installed.
 
    ```bash
    ./install.sh
-   # or
-   ./install-otto.sh
    ```
 
 ## Emacs
