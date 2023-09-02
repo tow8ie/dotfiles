@@ -1,2 +1,3 @@
 EXCLUDES="*.md *.sh"
+UNDOTTED="Brewfile"
 
