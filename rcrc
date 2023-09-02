@@ -1,2 +1,2 @@
-EXCLUDES="README.md *:*.placeholder install.sh install-*.sh configure-iterm.sh"
+EXCLUDES="*.md *.sh"
 
