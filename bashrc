@@ -5,7 +5,7 @@
 # exec 3>&2 2>/tmp/bashstart.$$.log
 # set -x
 
-for script in `ls $HOME/.shell.d/*.{sh,bash} | sort`; do
+for script in `ls $HOME/.bash.d/*.{sh,bash} | sort`; do
   if [[ -r $script ]]; then
     source $script
   fi

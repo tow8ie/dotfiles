@@ -7,7 +7,7 @@ if (( $+commands[brew] )); then
     source $ZPLUG_HOME/init.zsh
 
     # My local zshell files that should be sourced.
-    zplug "~/.shell.d", from:local, use:"*.zsh"
+    zplug "~/.zsh.d", from:local, use:"*.zsh"
 
     # geometry is a minimalistic, fully customizable zsh prompt theme.
     # zplug "frmendes/geometry"
