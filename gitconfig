@@ -22,7 +22,6 @@
   ggro = log --graph --pretty='format:%Cred%h %Cblue%an (%ad)%Cgreen%d %Creset%s' --date=relative
   # History of deleted files
   ldf = log --diff-filter=D --summary
-  ctags = !.git/hooks/ctags
   # Delete remote branch
   # Example: git rrmbranch mybranch
   rrmbranch = "push --delete origin"
@@ -60,8 +59,6 @@
 [mergetool "threesome"]
   cmd = "vim -f $BASE $LOCAL $REMOTE $MERGED -c 'ThreesomeInit'"
   trustExitCode = true
-[init]
-  templatedir = ~/.gittemplate
 [filter "media"]
 	required = true
 	clean = git media clean %f
