@@ -8,13 +8,14 @@ You need to have [rcm] installed.
 # Installation
 
 ```bash
-.bin/dotfiles-install.sh
+git clone git@github.com:tow8ie/dotfiles.git "${HOME}/.dotfiles"
+${HOME}/.dotfiles/bin/dotfiles-update.sh
 ```
 
 ## Updating after pulling latest repo changes
 
 ```bash
-./bin/dotfiles-update.sh
+dotfiles-update.sh
 ```
 
 ## Emacs
