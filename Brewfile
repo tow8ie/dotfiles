@@ -8,9 +8,6 @@ brew "asdf"
 brew "bash"
 brew "bash-completion@2"
 brew "bat"
-# Is used by Pallet (https://github.com/rdallasgray/pallet) for managing Emacs
-# package dependencies.
-# brew "cask"
 brew "clojure"
 brew "direnv"
 brew "editorconfig"
