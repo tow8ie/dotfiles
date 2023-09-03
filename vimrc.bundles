@@ -67,7 +67,6 @@ Plug 'ciaranm/securemodelines'
 " Plug 'int3/vim-extradite'
 " Plug 'tpope/vim-bundler'
 " Plug 'vim-scripts/AutoClose'
-" Plug 'SirVer/ultisnips'
 
 call plug#end()
 

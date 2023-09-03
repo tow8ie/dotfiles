@@ -174,20 +174,6 @@ nmap <silent> <leader>d <Plug>DashSearch
 let g:CommandTMaxHeight=10
 let g:CommandTMatchWindowReverse=1
 
-" --------- "
-" UltiSnips "
-" --------- "
-
-let g:UltiSnipsSnippetsDir="~/.vim/snippets"
-let g:UltiSnipsSnippetDirectories=["UltiSnips", "snippets"]
-
-let g:UltiSnipsExpandTrigger="<tab>"
-let g:UltiSnipsJumpForwardTrigger="<tab>"
-let g:UltiSnipsJumpBackwardTrigger="<s-tab>"
-" Seems not to work in iTerm
-" let g:UltiSnipsListSnippets="<c-j>"
-map <leader>l :call UltiSnips_ListSnippets()<cr>
-
 " -------- "
 " NERDTree "
 " -------- "
