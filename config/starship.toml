@@ -75,6 +75,9 @@ symbol = " "
 [scala]
 symbol = " "
 
+[shell]
+disabled = false
+
 [shlvl]
 symbol = " "
 
