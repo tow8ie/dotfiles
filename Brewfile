@@ -15,6 +15,7 @@ brew "fd"
 brew "fish"
 brew "fzf"
 brew "jq"
+brew "mas"
 brew "neovim"
 brew "ranger"
 # Fixes the problem that when using tmux on Mac OS X the system clipboard is
@@ -38,6 +39,9 @@ cask "contexts"
 cask "marked"
 cask "rectangle"
 cask "the-unarchiver"
+
+mas "OX Drive", id: 818195014
+mas "Strongbox", id: 897283731
 
 vscode "42Crunch.vscode-openapi"
 vscode "arcticicestudio.nord-visual-studio-code"
