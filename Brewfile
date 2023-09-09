@@ -35,6 +35,7 @@ brew "zplug"
 brew "zsh"
 brew "zsh-autosuggestions"
 
+cask "carbon-copy-cloner"
 # cask "contexts"
 # cask "marked"
 cask "rectangle"
