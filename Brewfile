@@ -37,6 +37,7 @@ brew "zsh-autosuggestions"
 
 cask "carbon-copy-cloner"
 # cask "contexts"
+cask "doppler"
 # cask "marked"
 cask "rectangle"
 cask "the-unarchiver"
