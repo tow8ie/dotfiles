@@ -40,6 +40,7 @@ cask "carbon-copy-cloner"
 cask "doppler"
 # cask "marked"
 cask "rectangle"
+cask "setapp"
 cask "the-unarchiver"
 
 mas "OX Drive", id: 818195014
