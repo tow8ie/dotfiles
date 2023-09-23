@@ -42,6 +42,7 @@ cask "doppler"
 cask "rectangle"
 cask "setapp"
 cask "the-unarchiver"
+cask "thunderbird"
 
 mas "OX Drive", id: 818195014
 mas "Strongbox", id: 897283731
