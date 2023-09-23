@@ -47,6 +47,7 @@ cask "thunderbird"
 
 mas "OX Drive", id: 818195014
 mas "Strongbox", id: 897283731
+mas "Things", id: 904280696
 
 # vscode "42Crunch.vscode-openapi"
 # vscode "arcticicestudio.nord-visual-studio-code"
