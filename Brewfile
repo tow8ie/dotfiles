@@ -36,6 +36,7 @@ brew "zsh"
 brew "zsh-autosuggestions"
 
 cask "adobe-creative-cloud"
+# cask "alt-tab"
 cask "carbon-copy-cloner"
 # cask "contexts"
 cask "doppler"
