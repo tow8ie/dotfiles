@@ -4,6 +4,7 @@ tap "homebrew/bundle"
 tap "tow8ie/tow8ie"
 
 # brew "ack"
+brew "adobe-creative-cloud"
 brew "asdf"
 brew "bash"
 brew "bash-completion@2"
