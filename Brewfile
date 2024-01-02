@@ -51,6 +51,7 @@ cask "the-unarchiver"
 cask "thunderbird"
 
 mas "OX Drive", id: 818195014
+mas "Play: Save Videos Watch Later", id: 1596506190
 mas "Strongbox", id: 897283731
 mas "Things", id: 904280696
 
