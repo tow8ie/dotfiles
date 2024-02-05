@@ -51,6 +51,7 @@ cask "rectangle"
 cask "setapp"
 cask "the-unarchiver"
 cask "thunderbird"
+cask "zotero"
 
 mas "OX Drive", id: 818195014
 mas "Play: Save Videos Watch Later", id: 1596506190
