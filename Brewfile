@@ -39,6 +39,7 @@ brew "zsh-autosuggestions"
 
 cask "adobe-creative-cloud"
 # cask "alt-tab"
+cask "betterdisplay"
 cask "brave-browser"
 cask "calibre"
 cask "carbon-copy-cloner"
