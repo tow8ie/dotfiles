@@ -58,6 +58,7 @@ cask "setapp"
 cask "the-archive"
 cask "the-unarchiver"
 cask "thunderbird"
+cask "ticktick"
 cask "zotero"
 
 mas "Outbank: Banking und Finanzen", id: 1094255754
