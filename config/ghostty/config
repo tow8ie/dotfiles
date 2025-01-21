@@ -1,0 +1,9 @@
+# theme = GruvboxLightHard
+theme = nord
+font-size = 16
+
+window-save-state = always
+copy-on-select = true
+
+# keybind = global:cmd+apostrophe=toggle_quick_terminal
+
