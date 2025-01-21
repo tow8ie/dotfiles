@@ -41,6 +41,7 @@ alias tre='tree -Fa'
 # --- #
 
 alias gti='git'
+alias lg='lazygit'
 
 # ------ #
 # ranger #
