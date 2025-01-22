@@ -76,6 +76,7 @@ cask "the-unarchiver"
 cask "threema@beta"
 cask "thunderbird"
 cask "ticktick"
+cask "visual-studio-code"
 cask "vlc"
 cask "zotero"
 
