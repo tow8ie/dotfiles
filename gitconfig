@@ -82,3 +82,5 @@
   email = tow8ie@users.noreply.github.com
 [include]
   path = .gitconfig-hostspecific
+[pull]
+	rebase = true
