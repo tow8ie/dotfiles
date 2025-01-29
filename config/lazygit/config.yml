@@ -7,5 +7,5 @@ git:
   allBranchesLogCmd: git log --graph --all --color=always --pretty='format:%Cred%h %Cblue%an (%ad)%Cgreen%d %Creset%s' --date=relative
   paging:
     colorArg: always
-    pager: delta --dark --paging=never --side-by-side
+    pager: delta --dark --paging=never
 
