@@ -1,6 +1,9 @@
 # theme = GruvboxLightHard
 theme = nord
 font-size = 16
+window-padding-x = 10
+background-opacity = 0.8
+background-blur = true
 
 window-save-state = always
 copy-on-select = clipboard
