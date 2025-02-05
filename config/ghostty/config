@@ -2,7 +2,7 @@
 theme = nord
 font-size = 16
 window-padding-x = 10
-background-opacity = 0.8
+background-opacity = 0.9
 background-blur = true
 
 window-save-state = always
