@@ -83,6 +83,7 @@ cask "visual-studio-code"
 cask "vlc"
 cask "zotero"
 
+mas "Across: Modern Calendar", id: 6444851827
 mas "Outbank: Banking und Finanzen", id: 1094255754
 mas "OX Drive", id: 818195014
 mas "Play: Save Videos Watch Later", id: 1596506190
