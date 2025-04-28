@@ -9,6 +9,13 @@
 ;; (setq user-full-name "John Doe"
 ;;       user-mail-address "john@doe.com")
 
+(cond ((featurep :system 'macos)
+       (setq mac-command-modifier 'meta
+             mac-option-modifier 'nil
+             mac-control-modifier 'control
+             mac-right-command-modifier 'super
+             mac-right-control-modifier 'hyper)))
+
 (setq confirm-kill-emacs nil)
 
 ;; Doom exposes five (optional) variables for controlling fonts in Doom:
