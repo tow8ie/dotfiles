@@ -35,6 +35,9 @@ path=(
   # npm local bins
   # ./node_modules/.bin
 
+  # Doom Emacs
+  $HOME/.config/emacs/bin
+
 )
 
 export PATH
