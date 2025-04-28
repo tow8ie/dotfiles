@@ -9,6 +9,8 @@
 ;; (setq user-full-name "John Doe"
 ;;       user-mail-address "john@doe.com")
 
+(setq confirm-kill-emacs nil)
+
 ;; Doom exposes five (optional) variables for controlling fonts in Doom:
 ;;
 ;; - `doom-font' -- the primary font to use
