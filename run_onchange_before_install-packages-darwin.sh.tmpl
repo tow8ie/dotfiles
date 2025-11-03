@@ -7,6 +7,7 @@ if which brew &> /dev/null; then
   brew bundle --no-upgrade --verbose --file=/dev/stdin <<EOF
 tap "babashka/brew"
 tap "borkdude/brew"
+tap "d12frosted/emacs-plus"
 tap "homebrew/bundle"
 tap "jesseduffield/lazygit"
 tap "tow8ie/tow8ie"
@@ -20,6 +21,7 @@ brew "chezmoi"
 brew "clojure"
 brew "direnv"
 brew "editorconfig"
+brew "emacs-plus"
 brew "exiftool"
 brew "fd"
 brew "ffmpeg"
@@ -37,6 +39,7 @@ brew "ranger"
 # not available by default.
 # @see: https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard
 # brew "reattach-to-user-namespace"
+brew "ripgrep"
 brew "starship"
 brew "the_silver_searcher"
 # brew "thefuck"
