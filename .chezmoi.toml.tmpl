@@ -1,0 +1,16 @@
+[data]
+{{- if eq .chezmoi.os "darwin" -}}
+{{- $computerName := output "scutil" "--get" "ComputerName" | trim }}
+    computerName = {{ $computerName | quote }}
+{{ end -}}
+[diff]
+    pager = "delta"
+[merge]
+    command = "meld"
+    args = [
+      {{ printf "%q" "{{ .Destination }}" }},
+      {{ printf "%q" "{{ .Source }}" }},
+      {{ printf "%q" "{{ .Target }}" }},
+      {{ printf "%q" "--output={{ .Source }}" }}
+    ]
+

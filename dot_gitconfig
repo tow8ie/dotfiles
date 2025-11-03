@@ -1,0 +1,86 @@
+[alias]
+  co = checkout
+  st = status
+  s = status -sb
+  c = commit --verbose
+  l = log --oneline --decorate
+  d = diff --word-diff
+  dc = diff --cached
+  pr = pull --rebase
+  g = log --graph --all --decorate --pretty=oneline --abbrev-commit -n 25
+  go = log --graph --decorate --pretty=oneline --abbrev-commit -n 25
+  gl = log --graph --decorate --pretty=oneline --abbrev-commit -n 25
+  gd = log --graph --all --decorate --pretty=oneline --abbrev-commit -n 25 --date-order
+  gr = log --graph --all --decorate --pretty=oneline --abbrev-commit
+  grl = log --graph --decorate --pretty=oneline --abbrev-commit
+  grd = log --graph --all --decorate --pretty=oneline --abbrev-commit --date-order
+  gg = log --graph --all --pretty='format:%Cred%h %Cblue%an (%ad)%Cgreen%d %Creset%s' -n 25 --date=relative
+  ggo = log --graph --pretty='format:%Cred%h %Cblue%an (%ad)%Cgreen%d %Creset%s' -n 25 --date=relative
+  ggd = log --graph --all --pretty='format:%Cred%h %Cblue%an (%ad)%Cgreen%d %Creset%s' -n 25 --date=relative --date-order
+  ggr = log --graph --all --pretty='format:%Cred%h %Cblue%an (%ad)%Cgreen%d %Creset%s' --date=relative
+  ggrd = log --graph --all --pretty='format:%Cred%h %Cblue%an (%ad)%Cgreen%d %Creset%s' --date=relative --date-order
+  ggro = log --graph --pretty='format:%Cred%h %Cblue%an (%ad)%Cgreen%d %Creset%s' --date=relative
+  # History of deleted files
+  ldf = log --diff-filter=D --summary
+  # Delete remote branch
+  # Example: git rrmbranch mybranch
+  rrmbranch = "push --delete origin"
+  # Delete deleted remote branches
+  rprune = remote prune origin
+  # Shows if current branch and master have both touched/created migrations.
+  # Useful as a check before rebasing because rebasing changes history and
+  # migrations need a consistent history to work properly over time.
+  diff-migrations = diff master..HEAD --stat -- db/migrate/
+  # Git ad-hoc sharing in the local network
+  serve = daemon --reuseaddr --base-path=. --export-all --verbose --enable=receive-pack
+  # Suggested Git aliases from Hackernoon
+  # @see: https://hackernoon.com/lesser-known-git-commands-151a1918a60#.olkv2dnlh
+  please = push --force-with-lease
+  commend = commit --amend --no-edit
+  it = !git init && git commit -m 'Root commit.' --allow-empty
+  stsh = stash --keep-index
+  staash = stash --include-untracked
+  staaash = stash --all
+  shorty = status --short --branch
+  merc = merge --no-ff
+  grog = log --graph --abbrev-commit --decorate --all --format=format:\"%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(dim white) - %an%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n %C(white)%s%C(reset)\"
+[color]
+  status = auto
+  diff = auto
+  branch = auto
+[merge]
+  tool = opendiff
+[core]
+  precomposeunicode = true
+  autocrlf = input
+  excludesfile = ~/.gitignore
+[push]
+  default = upstream
+  autoSetupRemote = true
+[mergetool "threesome"]
+  cmd = "vim -f $BASE $LOCAL $REMOTE $MERGED -c 'ThreesomeInit'"
+  trustExitCode = true
+[filter "media"]
+	required = true
+	clean = git media clean %f
+	smudge = git media smudge %f
+[filter "hawser"]
+	clean = git hawser clean %f
+	smudge = git hawser smudge %f
+	required = true
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+# Cache the GitHub password in Git when cloning with HTTPS.
+# @see: https://help.github.com/articles/caching-your-github-password-in-git/
+[credential]
+	helper = osxkeychain
+[user]
+  name = Tobias Adam
+  email = tow8ie@users.noreply.github.com
+[include]
+  path = .gitconfig-hostspecific
+[pull]
+	rebase = true
