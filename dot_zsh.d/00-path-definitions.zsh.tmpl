@@ -7,11 +7,17 @@ typeset -gx -U path
 # What should/shouldn't go in .zshenv, .zshrc, .zlogin, .zprofile, .zlogout?
 # https://unix.stackexchange.com/questions/71253/what-should-shouldnt-go-in-zshenv-zshrc-zlogin-zprofile-zlogout
 
-# if (( $+commands[brew] )); then
-#   if brew ls | grep asdf &> /dev/null; then
-#     source $(brew --prefix asdf)/libexec/asdf.sh
-#   fi
-# fi
+{{ if eq .computerName "S0184534" -}}
+if (( $+commands[brew] )); then
+  if brew ls | grep asdf &> /dev/null; then
+    source $(brew --prefix asdf)/libexec/asdf.sh
+  fi
+fi
+
+if [[ -f "${HOME}/.cargo/env" ]]; then
+  source "${HOME}/.cargo/env"
+fi
+{{- end }}
 
 path=(
 
@@ -26,6 +32,9 @@ path=(
 
   $HOME/.babashka/bbin/bin
 
+  # pipx
+  $HOME/.local/bin
+
   # -- DEFAULT --
   $path
 
@@ -37,7 +46,10 @@ path=(
 
   # Doom Emacs
   $HOME/.config/emacs/bin
-
+{{ if eq .computerName "S0184534" }}
+  # Postgres Homebrew Install
+  /opt/homebrew/opt/postgresql@15/bin
+{{ end }}
 )
 
 export PATH

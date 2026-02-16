@@ -1,0 +1,209 @@
+{{- if eq .computerName "Tobis Mac mini" "S0184534" -}}
+#!/bin/bash
+
+echo "Installing Homebrew formulas."
+
+if which brew &> /dev/null; then
+  brew bundle --no-upgrade --verbose --file=/dev/stdin <<EOF
+### Common Taps
+
+tap "babashka/brew"
+tap "borkdude/brew"
+tap "homebrew/bundle"
+tap "jesseduffield/lazygit"
+tap "railwaycat/emacsmacport"
+tap "tow8ie/tow8ie"
+
+### Common Brews
+
+brew "bash"
+brew "bash-completion@2"
+brew "bat"
+brew "chezmoi"
+brew "clojure"
+brew "difftastic"
+brew "direnv"
+brew "editorconfig"
+brew "fd"
+brew "fish"
+brew "fzf"
+brew "git-delta"
+brew "jesseduffield/lazygit/lazygit"
+brew "jq"
+brew "just"
+brew "mas"
+brew "mise"
+brew "neovim"
+brew "ranger"
+brew "ripgrep"
+brew "starship"
+brew "the_silver_searcher"
+brew "tree"
+brew "uv"
+brew "vim"
+brew "watch"
+brew "wget"
+brew "zplug"
+brew "zsh"
+brew "zsh-autosuggestions"
+
+# Fixes the problem that when using tmux on Mac OS X the system clipboard is
+# not available by default.
+# @see: https://github.com/ChrisJohnsen/tmux-MacOSX-pasteboard
+# brew "reattach-to-user-namespace"
+# brew "trash"
+
+### Common Casks
+
+cask "appcleaner"
+cask "ghostty"{{ if eq .computerName "S0184534" -}}, { appdir: "~/Applications" }{{- end }}
+cask "istat-menus"
+cask "iterm2"
+cask "jordanbaird-ice"{{ if eq .computerName "S0184534" -}}, { appdir: "~/Applications" }{{- end }}
+cask "meld"{{ if eq .computerName "S0184534" -}}, { appdir: "~/Applications" }{{- end }}
+cask "railwaycat/emacsmacport/emacs-mac-spacemacs-icon"
+cask "raycast"
+cask "rectangle"
+cask "the-unarchiver"
+
+### Common Mac App Store Apps
+
+mas "Strongbox", id: 897283731
+
+{{ if eq .computerName "Tobis Mac mini" -}}
+### Host-specific Taps
+
+tap "supersonic-app/supersonic"
+
+### Host-specific Brews
+
+brew "exiftool"
+brew "ffmpeg"
+brew "media-info"
+brew "yt-dlp"
+
+### Host-specific Casks
+
+cask "adobe-creative-cloud"
+cask "affinity-designer"
+cask "affinity-photo"
+cask "affinity-publisher"
+cask "betterdisplay"
+cask "bettermouse"
+cask "brave-browser"
+cask "busycal"
+cask "calibre"
+cask "carbon-copy-cloner"
+cask "darktable"
+cask "doppler"
+cask "downie"
+cask "elgato-camera-hub"
+cask "ente"
+cask "firefox"
+cask "hazel"
+cask "keybase"
+cask "mailmate@beta"
+cask "meta"
+cask "moneymoney"
+cask "monitorcontrol"
+cask "opencore-patcher"
+cask "qfinder-pro"
+cask "setapp"
+cask "songkong"
+cask "supersonic"
+cask "the-archive"
+cask "threema@beta"
+cask "thunderbird"
+cask "ticktick"
+cask "visual-studio-code"
+cask "vlc"
+cask "zotero"
+
+# cask "alt-tab"
+# cask "mac-mouse-fix"
+# cask "steermouse"
+
+### Host-specific Mac App Store Apps
+
+mas "Across: Modern Calendar", id: 6444851827
+mas "OX Drive", id: 818195014
+mas "Outbank: Banking und Finanzen", id: 1094255754
+mas "Play: Save Videos Watch Later", id: 1596506190
+mas "Things", id: 904280696
+{{- end -}}
+
+{{ if eq .computerName "S0184534" -}}
+### Host-specific Taps
+
+tap "common-fate/granted"
+tap "remotemobprogramming/brew"
+tap "saucelabs/tap"
+
+### Host-specific Brews
+
+brew "ack"
+brew "asdf"
+brew "babashka/brew/bbin"
+brew "borkdude/brew/jet"
+brew "gh"
+brew "granted"
+brew "graphviz"
+brew "httpie"
+brew "inframap"
+brew "mr"
+brew "pgcli"
+brew "pipenv"
+brew "pipx"
+brew "postgresql@15"
+brew "remotemobprogramming/brew/mob"
+brew "rustup-init"
+brew "sauce-connect"
+brew "terraform-docs"
+brew "thefuck"
+brew "tmux"
+brew "ykman"
+
+### Host-specific Casks
+
+cask "alfred"
+cask "caffeine"
+cask "chromedriver"
+cask "contexts"
+cask "docker-desktop", args: { appdir: "~/Applications" }
+cask "httpie-desktop", args: { appdir: "~/Applications" }
+cask "macupdater", args: { appdir: "~/Applications" }
+cask "marked-app"
+cask "miro", args: { appdir: "~/Applications" }
+cask "notunes", args: { appdir: "~/Applications" }
+cask "rapidapi"
+cask "temurin" # Latest Java version. Required by visualvm
+cask "visualvm", args: { appdir: "~/Applications" }
+cask "yed", args: { appdir: "~/Applications" }
+
+### Host-specific Mac App Store Apps
+
+mas "Ice Cubes for Mastodon", id: 6444915884
+
+### Host-specific Visual Studio Code Plugins
+
+# vscode "42Crunch.vscode-openapi"
+# vscode "GitHub.github-vscode-theme"
+# vscode "arcticicestudio.nord-visual-studio-code"
+# vscode "betterthantomorrow.calva"
+# vscode "betterthantomorrow.calva-spritz"
+# vscode "golang.go"
+# vscode "golf1052.base16-generator"
+# vscode "mechatroner.rainbow-csv"
+# vscode "ms-vsliveshare.vsliveshare"
+# vscode "redhat.vscode-yaml"
+{{- end }}
+EOF
+
+{{ if eq .computerName "Tobis Mac mini" -}}
+  xattr -r -d com.apple.quarantine /Applications/Supersonic.app
+{{- end }}
+
+else
+  echo "Homebrew is not installed. Skipping the installation of Homebrew formulas."
+fi
+{{ end -}}
