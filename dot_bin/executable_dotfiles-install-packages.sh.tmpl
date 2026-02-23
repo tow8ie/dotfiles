@@ -118,6 +118,7 @@ cask "thunderbird"
 cask "ticktick"
 cask "visual-studio-code"
 cask "vlc"
+cask "xld"
 cask "zotero"
 
 # cask "alt-tab"
@@ -202,6 +203,7 @@ EOF
 
 {{ if eq .computerName "Tobis Mac mini" -}}
   xattr -r -d com.apple.quarantine /Applications/Supersonic.app
+  xattr -r -d com.apple.quarantine /Applications/XLD.app
 {{- end }}
 
 else
