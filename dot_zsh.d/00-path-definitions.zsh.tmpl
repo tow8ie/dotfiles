@@ -8,12 +8,6 @@ typeset -gx -U path
 # https://unix.stackexchange.com/questions/71253/what-should-shouldnt-go-in-zshenv-zshrc-zlogin-zprofile-zlogout
 
 {{ if eq .computerName "S0184534" -}}
-if (( $+commands[brew] )); then
-  if brew ls | grep asdf &> /dev/null; then
-    source $(brew --prefix asdf)/libexec/asdf.sh
-  fi
-fi
-
 if [[ -f "${HOME}/.cargo/env" ]]; then
   source "${HOME}/.cargo/env"
 fi

@@ -50,21 +50,5 @@ for (( idx=${#post_path_definitions[@]}-1 ; idx>=0 ; idx-- )) ; do
     pathedit -a "${post_path_definitions[idx]}"
 done
 
-# asdf version manager (for Node.js)
-
-ASDF_BREW_PATH="/usr/local/opt/asdf/libexec"
-
-# brew --prefix is slooooow, so only use it if it cannot be avoided
-if [ ! -d "${ASDF_BREW_PATH}" ]; then
-  if command -v brew 1>/dev/null 2>&1; then
-    ASDF_BREW_PATH="$(brew --prefix asdf)"
-  fi
-fi
-
-if [ -d "${ASDF_BREW_PATH}" ]; then
-  source "${ASDF_BREW_PATH}/asdf.sh"
-fi
-
-
 export PATH
 
