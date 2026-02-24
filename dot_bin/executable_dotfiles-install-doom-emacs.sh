@@ -7,4 +7,5 @@ if [ -d "$HOME/.config/emacs" ]; then
 else
     git clone --depth 1 https://github.com/doomemacs/doomemacs $HOME/.config/emacs
     $HOME/.config/emacs/bin/doom install
+    $HOME/.config/emacs/bin/doom doctor
 fi
