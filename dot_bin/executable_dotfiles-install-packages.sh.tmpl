@@ -22,7 +22,6 @@ brew "bat"
 brew "chezmoi"
 brew "clojure"
 brew "difftastic"
-brew "direnv"
 brew "editorconfig"
 brew "fd"
 brew "fish"
@@ -201,6 +200,10 @@ mas "Ice Cubes for Mastodon", id: 6444915884
 # vscode "redhat.vscode-yaml"
 {{- end }}
 EOF
+
+### Uninstall previously installed Common Brews
+
+brew rm "direnv" --force
 
 {{ if eq .computerName "Tobis Mac mini" -}}
   xattr -r -d com.apple.quarantine /Applications/Supersonic.app
