@@ -84,3 +84,5 @@
   path = .gitconfig-hostspecific
 [pull]
 	rebase = true
+[init]
+	defaultBranch = main
