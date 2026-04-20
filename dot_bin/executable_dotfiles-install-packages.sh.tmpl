@@ -210,6 +210,11 @@ brew rm "direnv" --force
   xattr -r -d com.apple.quarantine /Applications/XLD.app
 {{- end }}
 
+
+{{ if eq .computerName "S0184534" -}}
+  xattr -r -d com.apple.quarantine /opt/homebrew/bin/chromedriver
+{{- end }}
+
 else
   echo "Homebrew is not installed. Skipping the installation of Homebrew formulas."
 fi
