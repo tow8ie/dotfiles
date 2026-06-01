@@ -54,3 +54,7 @@ fi
 
 eval "$(mise activate zsh)"
 
+if (( $+commands[fnox] )); then
+  eval "$(fnox activate zsh)"
+fi
+
