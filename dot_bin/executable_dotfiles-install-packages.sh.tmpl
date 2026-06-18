@@ -9,6 +9,7 @@ if which brew &> /dev/null; then
 
 tap "babashka/brew"
 tap "borkdude/brew"
+tap "d12frosted/emacs-plus"
 tap "homebrew/bundle"
 tap "jesseduffield/lazygit"
 tap "railwaycat/emacsmacport"
@@ -23,6 +24,7 @@ brew "chezmoi"
 brew "clojure"
 brew "difftastic"
 brew "editorconfig"
+brew "emacs-plus@30"
 brew "fd"
 brew "fish"
 brew "fzf"
@@ -61,7 +63,6 @@ cask "ghostty"{{ if eq .computerName "S0184534" -}}, { appdir: "~/Applications" 
 cask "istat-menus"
 cask "iterm2"
 cask "meld"{{ if eq .computerName "S0184534" -}}, { appdir: "~/Applications" }{{- end }}
-cask "railwaycat/emacsmacport/emacs-mac-spacemacs-icon"
 cask "raycast"
 cask "rectangle"
 cask "the-unarchiver"
@@ -207,6 +208,12 @@ EOF
 ### Uninstall previously installed Common Brews
 
 brew rm "direnv" --force
+brew rm "railwaycat/emacsmacport/emacs-mac-spacemacs-icon" --force
+brew rm "railwaycat/emacsmacport/emacs-mac" --force
+
+### Post-install setup for commen Brews
+cp -r /opt/homebrew/opt/emacs-plus@30/Emacs.app /Applications/
+cp -r "/opt/homebrew/opt/emacs-plus@30/Emacs Client.app" /Applications/
 
 {{ if eq .computerName "Tobis Mac mini" -}}
   xattr -r -d com.apple.quarantine /Applications/Supersonic.app
