@@ -87,3 +87,32 @@
 ;;
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
+
+(after! evil-escape
+  (setq-default evil-escape-key-sequence "kj"))
+
+(use-package! paredit
+  :hook ((clojure-mode . paredit-mode)
+         (emacs-lisp-mode . paredit-mode)))
+
+(after! paredit
+  (map! :nvi
+
+        ;; :desc "Slurp forward"
+        ;; "C-)" #'paredit-forward-slurp-sexp
+
+        ;; :desc "Slurp Backward"
+        ;; "C-(" #'paredit-backward-slurp-sexp
+
+        ;; :desc "Barf forward"
+        ;; "C-]" #'paredit-forward-barf-sexp
+
+        ;; :desc "Barf backward"
+        ;; "C-[" #'paredit-backward-barf-sexp
+
+        ;; :desc "Backward"
+        ;; "C-c <left>" #'paredit-backward
+
+        ;; :desc "Forward"
+        ;; "C-c <right>" #'paredit-forward)
+  ))
