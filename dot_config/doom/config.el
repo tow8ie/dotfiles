@@ -56,6 +56,9 @@
 
 (setq initial-frame-alist '((fullscreen . maximized)))
 
+;; Don't show the Doom Emacs ASCII art banner
+(remove-hook '+dashboard-functions #'+dashboard-widget-banner)
+
 ;; Whenever you reconfigure a package, make sure to wrap your config in an
 ;; `after!' block, otherwise Doom's defaults may override your settings. E.g.
 ;;
