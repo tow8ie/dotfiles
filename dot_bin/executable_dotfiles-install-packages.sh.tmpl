@@ -12,7 +12,6 @@ tap "borkdude/brew"
 tap "d12frosted/emacs-plus"
 tap "homebrew/bundle"
 tap "jesseduffield/lazygit"
-tap "railwaycat/emacsmacport"
 tap "tow8ie/tow8ie"
 
 ### Common Brews
@@ -209,8 +208,6 @@ EOF
 ### Uninstall previously installed Common Brews
 
 brew rm "direnv" --force
-brew rm "railwaycat/emacsmacport/emacs-mac-spacemacs-icon" --force
-brew rm "railwaycat/emacsmacport/emacs-mac" --force
 
 ### Post-install setup for commen Brews
 cp -r /opt/homebrew/opt/emacs-plus@30/Emacs.app /Applications/
