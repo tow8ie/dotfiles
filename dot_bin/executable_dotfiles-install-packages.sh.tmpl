@@ -175,7 +175,6 @@ brew "zipkin"
 
 cask "alfred"
 cask "caffeine"
-cask "chromedriver"
 cask "contexts"
 cask "copilot-cli"
 cask "docker-desktop", args: { appdir: "~/Applications" }
@@ -220,11 +219,6 @@ cp -r "/opt/homebrew/opt/emacs-plus@30/Emacs Client.app" /Applications/
 {{ if eq .computerName "Tobis Mac mini" -}}
   xattr -r -d com.apple.quarantine /Applications/Supersonic.app
   xattr -r -d com.apple.quarantine /Applications/XLD.app
-{{- end }}
-
-
-{{ if eq .computerName "S0184534" -}}
-  xattr -r -d com.apple.quarantine /opt/homebrew/bin/chromedriver
 {{- end }}
 
 else
