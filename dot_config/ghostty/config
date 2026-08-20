@@ -8,6 +8,9 @@ background-blur = true
 window-save-state = always
 copy-on-select = clipboard
 
+unfocused-split-opacity = 0.8
+unfocused-split-fill = #ffffff
+
 # 50 MB
 scrollback-limit = 50000000
 
